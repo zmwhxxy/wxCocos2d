@@ -1,0 +1,9 @@
+*.lib
+*.so
+*.exe
+*.dll
+*.tlog
+*.db
+*.idb
+*.ipch
+*.VC
