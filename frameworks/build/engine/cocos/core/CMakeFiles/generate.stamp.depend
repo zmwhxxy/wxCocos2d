@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/2d/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/3d/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/audio/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/base/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/editor-support/cocostudio/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/editor-support/dragonBones/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/editor-support/fairygui/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/editor-support/spine/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/math/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/navmesh/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/network/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/physics/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/physics3d/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/platform/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/renderer/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/cocos/ui/CMakeLists.txt
+F:/wxCocos2d/frameworks/cocos2d-x/extensions/CMakeLists.txt
