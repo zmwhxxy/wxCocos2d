@@ -809,7 +809,7 @@ void Director::replaceScene(Scene *scene)
         _nextScene = nullptr;
     }
 
-    ssize_t index = _scenesStack.size() - 1;
+    unsigned long index = _scenesStack.size() - 1;
 
     _sendCleanupToScene = true;
 #if CC_ENABLE_GC_FOR_NATIVE_OBJECTS
@@ -854,7 +854,7 @@ void Director::popScene()
     }
 #endif // CC_ENABLE_GC_FOR_NATIVE_OBJECTS
     _scenesStack.popBack();
-    ssize_t c = _scenesStack.size();
+    unsigned long c = _scenesStack.size();
 
     if (c == 0)
     {
@@ -875,7 +875,7 @@ void Director::popToRootScene()
 void Director::popToSceneStackLevel(int level)
 {
     CCASSERT(_runningScene != nullptr, "A running Scene is needed");
-    ssize_t c = _scenesStack.size();
+    unsigned long c = _scenesStack.size();
 
     // level 0? -> end
     if (level == 0)
@@ -1211,7 +1211,7 @@ void Director::calculateMPF()
 }
 
 // returns the FPS image data pointer and len
-void Director::getFPSImageData(unsigned char** datapointer, ssize_t* length)
+void Director::getFPSImageData(unsigned char** datapointer, unsigned long* length)
 {
     // FIXME: fixed me if it should be used 
     *datapointer = cc_fps_images_png;
@@ -1240,7 +1240,7 @@ void Director::createStatsLabel()
     backend::PixelFormat currentFormat = Texture2D::getDefaultAlphaPixelFormat();
     Texture2D::setDefaultAlphaPixelFormat(backend::PixelFormat::RGBA4444);
     unsigned char *data = nullptr;
-    ssize_t dataLength = 0;
+    unsigned long dataLength = 0;
     getFPSImageData(&data, &dataLength);
 
     Image* image = new (std::nothrow) Image();

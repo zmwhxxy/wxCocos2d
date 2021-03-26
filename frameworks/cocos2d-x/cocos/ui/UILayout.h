@@ -548,7 +548,7 @@ protected:
     /**
      * find a focus enabled child Widget in the layout by index
      */
-    Widget* findFocusEnabledChildWidgetByIndex(ssize_t index);
+    Widget* findFocusEnabledChildWidgetByIndex(unsigned long index);
     
     /**
      * get the center point of a widget in world space
@@ -575,7 +575,7 @@ protected:
      * find the nth element in the _children array. Only the Widget descendant object will be returned
      *@param index  The index of a element in the _children array
      */
-    Widget* getChildWidgetByIndex(ssize_t index)const;
+    Widget* getChildWidgetByIndex(unsigned long index)const;
     /**
      * whether it is the last element according to all their parents
      */

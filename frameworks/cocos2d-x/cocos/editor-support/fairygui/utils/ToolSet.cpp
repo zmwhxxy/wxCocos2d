@@ -6,7 +6,7 @@ using namespace std;
 
 Color4B ToolSet::hexToColor(const char* str)
 {
-    ssize_t len = strlen(str);
+    unsigned long len = strlen(str);
     if (len < 7 || str[0] != '#')
         return Color4B::BLACK;
 
@@ -74,7 +74,7 @@ FastSplitter::FastSplitter() : data(nullptr), dataLength(-1), delimiter('\0')
 {
 }
 
-void FastSplitter::start(const char* data, ssize_t dataLength, char delimiter)
+void FastSplitter::start(const char* data, unsigned long dataLength, char delimiter)
 {
     this->data = data;
     this->dataLength = dataLength;
@@ -113,12 +113,12 @@ const char* FastSplitter::getText()
         return nullptr;
 }
 
-ssize_t FastSplitter::getTextLength()
+unsigned long FastSplitter::getTextLength()
 {
     return textLength;
 }
 
-void FastSplitter::getKeyValuePair(char* keyBuf, ssize_t keyBufSize, char* valueBuf, ssize_t valueBufSize)
+void FastSplitter::getKeyValuePair(char* keyBuf, unsigned long keyBufSize, char* valueBuf, unsigned long valueBufSize)
 {
     if (textLength == 0)
     {
@@ -130,7 +130,7 @@ void FastSplitter::getKeyValuePair(char* keyBuf, ssize_t keyBufSize, char* value
         char* found = (char*)memchr(data, (int)'=', textLength);
         if (found)
         {
-            ssize_t len = MIN(keyBufSize - 1, found - data);
+            unsigned long len = MIN(keyBufSize - 1, found - data);
             memcpy(keyBuf, data, len);
             keyBuf[len] = '\0';
 
@@ -140,7 +140,7 @@ void FastSplitter::getKeyValuePair(char* keyBuf, ssize_t keyBufSize, char* value
         }
         else
         {
-            ssize_t len = MIN(valueBufSize - 1, textLength);
+            unsigned long len = MIN(valueBufSize - 1, textLength);
             memcpy(keyBuf, data, len);
             keyBuf[len] = '\0';
             valueBuf[0] = '\0';

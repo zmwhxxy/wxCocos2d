@@ -64,14 +64,14 @@ Properties::Properties(const Properties& copy)
     rewind();
 }
 
-Properties::Properties(Data* data, ssize_t* dataIdx)
+Properties::Properties(Data* data, unsigned long* dataIdx)
     : _dataIdx(dataIdx), _data(data), _variables(NULL), _dirPath(NULL), _parent(NULL)
 {
     readProperties();
     rewind();
 }
 
-Properties::Properties(Data* data, ssize_t* dataIdx, const std::string& name, const char* id, const char* parentID, Properties* parent)
+Properties::Properties(Data* data, unsigned long* dataIdx, const std::string& name, const char* id, const char* parentID, Properties* parent)
     : _dataIdx(dataIdx), _data(data), _namespace(name), _variables(NULL), _dirPath(NULL), _parent(parent)
 {
     if (id)
@@ -104,7 +104,7 @@ Properties* Properties::createNonRefCounted(const std::string& url)
     // data will be released automatically when 'data' goes out of scope
     // so we pass data as weak pointer
     auto data = FileUtils::getInstance()->getDataFromFile(fileString);
-    ssize_t dataIdx = 0;
+    unsigned long dataIdx = 0;
     Properties* properties = new (std::nothrow) Properties(&data, &dataIdx);
     properties->resolveInheritance();
 
@@ -424,7 +424,7 @@ char* Properties::readLine(char* output, int num)
         return nullptr;
 
     // little optimization: avoid unneeded dereferences
-    const ssize_t dataIdx = *_dataIdx;
+    const unsigned long dataIdx = *_dataIdx;
     int i;
 
     for (i=0; i<num && dataIdx+i < _data->_size; i++)

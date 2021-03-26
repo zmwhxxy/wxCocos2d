@@ -576,7 +576,7 @@ void SkeletonRenderer::draw (Renderer* renderer, const Mat4& transform, uint32_t
 		} else {
 			const cocos2d::Vector<Node*>& children = parent->getChildren();
 			Node* sibling = nullptr;
-			for (ssize_t i = 0; i < children.size(); i++) {
+			for (unsigned long i = 0; i < children.size(); i++) {
 				if (children.at(i) == this) {
 					if (i < children.size() - 1) {
 						sibling = children.at(i+1);

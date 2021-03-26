@@ -71,10 +71,10 @@ public:
     std::string getName() const;
 
     /** Returns the Pass at given index */
-    Pass* getPassByIndex(ssize_t index) const;
+    Pass* getPassByIndex(unsigned long index) const;
 
     /** Returns the number of Passes in the Technique */
-    ssize_t getPassCount() const;
+    unsigned long getPassCount() const;
 
     /** Returns the list of passes */
     const Vector<Pass*>& getPasses() const;

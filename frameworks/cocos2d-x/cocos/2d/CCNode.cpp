@@ -580,7 +580,7 @@ void Node::setPositionNormalized(const Vec2& position)
     _transformUpdated = _transformDirty = _inverseDirty = true;
 }
 
-ssize_t Node::getChildrenCount() const
+unsigned long Node::getChildrenCount() const
 {
     return _children.size();
 }
@@ -1018,7 +1018,7 @@ void Node::removeChild(Node* child, bool cleanup /* = true */)
         return;
     }
 
-    ssize_t index = _children.getIndex(child);
+    unsigned long index = _children.getIndex(child);
     if( index != CC_INVALID_INDEX )
         this->detachChild( child, index, cleanup );
 }
@@ -1092,7 +1092,7 @@ void Node::removeAllChildrenWithCleanup(bool cleanup)
     _children.clear();
 }
 
-void Node::detachChild(Node *child, ssize_t childIndex, bool doCleanup)
+void Node::detachChild(Node *child, unsigned long childIndex, bool doCleanup)
 {
     // IMPORTANT:
     //  -1st do onExit
@@ -1440,12 +1440,12 @@ Action * Node::getActionByTag(int tag)
     return _actionManager->getActionByTag(tag, this);
 }
 
-ssize_t Node::getNumberOfRunningActions() const
+unsigned long Node::getNumberOfRunningActions() const
 {
     return _actionManager->getNumberOfRunningActionsInTarget(this);
 }
 
-ssize_t Node::getNumberOfRunningActionsByTag(int tag) const
+unsigned long Node::getNumberOfRunningActionsByTag(int tag) const
 {
     return _actionManager->getNumberOfRunningActionsInTargetByTag(this, tag);
 }

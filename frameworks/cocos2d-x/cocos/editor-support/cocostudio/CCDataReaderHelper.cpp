@@ -2241,14 +2241,14 @@ void DataReaderHelper::decodeNode(BaseData *node, const rapidjson::Value& json, 
 
 
 
-        const ssize_t framesizemusone = movementBoneData->frameList.size()-1;
+        const unsigned long framesizemusone = movementBoneData->frameList.size()-1;
         if (dataInfo->cocoStudioVersion < VERSION_CHANGE_ROTATION_RANGE)
         {
             //! Change rotation range from (-180 -- 180) to (-infinity -- infinity)
             cocos2d::Vector<FrameData*> frames =movementBoneData->frameList;
 
-            ssize_t imusone =0;
-            ssize_t i =0;
+            unsigned long imusone =0;
+            unsigned long i =0;
             for (i = framesizemusone; i >= 0; i--)
             {
                 if (i > 0)

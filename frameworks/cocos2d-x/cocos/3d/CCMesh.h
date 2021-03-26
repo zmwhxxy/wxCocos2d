@@ -91,7 +91,7 @@ public:
      */
     bool hasVertexAttrib(shaderinfos::VertexKey attrib) const;
     /**get mesh vertex attribute count*/
-    ssize_t getMeshVertexAttribCount() const;
+    unsigned long getMeshVertexAttribCount() const;
     /**get MeshVertexAttribute by index*/
     const MeshVertexAttrib& getMeshVertexAttribute(int idx);
     /**get per vertex size in bytes*/
@@ -174,7 +174,7 @@ public:
      *
      * @lua NA
      */
-    ssize_t getIndexCount() const;
+    unsigned long getIndexCount() const;
     /**
      * get index format
      *

@@ -119,7 +119,7 @@ private:
     bool calculateFinalPositionWithRelativeWidget(LayoutProtocol *layout);
     void calculateFinalPositionWithRelativeAlign();
 
-    ssize_t _unlayoutChildCount;
+    unsigned long _unlayoutChildCount;
     Vector<Widget*> _widgetChildren;
     Widget* _widget;
     float _finalPositionX;

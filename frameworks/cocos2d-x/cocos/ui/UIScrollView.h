@@ -348,7 +348,7 @@ public:
     virtual void removeChild(Node* child, bool cleanup = true) override;
     virtual Vector<Node*>& getChildren() override;
     virtual const Vector<Node*>& getChildren() const override;
-    virtual ssize_t getChildrenCount() const override;
+    virtual unsigned long getChildrenCount() const override;
     virtual Node * getChildByTag(int tag) const override;
     virtual Node* getChildByName(const std::string& name)const override;
     //touch event callback

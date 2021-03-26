@@ -72,7 +72,7 @@ public:
      * @param capacity The capacity of children.
      * @return Return an autorelease object.
      */
-    static SpriteBatchNode* createWithTexture(Texture2D* tex, ssize_t capacity = DEFAULT_CAPACITY);
+    static SpriteBatchNode* createWithTexture(Texture2D* tex, unsigned long capacity = DEFAULT_CAPACITY);
 
     /** Creates a SpriteBatchNode with a file image (.png, .jpeg, .pvr, etc) and capacity of children.
      * The capacity will be increased in 33% in runtime if it runs out of space.
@@ -82,7 +82,7 @@ public:
      * @param capacity The capacity of children.
      * @return Return an autorelease object.
      */
-    static SpriteBatchNode* create(const std::string& fileImage, ssize_t capacity = DEFAULT_CAPACITY);
+    static SpriteBatchNode* create(const std::string& fileImage, unsigned long capacity = DEFAULT_CAPACITY);
 
 
     /** Returns the TextureAtlas object. 
@@ -121,7 +121,7 @@ public:
      * @param doCleanup Whether or not to cleanup the running actions.
      * @warning Removing a child from a SpriteBatchNode is very slow.
      */
-    void removeChildAtIndex(ssize_t index, bool doCleanup);
+    void removeChildAtIndex(unsigned long index, bool doCleanup);
     
     /** Append the child. 
      *
@@ -141,21 +141,21 @@ public:
      * @param index The child index.
      * @return Index.
      */
-    ssize_t rebuildIndexInOrder(Sprite *parent, ssize_t index);
+    unsigned long rebuildIndexInOrder(Sprite *parent, unsigned long index);
     
     /** Get the Max image block index,in all child.
      *
      * @param sprite The parent sprite.
      * @return Index.
      */
-    ssize_t highestAtlasIndexInChild(Sprite *sprite);
+    unsigned long highestAtlasIndexInChild(Sprite *sprite);
     
     /** Get the Min image block index,in all child. 
      *
      * @param sprite The parent sprite.
      * @return Index.
      */
-    ssize_t lowestAtlasIndexInChild(Sprite *sprite);
+    unsigned long lowestAtlasIndexInChild(Sprite *sprite);
     
     /** Get the nearest index from the sprite in z.
      *
@@ -163,7 +163,7 @@ public:
      * @param z Z order for drawing priority.
      * @return Index.
      */
-    ssize_t atlasIndexForChild(Sprite *sprite, int z);
+    unsigned long atlasIndexForChild(Sprite *sprite, int z);
     /* Sprites use this to start sortChildren, don't call this manually. */
     void reorderBatch(bool reorder);
 
@@ -220,7 +220,7 @@ public:
      * This method should be called only when you are dealing with very big AtlasSprite and when most of the Sprite won't be updated.
      * For example: a tile map (TMXMap) or a label with lots of characters (LabelBMFont).
      */
-    void insertQuadFromSprite(Sprite *sprite, ssize_t index);
+    void insertQuadFromSprite(Sprite *sprite, unsigned long index);
     /* This is the opposite of "addQuadFromSprite.
      * It add the sprite to the children and descendants array, but it doesn't update add it to the texture atlas
      */
@@ -229,7 +229,7 @@ public:
     /** reserves capacity for the batch node.
      If the current capacity is bigger, nothing happens.
      otherwise, a new capacity is allocated */
-    void reserveCapacity(ssize_t newCapacity);
+    void reserveCapacity(unsigned long newCapacity);
 CC_CONSTRUCTOR_ACCESS:
     /**
      * @js ctor
@@ -244,14 +244,14 @@ CC_CONSTRUCTOR_ACCESS:
     /** initializes a SpriteBatchNode with a texture2d and capacity of children.
      The capacity will be increased in 33% in runtime if it runs out of space.
      */
-    bool initWithTexture(Texture2D *tex, ssize_t capacity = DEFAULT_CAPACITY);
+    bool initWithTexture(Texture2D *tex, unsigned long capacity = DEFAULT_CAPACITY);
     /** initializes a SpriteBatchNode with a file image (.png, .jpeg, .pvr, etc) and a capacity of children.
      The capacity will be increased in 33% in runtime if it runs out of space.
      The file will be loaded using the TextureMgr.
      * @js init
      * @lua init
      */
-    bool initWithFile(const std::string& fileImage, ssize_t capacity = DEFAULT_CAPACITY);
+    bool initWithFile(const std::string& fileImage, unsigned long capacity = DEFAULT_CAPACITY);
     bool init() override;
     
 protected:
@@ -259,10 +259,10 @@ protected:
      This method should be called only when you are dealing with very big AtlasSprite and when most of the Sprite won't be updated.
      For example: a tile map (TMXMap) or a label with lots of characters (LabelBMFont)
      */
-    void updateQuadFromSprite(Sprite *sprite, ssize_t index);   
+    void updateQuadFromSprite(Sprite *sprite, unsigned long index);   
 
-    void updateAtlasIndex(Sprite* sprite, ssize_t* curIndex);
-    void swap(ssize_t oldIndex, ssize_t newIndex);
+    void updateAtlasIndex(Sprite* sprite, unsigned long* curIndex);
+    void swap(unsigned long oldIndex, unsigned long newIndex);
     void updateBlendFunc();
     void setVertexLayout();
     void setUniformLocation();

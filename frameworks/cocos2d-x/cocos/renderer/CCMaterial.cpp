@@ -550,7 +550,7 @@ Technique* Material::getTechniqueByName(const std::string& name)
     return nullptr;
 }
 
-Technique* Material::getTechniqueByIndex(ssize_t index)
+Technique* Material::getTechniqueByIndex(unsigned long index)
 {
     CC_ASSERT(index>=0 && index<_techniques.size() && "Invalid size");
 
@@ -569,7 +569,7 @@ void Material::setTechnique(const std::string& techniqueName)
         _currentTechnique = technique;
 }
 
-ssize_t Material::getTechniqueCount() const
+unsigned long Material::getTechniqueCount() const
 {
     return _techniques.size();
 }

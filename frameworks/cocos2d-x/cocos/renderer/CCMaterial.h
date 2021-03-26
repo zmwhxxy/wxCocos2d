@@ -113,7 +113,7 @@ public:
     /** Returns a Technique by index. 
      returns `nullptr` if the index is invalid.
      */
-    Technique* getTechniqueByIndex(ssize_t index);
+    Technique* getTechniqueByIndex(unsigned long index);
 
     /** Returns the Technique used by the Material */
     Technique* getTechnique() const;
@@ -122,7 +122,7 @@ public:
     const Vector<Technique*>& getTechniques() const;
 
     /** Returns the number of Techniques in the Material. */
-    ssize_t getTechniqueCount() const;
+    unsigned long getTechniqueCount() const;
 
     /** Adds a Technique into the Material */
     void addTechnique(Technique* technique);

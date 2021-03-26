@@ -749,11 +749,11 @@ void EventDispatcher::dispatchEventToListeners(EventListenerVector* listeners, c
     auto fixedPriorityListeners = listeners->getFixedPriorityListeners();
     auto sceneGraphPriorityListeners = listeners->getSceneGraphPriorityListeners();
     
-    ssize_t i = 0;
+    unsigned long i = 0;
     // priority < 0
     if (fixedPriorityListeners)
     {
-        CCASSERT(listeners->getGt0Index() <= static_cast<ssize_t>(fixedPriorityListeners->size()), "Out of range exception!");
+        CCASSERT(listeners->getGt0Index() <= static_cast<unsigned long>(fixedPriorityListeners->size()), "Out of range exception!");
         
         if (!fixedPriorityListeners->empty())
         {
@@ -790,7 +790,7 @@ void EventDispatcher::dispatchEventToListeners(EventListenerVector* listeners, c
         if (!shouldStopPropagation)
         {
             // priority > 0
-            ssize_t size = fixedPriorityListeners->size();
+            unsigned long size = fixedPriorityListeners->size();
             for (; i < size; ++i)
             {
                 auto l = fixedPriorityListeners->at(i);
@@ -811,11 +811,11 @@ void EventDispatcher::dispatchTouchEventToListeners(EventListenerVector* listene
     auto fixedPriorityListeners = listeners->getFixedPriorityListeners();
     auto sceneGraphPriorityListeners = listeners->getSceneGraphPriorityListeners();
     
-    ssize_t i = 0;
+    unsigned long i = 0;
     // priority < 0
     if (fixedPriorityListeners)
     {
-        CCASSERT(listeners->getGt0Index() <= static_cast<ssize_t>(fixedPriorityListeners->size()), "Out of range exception!");
+        CCASSERT(listeners->getGt0Index() <= static_cast<unsigned long>(fixedPriorityListeners->size()), "Out of range exception!");
         
         if (!fixedPriorityListeners->empty())
         {
@@ -887,7 +887,7 @@ void EventDispatcher::dispatchTouchEventToListeners(EventListenerVector* listene
         if (!shouldStopPropagation)
         {
             // priority > 0
-            ssize_t size = fixedPriorityListeners->size();
+            unsigned long size = fixedPriorityListeners->size();
             for (; i < size; ++i)
             {
                 auto l = fixedPriorityListeners->at(i);

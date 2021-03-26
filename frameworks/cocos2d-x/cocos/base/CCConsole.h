@@ -31,10 +31,6 @@
 #include <BaseTsd.h>
 #include <WinSock2.h>
 
-#ifndef __SSIZE_T
-#define __SSIZE_T
-typedef SSIZE_T ssize_t;
-#endif // __SSIZE_T
 
 #else
 #include <sys/select.h>
@@ -92,10 +88,10 @@ public:
         static bool isFloat(const std::string& myString);
         
         /** send a message to console */
-        static ssize_t sendToConsole(int fd, const void* buffer, size_t length, int flags = 0);
+        static unsigned long sendToConsole(int fd, const void* buffer, size_t length, int flags = 0);
         
         /** my dprintf() */
-        static ssize_t mydprintf(int sock, const char *format, ...);
+        static unsigned long mydprintf(int sock, const char *format, ...);
         
         /** send prompt string to console */
         static void sendPrompt(int fd);
@@ -218,8 +214,8 @@ protected:
     void loop();
     
     // Helpers
-    ssize_t readline(int fd, char *buf, size_t maxlen);
-    ssize_t readBytes(int fd, char* buffer, size_t maxlen, bool* more);
+	unsigned long readline(int fd, char *buf, size_t maxlen);
+    unsigned long readBytes(int fd, char* buffer, size_t maxlen, bool* more);
     bool parseCommand(int fd);
     void performCommand(int fd, const std::string& command);
     

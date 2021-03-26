@@ -104,12 +104,12 @@ unsigned char* Data::getBytes() const
     return _bytes;
 }
 
-ssize_t Data::getSize() const
+unsigned long Data::getSize() const
 {
     return _size;
 }
 
-ssize_t Data::copy(const unsigned char* bytes, const ssize_t size)
+unsigned long Data::copy(const unsigned char* bytes, const unsigned long size)
 {
     CCASSERT(size >= 0, "copy size should be non-negative");
     CCASSERT(bytes, "bytes should not be nullptr");
@@ -127,7 +127,7 @@ ssize_t Data::copy(const unsigned char* bytes, const ssize_t size)
     return _size;
 }
 
-void Data::fastSet(unsigned char* bytes, const ssize_t size)
+void Data::fastSet(unsigned char* bytes, const unsigned long size)
 {
     CCASSERT(size >= 0, "fastSet size should be non-negative");
     //CCASSERT(bytes, "bytes should not be nullptr");
@@ -142,7 +142,7 @@ void Data::clear()
     _size = 0;
 }
 
-unsigned char* Data::takeBuffer(ssize_t* size)
+unsigned char* Data::takeBuffer(unsigned long* size)
 {
     auto buffer = getBytes();
     if (size)

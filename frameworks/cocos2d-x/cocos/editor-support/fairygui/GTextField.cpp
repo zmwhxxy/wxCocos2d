@@ -195,8 +195,8 @@ std::string GTextField::parseTemplate(const char* text)
 {
     const char* pString = text;
 
-    ssize_t pos;
-    ssize_t pos2;
+    unsigned long pos;
+    unsigned long pos2;
     std::string tag, attr;
     std::string repl;
     std::string out;

@@ -155,7 +155,7 @@ public:
     /**
      * Get movement count
      */
-    ssize_t getMovementCount() const;
+    unsigned long getMovementCount() const;
 
     virtual void update(float dt) override;
 

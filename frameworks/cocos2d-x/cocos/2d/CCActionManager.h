@@ -140,13 +140,13 @@ public:
      * @return  The numbers of actions that are running in a certain target.
      * @js NA
      */
-    virtual ssize_t getNumberOfRunningActionsInTarget(const Node *target) const;
+    virtual unsigned long getNumberOfRunningActionsInTarget(const Node *target) const;
     
     /** Returns the numbers of actions that are running in all targets.
      * @return  The numbers of actions that are running in all target.
      * @js NA
      */
-    virtual ssize_t getNumberOfRunningActions() const;
+    virtual unsigned long getNumberOfRunningActions() const;
 
 
     /** Returns the numbers of actions that are running in a
@@ -198,7 +198,7 @@ public:
 protected:
     // declared in ActionManager.m
 
-    void removeActionAtIndex(ssize_t index, struct _hashElement *element);
+    void removeActionAtIndex(unsigned long index, struct _hashElement *element);
     void deleteHashElement(struct _hashElement *element);
     void actionAllocWithHashElement(struct _hashElement *element);
 

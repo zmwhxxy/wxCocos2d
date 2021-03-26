@@ -4818,7 +4818,7 @@ int lua_cocos2dx_studio_AnimationData_getMovementCount(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_studio_AnimationData_getMovementCount'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getMovementCount();
+        unsigned long ret = cobj->getMovementCount();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -9275,7 +9275,7 @@ int lua_cocos2dx_studio_ArmatureAnimation_getMovementCount(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_studio_ArmatureAnimation_getMovementCount'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getMovementCount();
+        unsigned long ret = cobj->getMovementCount();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }

@@ -225,16 +225,16 @@ extern CC_LUA_DLL bool luaval_to_std_string(lua_State* L, int lo, std::string* o
 extern bool luaval_to_long(lua_State* L,int lo, long* outValue, const char* funcName = "");
 
 /**
- * Get a ssize_t value from the given acceptable index of stack.
+ * Get a unsigned long value from the given acceptable index of stack.
  * If the value at the given acceptable index of stack is a number or a string convertible to a number it returns true, otherwise returns false.
  *
  * @param L the current lua_State.
  * @param lo the given acceptable index of stack.
- * @param outValue the pointer to store the ssize_t value converted from the Lua value.
+ * @param outValue the pointer to store the unsigned long value converted from the Lua value.
  * @param funcName the name of calling function, it is used for error output in the debug model.
  * @return Return true if the value at the given acceptable index of stack is a number or a string convertible to a number, otherwise return false.
  */
-extern bool luaval_to_ssize(lua_State* L,int lo, ssize_t* outValue, const char* funcName = "");
+extern bool luaval_to_ssize(lua_State* L,int lo, unsigned long* outValue, const char* funcName = "");
 
 /**
  * Get a Size object value from the given acceptable index of stack.

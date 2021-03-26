@@ -51,8 +51,8 @@ public:
     virtual ~PageViewIndicator();
 
     void setDirection(PageView::Direction direction);
-    void reset(ssize_t numberOfTotalPages);
-    void indicate(ssize_t index);
+    void reset(unsigned long numberOfTotalPages);
+    void indicate(unsigned long index);
     void clear();
     void setSpaceBetweenIndexNodes(float spaceBetweenIndexNodes);
     float getSpaceBetweenIndexNodes() const { return _spaceBetweenIndexNodes; }

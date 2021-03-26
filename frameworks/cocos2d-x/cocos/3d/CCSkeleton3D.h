@@ -110,7 +110,7 @@ public:
     /**bone tree, we do not inherit from Node, Node has too many properties that we do not need. A clean Node is needed.*/
     Bone3D* getParentBone();
     /**get child bone count*/
-    ssize_t getChildBoneCount() const;
+    unsigned long getChildBoneCount() const;
     /**get child bone by index*/
     Bone3D* getChildBoneByIndex(int index) const;
     /**add child bone*/
@@ -196,14 +196,14 @@ public:
     static Skeleton3D* create(const std::vector<NodeData*>& skeletondata);
     
     /**get total bone count*/
-    ssize_t getBoneCount() const;
+    unsigned long getBoneCount() const;
     
     /**get bone*/
     Bone3D* getBoneByIndex(unsigned int index) const;
     Bone3D* getBoneByName(const std::string& id) const;
     
     /**get & set root bone*/
-    ssize_t getRootCount() const;
+    unsigned long getRootCount() const;
     Bone3D* getRootBone(int index) const;
     
     /**get bone index*/

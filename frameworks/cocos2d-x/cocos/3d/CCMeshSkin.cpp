@@ -64,7 +64,7 @@ MeshSkin* MeshSkin::create(Skeleton3D* skeleton, const std::vector<std::string>&
     return skin;
 }
 
-ssize_t MeshSkin::getBoneCount() const
+unsigned long MeshSkin::getBoneCount() const
 {
     return _skinBones.size();
 }
@@ -89,7 +89,7 @@ Bone3D* MeshSkin::getBoneByName(const std::string& id) const
 
 int MeshSkin::getBoneIndex(Bone3D* bone) const
 {
-    for (ssize_t i = 0, size = _skinBones.size(); i < size; ++i) {
+    for (unsigned long i = 0, size = _skinBones.size(); i < size; ++i) {
         if (_skinBones.at(i) == bone)
             return static_cast<int>(i);
     }
@@ -114,12 +114,12 @@ Vec4* MeshSkin::getMatrixPalette()
     return _matrixPalette.data();
 }
 
-ssize_t MeshSkin::getMatrixPaletteSize() const
+unsigned long MeshSkin::getMatrixPaletteSize() const
 {
     return _skinBones.size() * PALETTE_ROWS;
 }
 
-ssize_t MeshSkin::getMatrixPaletteSizeInBytes() const
+unsigned long MeshSkin::getMatrixPaletteSizeInBytes() const
 {
     return _skinBones.size() * PALETTE_ROWS * sizeof(_matrixPalette[0]);
 }
@@ -150,7 +150,7 @@ Bone3D* MeshSkin::getRootBone() const
 
 const Mat4& MeshSkin::getInvBindPose(const Bone3D* bone)
 {
-    for (ssize_t i = 0, size = _skinBones.size(); i < size; ++i) {
+    for (unsigned long i = 0, size = _skinBones.size(); i < size; ++i) {
         if (_skinBones.at(i) == bone)
         {
             return _invBindPoses.at(i);

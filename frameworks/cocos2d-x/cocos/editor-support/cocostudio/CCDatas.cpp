@@ -371,7 +371,7 @@ MovementData *AnimationData::getMovement(const std::string& movementName)
     return movementDataDic.at(movementName);
 }
 
-ssize_t AnimationData::getMovementCount()
+unsigned long AnimationData::getMovementCount()
 {
     return movementDataDic.size();
 }

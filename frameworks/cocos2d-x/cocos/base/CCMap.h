@@ -95,7 +95,7 @@ public:
     }
     
     /** Constructor with capacity. */
-    explicit Map<K, V>(ssize_t capacity)
+    explicit Map<K, V>(unsigned long capacity)
     : _data()
     {
         static_assert(std::is_convertible<V, Ref*>::value, "Invalid Type for cocos2d::Map<K, V>!");
@@ -131,7 +131,7 @@ public:
     }
     
     /** Sets capacity of the map. */
-    void reserve(ssize_t capacity)
+    void reserve(unsigned long capacity)
     {
 #if USE_STD_UNORDERED_MAP
         _data.reserve(capacity);
@@ -139,7 +139,7 @@ public:
     }
     
     /** Returns the number of buckets in the Map container. */
-    ssize_t bucketCount() const
+    unsigned long bucketCount() const
     {
 #if USE_STD_UNORDERED_MAP
         return _data.bucket_count();
@@ -149,7 +149,7 @@ public:
     }
     
     /** Returns the number of elements in bucket n. */
-    ssize_t bucketSize(ssize_t n) const
+    unsigned long bucketSize(unsigned long n) const
     {
 #if USE_STD_UNORDERED_MAP
         return _data.bucket_size(n);
@@ -159,7 +159,7 @@ public:
     }
     
     /** Returns the bucket number where the element with key k is located. */
-    ssize_t bucket(const K& k) const
+    unsigned long bucket(const K& k) const
     {
 #if USE_STD_UNORDERED_MAP
         return _data.bucket(k);
@@ -169,7 +169,7 @@ public:
     }
     
     /** The number of elements in the map. */
-    ssize_t size() const
+    unsigned long size() const
     {
         return _data.size();
     }
@@ -347,7 +347,7 @@ public:
     {
         if (!_data.empty())
         {
-            ssize_t randIdx = RandomHelper::random_int<int>(0, static_cast<int>(_data.size()) - 1);
+            unsigned long randIdx = RandomHelper::random_int<int>(0, static_cast<int>(_data.size()) - 1);
             const_iterator randIter = _data.begin();
             std::advance(randIter , randIdx);
             return randIter->second;

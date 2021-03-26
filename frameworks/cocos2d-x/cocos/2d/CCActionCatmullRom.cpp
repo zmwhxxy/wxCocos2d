@@ -44,7 +44,7 @@ NS_CC_BEGIN;
  *  Implementation of PointArray
  */
 
-PointArray* PointArray::create(ssize_t capacity)
+PointArray* PointArray::create(unsigned long capacity)
 {
     PointArray* pointArray = new (std::nothrow) PointArray();
     if (pointArray && pointArray->initWithCapacity(capacity))
@@ -57,7 +57,7 @@ PointArray* PointArray::create(ssize_t capacity)
     return nullptr;
 }
 
-bool PointArray::initWithCapacity(ssize_t capacity)
+bool PointArray::initWithCapacity(unsigned long capacity)
 {
     _controlPoints.reserve(capacity);
     
@@ -98,29 +98,29 @@ void PointArray::addControlPoint(const Vec2& controlPoint)
     _controlPoints.push_back(controlPoint);
 }
 
-void PointArray::insertControlPoint(const Vec2& controlPoint, ssize_t index)
+void PointArray::insertControlPoint(const Vec2& controlPoint, unsigned long index)
 {
     _controlPoints.insert(std::next(_controlPoints.begin(), index), controlPoint);
 }
 
-const Vec2& PointArray::getControlPointAtIndex(ssize_t index) const
+const Vec2& PointArray::getControlPointAtIndex(unsigned long index) const
 {
-    index = MIN(static_cast<ssize_t>(_controlPoints.size())-1, MAX(index, 0));
+    index = MIN(static_cast<unsigned long>(_controlPoints.size())-1, MAX(index, 0));
     return _controlPoints.at(index);
 }
 
-void PointArray::replaceControlPoint(const Vec2& controlPoint, ssize_t index)
+void PointArray::replaceControlPoint(const Vec2& controlPoint, unsigned long index)
 {
     _controlPoints.at(index) = controlPoint;
 }
 
-void PointArray::removeControlPointAtIndex(ssize_t index)
+void PointArray::removeControlPointAtIndex(unsigned long index)
 {
     vector<Vec2>::iterator iter = std::next(_controlPoints.begin(), index);
     _controlPoints.erase(iter);
 }
 
-ssize_t PointArray::count() const
+unsigned long PointArray::count() const
 {
     return _controlPoints.size();
 }
@@ -255,7 +255,7 @@ CardinalSplineTo* CardinalSplineTo::clone() const
 
 void CardinalSplineTo::update(float time)
 {
-    ssize_t p;
+    unsigned long p;
     float lt;
 
     // eg.
@@ -269,7 +269,7 @@ void CardinalSplineTo::update(float time)
     }
     else 
     {
-        p = (ssize_t)(time / _deltaT);
+        p = (unsigned long)(time / _deltaT);
         lt = (time - _deltaT * p) / _deltaT;
     }
     
@@ -348,7 +348,7 @@ CardinalSplineBy* CardinalSplineBy::reverse() const
     // convert "absolutes" to "diffs"
     //
     Vec2 p = copyConfig->getControlPointAtIndex(0);
-    for (ssize_t i = 1; i < copyConfig->count(); ++i)
+    for (unsigned long i = 1; i < copyConfig->count(); ++i)
     {
         Vec2 current = copyConfig->getControlPointAtIndex(i);
         Vec2 diff = current - p;
@@ -369,7 +369,7 @@ CardinalSplineBy* CardinalSplineBy::reverse() const
     p = -p;
     pReverse->insertControlPoint(p, 0);
     
-    for (ssize_t i = 1; i < pReverse->count(); ++i)
+    for (unsigned long i = 1; i < pReverse->count(); ++i)
     {
         Vec2 current = pReverse->getControlPointAtIndex(i);
         current = -current;
@@ -492,7 +492,7 @@ CatmullRomBy* CatmullRomBy::reverse() const
     // convert "absolutes" to "diffs"
     //
     Vec2 p = copyConfig->getControlPointAtIndex(0);
-    for (ssize_t i = 1; i < copyConfig->count(); ++i)
+    for (unsigned long i = 1; i < copyConfig->count(); ++i)
     {
         Vec2 current = copyConfig->getControlPointAtIndex(i);
         Vec2 diff = current - p;
@@ -513,7 +513,7 @@ CatmullRomBy* CatmullRomBy::reverse() const
     p = -p;
     reverse->insertControlPoint(p, 0);
 
-    for (ssize_t i = 1; i < reverse->count(); ++i)
+    for (unsigned long i = 1; i < reverse->count(); ++i)
     {
         Vec2 current = reverse->getControlPointAtIndex(i);
         current = -current;

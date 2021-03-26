@@ -116,19 +116,19 @@ public:
     backend::Buffer* getVertexBuffer() const { return _vertexBuffer; }
     
     /** get attributes count */
-    ssize_t getMeshVertexAttribCount() const { return _attribs.size(); }
+    unsigned long getMeshVertexAttribCount() const { return _attribs.size(); }
     
     /** get attribute by index */
-    const MeshVertexAttrib& getMeshVertexAttrib(ssize_t index) const { return _attribs[index]; }
+    const MeshVertexAttrib& getMeshVertexAttrib(unsigned long index) const { return _attribs[index]; }
     
     /** get index data count */
-    ssize_t getMeshIndexDataCount() const { return _indexs.size(); }
+    unsigned long getMeshIndexDataCount() const { return _indexs.size(); }
     /** get index data by index */
     MeshIndexData* getMeshIndexDataByIndex(int index) const { return _indexs.at(index); }
     /** get index data by id */
     MeshIndexData* getMeshIndexDataById(const std::string& id) const;
     
-    ssize_t getSizePerVertex() const { return _sizePerVertex; }
+    unsigned long getSizePerVertex() const { return _sizePerVertex; }
 
     /**has vertex attribute?*/
     //TODO: will be removed!
@@ -143,7 +143,7 @@ CC_CONSTRUCTOR_ACCESS:
 protected:
     
     backend::Buffer* _vertexBuffer = nullptr; // vertex buffer
-    ssize_t  _sizePerVertex = -1;
+    unsigned long  _sizePerVertex = -1;
     Vector<MeshIndexData*> _indexs; //index data
     std::vector<MeshVertexAttrib> _attribs; //vertex attributes
     

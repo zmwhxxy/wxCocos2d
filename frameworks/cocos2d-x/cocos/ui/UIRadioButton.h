@@ -243,7 +243,7 @@ public:
      *
      * @return the number of radio buttons in this group
      */
-    ssize_t getNumberOfRadioButtons() const;
+    unsigned long getNumberOfRadioButtons() const;
     
     /**
      * Get a radio button in this group by index.

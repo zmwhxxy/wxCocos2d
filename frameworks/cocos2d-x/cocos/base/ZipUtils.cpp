@@ -56,7 +56,7 @@ bool ZipUtils::s_bEncryptionKeyIsValid = false;
 
 // --------------------- ZipUtils ---------------------
 
-inline void ZipUtils::decodeEncodedPvr(unsigned int *data, ssize_t len)
+inline void ZipUtils::decodeEncodedPvr(unsigned int *data, unsigned long len)
 {
     const int enclen = 1024;
     const int securelen = 512;
@@ -125,7 +125,7 @@ inline void ZipUtils::decodeEncodedPvr(unsigned int *data, ssize_t len)
     }
 }
 
-inline unsigned int ZipUtils::checksumPvr(const unsigned int *data, ssize_t len)
+inline unsigned int ZipUtils::checksumPvr(const unsigned int *data, unsigned long len)
 {
     unsigned int cs = 0;
     const int cslen = 128;
@@ -144,12 +144,12 @@ inline unsigned int ZipUtils::checksumPvr(const unsigned int *data, ssize_t len)
 // Should buffer factor be 1.5 instead of 2 ?
 #define BUFFER_INC_FACTOR (2)
 
-int ZipUtils::inflateMemoryWithHint(unsigned char *in, ssize_t inLength, unsigned char **out, ssize_t *outLength, ssize_t outLengthHint)
+int ZipUtils::inflateMemoryWithHint(unsigned char *in, unsigned long inLength, unsigned char **out, unsigned long *outLength, unsigned long outLengthHint)
 {
     /* ret value */
     int err = Z_OK;
     
-    ssize_t bufferSize = outLengthHint;
+    unsigned long bufferSize = outLengthHint;
     *out = (unsigned char*)malloc(bufferSize);
     
     z_stream d_stream; /* decompression stream */
@@ -209,9 +209,9 @@ int ZipUtils::inflateMemoryWithHint(unsigned char *in, ssize_t inLength, unsigne
     return err;
 }
 
-ssize_t ZipUtils::inflateMemoryWithHint(unsigned char *in, ssize_t inLength, unsigned char **out, ssize_t outLengthHint)
+unsigned long ZipUtils::inflateMemoryWithHint(unsigned char *in, unsigned long inLength, unsigned char **out, unsigned long outLengthHint)
 {
-    ssize_t outLength = 0;
+    unsigned long outLength = 0;
     int err = inflateMemoryWithHint(in, inLength, out, &outLength, outLengthHint);
     
     if (err != Z_OK || *out == nullptr) {
@@ -242,7 +242,7 @@ ssize_t ZipUtils::inflateMemoryWithHint(unsigned char *in, ssize_t inLength, uns
     return outLength;
 }
 
-ssize_t ZipUtils::inflateMemory(unsigned char *in, ssize_t inLength, unsigned char **out)
+unsigned long ZipUtils::inflateMemory(unsigned char *in, unsigned long inLength, unsigned char **out)
 {
     // 256k for hint
     return inflateMemoryWithHint(in, inLength, out, 256 * 1024);
@@ -332,7 +332,7 @@ bool ZipUtils::isCCZFile(const char *path)
     return isCCZBuffer(compressedData.getBytes(), compressedData.getSize());
 }
 
-bool ZipUtils::isCCZBuffer(const unsigned char *buffer, ssize_t len)
+bool ZipUtils::isCCZBuffer(const unsigned char *buffer, unsigned long len)
 {
     if (static_cast<size_t>(len) < sizeof(struct CCZHeader))
     {
@@ -358,7 +358,7 @@ bool ZipUtils::isGZipFile(const char *path)
     return isGZipBuffer(compressedData.getBytes(), compressedData.getSize());
 }
 
-bool ZipUtils::isGZipBuffer(const unsigned char *buffer, ssize_t len)
+bool ZipUtils::isGZipBuffer(const unsigned char *buffer, unsigned long len)
 {
     if (len < 2)
     {
@@ -369,7 +369,7 @@ bool ZipUtils::isGZipBuffer(const unsigned char *buffer, ssize_t len)
 }
 
 
-int ZipUtils::inflateCCZBuffer(const unsigned char *buffer, ssize_t bufferLen, unsigned char **out)
+int ZipUtils::inflateCCZBuffer(const unsigned char *buffer, unsigned long bufferLen, unsigned char **out)
 {
     struct CCZHeader *header = (struct CCZHeader*) buffer;
 
@@ -413,7 +413,7 @@ int ZipUtils::inflateCCZBuffer(const unsigned char *buffer, ssize_t bufferLen, u
 
         // decrypt
         unsigned int* ints = (unsigned int*)(buffer+12);
-        ssize_t enclen = (bufferLen-12)/4;
+        unsigned long enclen = (bufferLen-12)/4;
 
         decodeEncodedPvr(ints, enclen);
 
@@ -644,7 +644,7 @@ std::vector<std::string> ZipFile::listFiles(const std::string &pathname) const
     return std::vector<std::string>(fileSet.begin(), fileSet.end());
 }
 
-unsigned char *ZipFile::getFileData(const std::string &fileName, ssize_t *size)
+unsigned char *ZipFile::getFileData(const std::string &fileName, unsigned long *size)
 {
     unsigned char * buffer = nullptr;
     if (size)

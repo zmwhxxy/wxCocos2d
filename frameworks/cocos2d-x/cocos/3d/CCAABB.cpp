@@ -120,9 +120,9 @@ bool AABB::isEmpty() const
     return _min.x > _max.x || _min.y > _max.y || _min.z > _max.z;
 }
 
-void AABB::updateMinMax(const Vec3* point, ssize_t num)
+void AABB::updateMinMax(const Vec3* point, unsigned long num)
 {
-    for (ssize_t i = 0; i < num; i++)
+    for (unsigned long i = 0; i < num; i++)
     {
         // Leftmost point.
         if (point[i].x < _min.x)

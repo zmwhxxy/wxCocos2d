@@ -112,7 +112,7 @@ UIPackage* UIPackage::addPackage(const string& assetPath)
         return nullptr;
     }
 
-    ssize_t size;
+    unsigned long size;
     char* p = (char*)data.takeBuffer(&size);
     ByteBuffer buffer(p, 0, (int)size, true);
 
@@ -205,11 +205,11 @@ PackageItem* UIPackage::getItemByURL(const string& url)
     if (url.size() == 0)
         return nullptr;
 
-    ssize_t pos1 = url.find('/');
+    unsigned long pos1 = url.find('/');
     if (pos1 == -1)
         return nullptr;
 
-    ssize_t pos2 = url.find('/', pos1 + 2);
+    unsigned long pos2 = url.find('/', pos1 + 2);
     if (pos2 == -1)
     {
         if (url.size() > 13)
@@ -242,11 +242,11 @@ string UIPackage::normalizeURL(const string& url)
     if (url.size() == 0)
         return url;
 
-    ssize_t pos1 = url.find('/');
+    unsigned long pos1 = url.find('/');
     if (pos1 == -1)
         return url;
 
-    ssize_t pos2 = url.find('/', pos1 + 2);
+    unsigned long pos2 = url.find('/', pos1 + 2);
     if (pos2 == -1)
         return url;
     else

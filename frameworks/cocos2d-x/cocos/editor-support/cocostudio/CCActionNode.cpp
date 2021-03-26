@@ -588,7 +588,7 @@ int ActionNode::getLastFrameIndex()
             continue;
         }
         bFindFrame = true;
-        ssize_t lastInex = cArray->size() - 1;
+        unsigned long lastInex = cArray->size() - 1;
         auto frame = cArray->at(lastInex);
         int iFrameIndex = frame->getFrameIndex();
 
@@ -616,7 +616,7 @@ bool ActionNode::updateActionToTimeLine(float fTime)
         {
             continue;
         }
-        ssize_t frameCount = cArray->size();
+        unsigned long frameCount = cArray->size();
         for (int i = 0; i < frameCount; i++)
         {
             auto frame = cArray->at(i);

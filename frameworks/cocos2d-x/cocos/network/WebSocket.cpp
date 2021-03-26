@@ -458,7 +458,7 @@ public:
     {
     }
 
-    bool init(unsigned char* buf, ssize_t len)
+    bool init(unsigned char* buf, unsigned long len)
     {
         if (buf == nullptr && len > 0)
             return false;
@@ -482,20 +482,20 @@ public:
         return true;
     }
 
-    void update(ssize_t issued)
+    void update(unsigned long issued)
     {
         _payloadLength -= issued;
         _payload += issued;
     }
 
     unsigned char* getPayload() const { return _payload; }
-    ssize_t getPayloadLength() const { return _payloadLength; }
-    ssize_t getFrameLength() const { return _frameLength; }
+    unsigned long getPayloadLength() const { return _payloadLength; }
+    unsigned long getFrameLength() const { return _frameLength; }
 private:
     unsigned char* _payload;
-    ssize_t _payloadLength;
+    unsigned long _payloadLength;
 
-    ssize_t _frameLength;
+    unsigned long _frameLength;
     std::vector<unsigned char> _data;
 };
 //
@@ -504,8 +504,8 @@ void WebSocket::closeAllConnections()
 {
     if (__websocketInstances != nullptr)
     {
-        ssize_t count = __websocketInstances->size();
-        for (ssize_t i = count-1; i >=0 ; i--)
+        unsigned long count = __websocketInstances->size();
+        for (unsigned long i = count-1; i >=0 ; i--)
         {
             WebSocket* instance = __websocketInstances->at(i);
             instance->close();
@@ -658,7 +658,7 @@ void WebSocket::send(const std::string& message)
         // Make sure the last byte is '\0'
         data->bytes[message.length()] = '\0';
         strcpy(data->bytes, message.c_str());
-        data->len = static_cast<ssize_t>(message.length());
+        data->len = static_cast<unsigned long>(message.length());
 
         WsMessage* msg = new (std::nothrow) WsMessage();
         msg->what = WS_MSG_TO_SUBTRHEAD_SENDING_STRING;
@@ -970,17 +970,17 @@ int WebSocket::onClientWritable()
             }
         }
 
-        ssize_t bytesWrite = 0;
+        unsigned long bytesWrite = 0;
         if (iter != __wsHelper->_subThreadWsMessageQueue->end())
         {
             WsMessage* subThreadMsg = *iter;
 
             Data* data = (Data*)subThreadMsg->data;
 
-            const ssize_t c_bufferSize = WS_RX_BUFFER_SIZE;
+            const unsigned long c_bufferSize = WS_RX_BUFFER_SIZE;
 
-            const ssize_t remaining = data->len - data->issued;
-            const ssize_t n = std::min(remaining, c_bufferSize);
+            const unsigned long remaining = data->len - data->issued;
+            const unsigned long n = std::min(remaining, c_bufferSize);
 
             WebSocketFrame* frame = nullptr;
 
@@ -1101,7 +1101,7 @@ int WebSocket::onClientWritable()
     return 0;
 }
 
-int WebSocket::onClientReceivedData(void* in, ssize_t len)
+int WebSocket::onClientReceivedData(void* in, unsigned long len)
 {
     // In websocket thread
     static int packageIndex = 0;
@@ -1130,7 +1130,7 @@ int WebSocket::onClientReceivedData(void* in, ssize_t len)
         // reset capacity of received data buffer
         _receivedData.reserve(WS_RESERVE_RECEIVE_BUFFER_SIZE);
 
-        ssize_t frameSize = frameData->size();
+        unsigned long frameSize = frameData->size();
 
         bool isBinary = (lws_frame_is_binary(_wsInstance) != 0);
 
@@ -1291,7 +1291,7 @@ int WebSocket::onConnectionClosed()
 
 int WebSocket::onSocketCallback(struct lws *wsi,
                      int reason,
-                     void *in, ssize_t len)
+                     void *in, unsigned long len)
 {
     //LOGD("socket callback for %d reason\n", reason);
 

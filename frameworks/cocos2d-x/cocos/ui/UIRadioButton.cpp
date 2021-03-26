@@ -202,7 +202,7 @@ void RadioButtonGroup::addRadioButton(RadioButton* radioButton)
 
 void RadioButtonGroup::removeRadioButton(RadioButton* radioButton)
 {
-    ssize_t index = _radioButtons.getIndex(radioButton);
+    unsigned long index = _radioButtons.getIndex(radioButton);
     if( index == CC_INVALID_INDEX )
     {
         CCLOGERROR("The radio button does not belong to this group!");
@@ -233,7 +233,7 @@ void RadioButtonGroup::removeAllRadioButtons()
     }
 }
 
-ssize_t RadioButtonGroup::getNumberOfRadioButtons() const
+unsigned long RadioButtonGroup::getNumberOfRadioButtons() const
 {
     return _radioButtons.size();
 }

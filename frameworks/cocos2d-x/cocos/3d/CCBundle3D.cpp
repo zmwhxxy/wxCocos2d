@@ -405,7 +405,7 @@ bool  Bundle3D::loadMeshDatasBinary(MeshDatas& meshdatas)
         meshData = new (std::nothrow) MeshData();
         meshData->attribCount = attribSize;
         meshData->attribs.resize(meshData->attribCount);
-        for (ssize_t j = 0; j < meshData->attribCount; ++j)
+        for (unsigned long j = 0; j < meshData->attribCount; ++j)
         {
             std::string attribute="";
             unsigned int vSize;
@@ -2208,7 +2208,7 @@ shaderinfos::VertexKey Bundle3D::parseGLProgramAttribute(const std::string& str)
 
 void Bundle3D::getModelRelativePath(const std::string& path)
 {
-    ssize_t index = path.find_last_of('/');
+    unsigned long index = path.find_last_of('/');
     std::string fullModelPath;
     _modelPath = path.substr(0, index + 1);
 }

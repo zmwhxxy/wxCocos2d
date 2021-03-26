@@ -35,7 +35,7 @@ THE SOFTWARE.
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 #include "platform/android/CCFileUtils-android.h"
 #elif(CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
-// for import ssize_t on win32 platform
+// for import unsigned long on win32 platform
 #include "platform/CCStdC.h"
 #endif
 
@@ -78,7 +78,7 @@ typedef struct unz_file_info_s unz_file_info;
          * @return The length of the deflated buffer.
          * @since v0.8.1
          */
-        static ssize_t inflateMemory(unsigned char *in, ssize_t inLength, unsigned char **out);
+        static unsigned long inflateMemory(unsigned char *in, unsigned long inLength, unsigned char **out);
 
         /** 
         * Inflates either zlib or gzip deflated memory. The inflated memory is expected to be freed by the caller.
@@ -88,7 +88,7 @@ typedef struct unz_file_info_s unz_file_info;
         * @return The length of the deflated buffer.
         * @since v1.0.0
         */
-        static ssize_t inflateMemoryWithHint(unsigned char *in, ssize_t inLength, unsigned char **out, ssize_t outLengthHint);
+        static unsigned long inflateMemoryWithHint(unsigned char *in, unsigned long inLength, unsigned char **out, unsigned long outLengthHint);
 
         /** 
          * Inflates a GZip file into memory.
@@ -112,7 +112,7 @@ typedef struct unz_file_info_s unz_file_info;
          * @return True is GZip format. false is not.
          * @since v3.0
          */
-        static bool isGZipBuffer(const unsigned char *buffer, ssize_t len);
+        static bool isGZipBuffer(const unsigned char *buffer, unsigned long len);
 
         /** 
          * Inflates a CCZ file into memory.
@@ -128,7 +128,7 @@ typedef struct unz_file_info_s unz_file_info;
          * @return The length of the deflated buffer.
          * @since v3.0
          */
-        static int inflateCCZBuffer(const unsigned char *buffer, ssize_t len, unsigned char **out);
+        static int inflateCCZBuffer(const unsigned char *buffer, unsigned long len, unsigned char **out);
         
         /** 
          * Test a file is a CCZ format file or not.
@@ -144,7 +144,7 @@ typedef struct unz_file_info_s unz_file_info;
          * @return True is CCZ format. false is not.
          * @since v3.0
          */
-        static bool isCCZBuffer(const unsigned char *buffer, ssize_t len);
+        static bool isCCZBuffer(const unsigned char *buffer, unsigned long len);
 
         /** 
          * Sets the pvr.ccz encryption key parts separately for added security.
@@ -197,9 +197,9 @@ typedef struct unz_file_info_s unz_file_info;
         static void setPvrEncryptionKey(unsigned int keyPart1, unsigned int keyPart2, unsigned int keyPart3, unsigned int keyPart4);
 
     private:
-        static int inflateMemoryWithHint(unsigned char *in, ssize_t inLength, unsigned char **out, ssize_t *outLength, ssize_t outLengthHint);
-        static inline void decodeEncodedPvr (unsigned int *data, ssize_t len);
-        static inline unsigned int checksumPvr(const unsigned int *data, ssize_t len);
+        static int inflateMemoryWithHint(unsigned char *in, unsigned long inLength, unsigned char **out, unsigned long *outLength, unsigned long outLengthHint);
+        static inline void decodeEncodedPvr (unsigned int *data, unsigned long len);
+        static inline unsigned int checksumPvr(const unsigned int *data, unsigned long len);
 
         static unsigned int s_uEncryptedPvrKeyParts[4];
         static unsigned int s_uEncryptionKey[1024];
@@ -273,7 +273,7 @@ typedef struct unz_file_info_s unz_file_info;
         *
         * @since v2.0.5
         */
-        unsigned char *getFileData(const std::string &fileName, ssize_t *size);
+        unsigned char *getFileData(const std::string &fileName, unsigned long *size);
         
         /**
         * Get resource file data from a zip file.

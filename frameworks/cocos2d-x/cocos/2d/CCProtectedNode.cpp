@@ -141,7 +141,7 @@ void ProtectedNode::removeProtectedChild(cocos2d::Node *child, bool cleanup)
         return;
     }
     
-    ssize_t index = _protectedChildren.getIndex(child);
+    unsigned long index = _protectedChildren.getIndex(child);
     if( index != CC_INVALID_INDEX )
     {
         

@@ -830,7 +830,7 @@ public:
      *
      * @return The amount of children.
      */
-    virtual ssize_t getChildrenCount() const;
+    virtual unsigned long getChildrenCount() const;
 
     /**
      * Sets the parent node.
@@ -1229,7 +1229,7 @@ public:
      *
      * @return The number of actions that are running plus the ones that are schedule to run.
      */
-    ssize_t getNumberOfRunningActions() const;
+    unsigned long getNumberOfRunningActions() const;
 
     /**
      * Returns the numbers of actions that are running plus the ones that are
@@ -1245,7 +1245,7 @@ public:
      * @return The number of actions that are running plus the
      *         ones that are schedule to run with specific tag.
      */
-    ssize_t getNumberOfRunningActionsByTag(int tag) const;
+    unsigned long getNumberOfRunningActionsByTag(int tag) const;
 
     /// @} end of Actions
 
@@ -1785,7 +1785,7 @@ protected:
     void insertChild(Node* child, int z);
 
     /// Removes a child, call child->onExit(), do cleanup, remove it from children array.
-    void detachChild(Node *child, ssize_t index, bool doCleanup);
+    void detachChild(Node *child, unsigned long index, bool doCleanup);
 
     /// Convert cocos2d coordinates to UI windows coordinate.
     Vec2 convertToWindowSpace(const Vec2& nodePoint) const;

@@ -90,7 +90,7 @@ public:
     {
         Data():bytes(nullptr), len(0), issued(0), isBinary(false), ext(nullptr){}
         char* bytes;
-        ssize_t len, issued;
+        unsigned long len, issued;
         bool isBinary;
         void* ext;
     };
@@ -226,10 +226,10 @@ private:
 
     // The following callback functions are invoked in websocket thread
     void onClientOpenConnectionRequest();
-    int onSocketCallback(struct lws *wsi, int reason, void *in, ssize_t len);
+    int onSocketCallback(struct lws *wsi, int reason, void *in, unsigned long len);
 
     int onClientWritable();
-    int onClientReceivedData(void* in, ssize_t len);
+    int onClientReceivedData(void* in, unsigned long len);
     int onConnectionOpened();
     int onConnectionError();
     int onConnectionClosed();

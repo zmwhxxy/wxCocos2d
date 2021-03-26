@@ -7716,7 +7716,7 @@ int lua_cocos2dx_Node_getNumberOfRunningActions(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_Node_getNumberOfRunningActions'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getNumberOfRunningActions();
+        unsigned long ret = cobj->getNumberOfRunningActions();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -7828,7 +7828,7 @@ int lua_cocos2dx_Node_getChildrenCount(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_Node_getChildrenCount'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getChildrenCount();
+        unsigned long ret = cobj->getChildrenCount();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -10706,7 +10706,7 @@ int lua_cocos2dx_Node_getNumberOfRunningActionsByTag(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_Node_getNumberOfRunningActionsByTag'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getNumberOfRunningActionsByTag(arg0);
+        unsigned long ret = cobj->getNumberOfRunningActionsByTag(arg0);
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -46256,7 +46256,7 @@ int lua_cocos2dx_ActionManager_getNumberOfRunningActions(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_ActionManager_getNumberOfRunningActions'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getNumberOfRunningActions();
+        unsigned long ret = cobj->getNumberOfRunningActions();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -46356,7 +46356,7 @@ int lua_cocos2dx_ActionManager_getNumberOfRunningActionsInTarget(lua_State* tolu
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_ActionManager_getNumberOfRunningActionsInTarget'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getNumberOfRunningActionsInTarget(arg0);
+        unsigned long ret = cobj->getNumberOfRunningActionsInTarget(arg0);
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -50222,7 +50222,7 @@ int lua_cocos2dx_AtlasNode_setQuadsToDraw(lua_State* tolua_S)
     argc = lua_gettop(tolua_S)-1;
     if (argc == 1) 
     {
-        ssize_t arg0;
+        unsigned long arg0;
 
         ok &= luaval_to_ssize(tolua_S, 2, &arg0, "cc.AtlasNode:setQuadsToDraw");
         if(!ok)
@@ -85092,7 +85092,7 @@ int lua_cocos2dx_Technique_getPassCount(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_Technique_getPassCount'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getPassCount();
+        unsigned long ret = cobj->getPassCount();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -85375,7 +85375,7 @@ int lua_cocos2dx_Technique_getPassByIndex(lua_State* tolua_S)
     argc = lua_gettop(tolua_S)-1;
     if (argc == 1) 
     {
-        ssize_t arg0;
+        unsigned long arg0;
 
         ok &= luaval_to_ssize(tolua_S, 2, &arg0, "cc.Technique:getPassByIndex");
         if(!ok)
@@ -85742,7 +85742,7 @@ int lua_cocos2dx_Material_getTechniqueByIndex(lua_State* tolua_S)
     argc = lua_gettop(tolua_S)-1;
     if (argc == 1) 
     {
-        ssize_t arg0;
+        unsigned long arg0;
 
         ok &= luaval_to_ssize(tolua_S, 2, &arg0, "cc.Material:getTechniqueByIndex");
         if(!ok)
@@ -85891,7 +85891,7 @@ int lua_cocos2dx_Material_getTechniqueCount(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_Material_getTechniqueCount'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getTechniqueCount();
+        unsigned long ret = cobj->getTechniqueCount();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -87765,7 +87765,7 @@ int lua_cocos2dx_Renderer_getDrawnVertices(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_Renderer_getDrawnVertices'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getDrawnVertices();
+        unsigned long ret = cobj->getDrawnVertices();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -89230,7 +89230,7 @@ int lua_cocos2dx_Renderer_addDrawnBatches(lua_State* tolua_S)
     argc = lua_gettop(tolua_S)-1;
     if (argc == 1) 
     {
-        ssize_t arg0;
+        unsigned long arg0;
 
         ok &= luaval_to_ssize(tolua_S, 2, &arg0, "cc.Renderer:addDrawnBatches");
         if(!ok)
@@ -89992,7 +89992,7 @@ int lua_cocos2dx_Renderer_addDrawnVertices(lua_State* tolua_S)
     argc = lua_gettop(tolua_S)-1;
     if (argc == 1) 
     {
-        ssize_t arg0;
+        unsigned long arg0;
 
         ok &= luaval_to_ssize(tolua_S, 2, &arg0, "cc.Renderer:addDrawnVertices");
         if(!ok)
@@ -90094,7 +90094,7 @@ int lua_cocos2dx_Renderer_getDrawnBatches(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_Renderer_getDrawnBatches'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getDrawnBatches();
+        unsigned long ret = cobj->getDrawnBatches();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -92534,7 +92534,7 @@ int lua_cocos2dx_SpriteBatchNode_removeChildAtIndex(lua_State* tolua_S)
     argc = lua_gettop(tolua_S)-1;
     if (argc == 2) 
     {
-        ssize_t arg0;
+        unsigned long arg0;
         bool arg1;
 
         ok &= luaval_to_ssize(tolua_S, 2, &arg0, "cc.SpriteBatchNode:removeChildAtIndex");
@@ -92704,7 +92704,7 @@ int lua_cocos2dx_SpriteBatchNode_atlasIndexForChild(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_SpriteBatchNode_atlasIndexForChild'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->atlasIndexForChild(arg0, arg1);
+        unsigned long ret = cobj->atlasIndexForChild(arg0, arg1);
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -92801,7 +92801,7 @@ int lua_cocos2dx_SpriteBatchNode_lowestAtlasIndexInChild(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_SpriteBatchNode_lowestAtlasIndexInChild'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->lowestAtlasIndexInChild(arg0);
+        unsigned long ret = cobj->lowestAtlasIndexInChild(arg0);
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -92905,7 +92905,7 @@ int lua_cocos2dx_SpriteBatchNode_initWithTexture(lua_State* tolua_S)
     if (argc == 2) 
     {
         cocos2d::Texture2D* arg0;
-        ssize_t arg1;
+        unsigned long arg1;
 
         ok &= luaval_to_object<cocos2d::Texture2D>(tolua_S, 2, "cc.Texture2D",&arg0, "cc.SpriteBatchNode:initWithTexture");
 
@@ -93007,7 +93007,7 @@ int lua_cocos2dx_SpriteBatchNode_reserveCapacity(lua_State* tolua_S)
     argc = lua_gettop(tolua_S)-1;
     if (argc == 1) 
     {
-        ssize_t arg0;
+        unsigned long arg0;
 
         ok &= luaval_to_ssize(tolua_S, 2, &arg0, "cc.SpriteBatchNode:reserveCapacity");
         if(!ok)
@@ -93108,7 +93108,7 @@ int lua_cocos2dx_SpriteBatchNode_insertQuadFromSprite(lua_State* tolua_S)
     if (argc == 2) 
     {
         cocos2d::Sprite* arg0;
-        ssize_t arg1;
+        unsigned long arg1;
 
         ok &= luaval_to_object<cocos2d::Sprite>(tolua_S, 2, "cc.Sprite",&arg0, "cc.SpriteBatchNode:insertQuadFromSprite");
 
@@ -93175,7 +93175,7 @@ int lua_cocos2dx_SpriteBatchNode_initWithFile(lua_State* tolua_S)
     if (argc == 2) 
     {
         std::string arg0;
-        ssize_t arg1;
+        unsigned long arg1;
 
         ok &= luaval_to_std_string(tolua_S, 2,&arg0, "cc.SpriteBatchNode:initWithFile");
 
@@ -93278,7 +93278,7 @@ int lua_cocos2dx_SpriteBatchNode_rebuildIndexInOrder(lua_State* tolua_S)
     if (argc == 2) 
     {
         cocos2d::Sprite* arg0;
-        ssize_t arg1;
+        unsigned long arg1;
 
         ok &= luaval_to_object<cocos2d::Sprite>(tolua_S, 2, "cc.Sprite",&arg0, "cc.SpriteBatchNode:rebuildIndexInOrder");
 
@@ -93288,7 +93288,7 @@ int lua_cocos2dx_SpriteBatchNode_rebuildIndexInOrder(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_SpriteBatchNode_rebuildIndexInOrder'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->rebuildIndexInOrder(arg0, arg1);
+        unsigned long ret = cobj->rebuildIndexInOrder(arg0, arg1);
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -93385,7 +93385,7 @@ int lua_cocos2dx_SpriteBatchNode_highestAtlasIndexInChild(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_SpriteBatchNode_highestAtlasIndexInChild'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->highestAtlasIndexInChild(arg0);
+        unsigned long ret = cobj->highestAtlasIndexInChild(arg0);
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -93430,7 +93430,7 @@ int lua_cocos2dx_SpriteBatchNode_create(lua_State* tolua_S)
     if (argc == 2)
     {
         std::string arg0;
-        ssize_t arg1;
+        unsigned long arg1;
         ok &= luaval_to_std_string(tolua_S, 2,&arg0, "cc.SpriteBatchNode:create");
         ok &= luaval_to_ssize(tolua_S, 3, &arg1, "cc.SpriteBatchNode:create");
         if(!ok)
@@ -93481,7 +93481,7 @@ int lua_cocos2dx_SpriteBatchNode_createWithTexture(lua_State* tolua_S)
     if (argc == 2)
     {
         cocos2d::Texture2D* arg0;
-        ssize_t arg1;
+        unsigned long arg1;
         ok &= luaval_to_object<cocos2d::Texture2D>(tolua_S, 2, "cc.Texture2D",&arg0, "cc.SpriteBatchNode:createWithTexture");
         ok &= luaval_to_ssize(tolua_S, 3, &arg1, "cc.SpriteBatchNode:createWithTexture");
         if(!ok)

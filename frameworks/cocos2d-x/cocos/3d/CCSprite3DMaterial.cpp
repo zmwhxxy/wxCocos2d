@@ -181,7 +181,7 @@ Material* Sprite3DMaterial::clone() const
         {
             auto t = technique->clone();
             t->setMaterial(material);
-            for (ssize_t i = 0; i < t->getPassCount(); i++) {
+            for (unsigned long i = 0; i < t->getPassCount(); i++) {
                 t->getPassByIndex(i)->setTechnique(t);
             }
             material->_techniques.pushBack(t);

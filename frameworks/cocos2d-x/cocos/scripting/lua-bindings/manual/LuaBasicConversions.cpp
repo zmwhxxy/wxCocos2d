@@ -503,7 +503,7 @@ bool luaval_to_physics_material(lua_State* L,int lo,PhysicsMaterial* outValue, c
 }
 #endif //#if CC_USE_PHYSICS
 
-bool luaval_to_ssize(lua_State* L,int lo, ssize_t* outValue, const char* funcName)
+bool luaval_to_ssize(lua_State* L,int lo, unsigned long* outValue, const char* funcName)
 {
     return luaval_to_long(L, lo, reinterpret_cast<long*>(outValue));
 }

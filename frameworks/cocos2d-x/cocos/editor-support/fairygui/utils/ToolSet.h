@@ -23,16 +23,16 @@ class FastSplitter
 {
 public:
     FastSplitter();
-    void start(const char* data, ssize_t dataLength, char delimiter);
+    void start(const char* data, unsigned long dataLength, char delimiter);
     bool next();
     const char* getText();
-    ssize_t getTextLength();
-    void getKeyValuePair(char* keyBuf, ssize_t keyBufSize, char* valueBuf, ssize_t valueBufSize);
+    unsigned long getTextLength();
+    void getKeyValuePair(char* keyBuf, unsigned long keyBufSize, char* valueBuf, unsigned long valueBufSize);
 
 private:
     const char* data;
-    ssize_t dataLength;
-    ssize_t textLength;
+    unsigned long dataLength;
+    unsigned long textLength;
     char delimiter;
 };
 

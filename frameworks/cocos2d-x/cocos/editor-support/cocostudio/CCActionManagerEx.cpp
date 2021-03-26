@@ -63,7 +63,7 @@ void ActionManagerEx::initWithDictionary(const char* jsonName,const rapidjson::V
 {
     std::string path = jsonName;
     this->_studioVersionNumber = version;
-    ssize_t pos = path.find_last_of('/');
+    unsigned long pos = path.find_last_of('/');
     std::string fileName = path.substr(pos+1,path.length());
     cocos2d::Vector<ActionObject*> actionList;
     int actionCount = DICTOOL->getArrayCount_json(dic, "actionlist");
@@ -83,7 +83,7 @@ void ActionManagerEx::initWithDictionary(const char* jsonName,const rapidjson::V
                                          stExpCocoNode*     pCocoNode)
     {
         std::string path = file;
-        ssize_t pos = path.find_last_of('/');
+        unsigned long pos = path.find_last_of('/');
         std::string fileName = path.substr(pos+1,path.length());
         cocos2d::Vector<ActionObject*> actionList;
         
@@ -116,7 +116,7 @@ void ActionManagerEx::initWithDictionary(const char* jsonName,const rapidjson::V
 ActionObject* ActionManagerEx::getActionByName(const char* jsonName,const char* actionName)
 {
     std::string path = jsonName;
-    ssize_t pos = path.find_last_of('/');
+    unsigned long pos = path.find_last_of('/');
     std::string fileName = path.substr(pos+1,path.length());
     auto iterator = _actionDic.find(fileName);
     if (iterator == _actionDic.end())
@@ -170,8 +170,8 @@ void ActionManagerEx::releaseActions()
     for (auto& iter : _actionDic)
     {
         cocos2d::Vector<ActionObject*> objList = iter.second;
-        ssize_t listCount = objList.size();
-        for (ssize_t i = 0; i < listCount; i++) {
+        unsigned long listCount = objList.size();
+        for (unsigned long i = 0; i < listCount; i++) {
             ActionObject* action = objList.at(i);
             if (action != nullptr) {
                 action->stop();

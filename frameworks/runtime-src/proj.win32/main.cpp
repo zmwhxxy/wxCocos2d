@@ -21,37 +21,74 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
+//#include "main.h"
+//#include "cocos2d.h"
+//#include "../Classes/AppDelegate.h"
+//
+//USING_NS_CC;
+//
+//// uncomment below line, open debug console
+//#define USE_WIN32_CONSOLE
+//
+//int WINAPI _tWinMain(HINSTANCE hInstance,
+//                       HINSTANCE hPrevInstance,
+//                       LPTSTR    lpCmdLine,
+//                       int       nCmdShow)
+//{
+//    UNREFERENCED_PARAMETER(hPrevInstance);
+//    UNREFERENCED_PARAMETER(lpCmdLine);
+//
+//#ifdef USE_WIN32_CONSOLE
+//    AllocConsole();
+//    freopen("CONIN$", "r", stdin);
+//    freopen("CONOUT$", "w", stdout);
+//    freopen("CONOUT$", "w", stderr);
+//#endif
+//
+//    // create the application instance
+//    AppDelegate app;
+//    int ret = Application::getInstance()->run();
+//
+//#ifdef USE_WIN32_CONSOLE
+//    FreeConsole();
+//#endif
+//
+//    return ret;
+//}
+
 #include "main.h"
-#include "cocos2d.h"
-#include "../Classes/AppDelegate.h"
 
-USING_NS_CC;
 
-// uncomment below line, open debug console
-#define USE_WIN32_CONSOLE
-
-int WINAPI _tWinMain(HINSTANCE hInstance,
-                       HINSTANCE hPrevInstance,
-                       LPTSTR    lpCmdLine,
-                       int       nCmdShow)
+class MyApp : public wxApp
 {
-    UNREFERENCED_PARAMETER(hPrevInstance);
-    UNREFERENCED_PARAMETER(lpCmdLine);
+public:
+	virtual bool OnInit();
+	void OnBtnClick(wxCommandEvent & WXUNUSED(event));
+};
 
-#ifdef USE_WIN32_CONSOLE
-    AllocConsole();
-    freopen("CONIN$", "r", stdin);
-    freopen("CONOUT$", "w", stdout);
-    freopen("CONOUT$", "w", stderr);
-#endif
+DECLARE_APP(MyApp)
+IMPLEMENT_APP(MyApp)
 
-    // create the application instance
-    AppDelegate app;
-    int ret = Application::getInstance()->run();
+void MyApp::OnBtnClick(wxCommandEvent & WXUNUSED(event))
+{
 
-#ifdef USE_WIN32_CONSOLE
-    FreeConsole();
-#endif
-
-    return ret;
 }
+
+bool MyApp::OnInit()
+{
+	/*wxFrame* frame = new wxFrame(NULL, wxID_ANY, wxT("Hello World"));
+	wxPanel *panel = new wxPanel(frame, wxID_ANY);
+	wxButton *button = new wxButton(panel, wxID_EXIT, wxT("Test"),
+		wxPoint(20, 20));
+	Connect(wxID_EXIT, wxEVT_COMMAND_BUTTON_CLICKED,
+		wxCommandEventHandler(MyApp::OnBtnClick));
+	button->SetFocus();
+	frame->Show();*/
+
+	/*return true;*/
+	AppDelegate app;
+	return cocos2d::Application::getInstance()->run();
+}
+
+
+

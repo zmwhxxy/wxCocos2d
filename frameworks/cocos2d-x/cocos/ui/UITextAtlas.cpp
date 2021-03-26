@@ -121,7 +121,7 @@ const std::string& TextAtlas::getString() const
     return _labelAtlasRenderer->getString();
 }
     
-ssize_t TextAtlas::getStringLength()const
+unsigned long TextAtlas::getStringLength()const
 {
     return _labelAtlasRenderer->getStringLength();
 }

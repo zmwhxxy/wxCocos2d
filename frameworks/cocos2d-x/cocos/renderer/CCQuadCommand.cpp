@@ -86,7 +86,7 @@ void QuadCommand::reIndex(int indicesCount)
     _indexSize = indicesCount;
 }
 
-void QuadCommand::init(float globalOrder, Texture2D *texture, const BlendFunc& blendType, V3F_C4B_T2F_Quad *quads, ssize_t quadCount, const Mat4 &mv, uint32_t flags)
+void QuadCommand::init(float globalOrder, Texture2D *texture, const BlendFunc& blendType, V3F_C4B_T2F_Quad *quads, unsigned long quadCount, const Mat4 &mv, uint32_t flags)
 {
     if (quadCount * 6 > _indexSize)
         reIndex((int)quadCount*6);

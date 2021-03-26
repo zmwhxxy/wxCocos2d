@@ -28,9 +28,9 @@
 #define __CCDATA_H__
 
 #include "platform/CCPlatformMacros.h"
-#include <stdint.h> // for ssize_t on android
-#include <string>   // for ssize_t on linux
-#include "platform/CCStdC.h" // for ssize_t on window
+#include <stdint.h> // for unsigned long on android
+#include <string>   // for unsigned long on linux
+#include "platform/CCStdC.h" // for unsigned long on window
 
 /**
  * @addtogroup base
@@ -91,7 +91,7 @@ public:
      *
      * @return The size of bytes of Data.
      */
-    ssize_t getSize() const;
+    unsigned long getSize() const;
 
     /** Copies the buffer pointer and its size.
      *  @note This method will copy the whole buffer.
@@ -99,7 +99,7 @@ public:
      *  @see Data::fastSet
      * @return The size of bytes copied, return 0 if size <= 0
      */
-    ssize_t copy(const unsigned char* bytes, const ssize_t size);
+    unsigned long copy(const unsigned char* bytes, const unsigned long size);
 
     /** Fast set the buffer pointer and its size. Please use it carefully.
      *  @param bytes The buffer pointer, note that it have to be allocated by 'malloc' or 'calloc',
@@ -108,7 +108,7 @@ public:
      *        2. The pointer should not be used outside after it was passed to this method.
      *  @see Data::copy
      */
-    void fastSet(unsigned char* bytes, const ssize_t size);
+    void fastSet(unsigned char* bytes, const unsigned long size);
 
     /**
      * Clears data, free buffer and reset data size.
@@ -133,7 +133,7 @@ public:
      * @code
      *  Data d;
      *  // ...
-     *  ssize_t size;
+     *  unsigned long size;
      *  unsigned char* buffer = d.takeBuffer(&size);
      *  // use buffer and size
      *  free(buffer);
@@ -142,13 +142,13 @@ public:
      * @param size Will fill with the data buffer size in bytes, if you do not care buffer size, pass nullptr.
      * @return the internal data buffer, free it after use.
      */
-    unsigned char* takeBuffer(ssize_t* size);
+    unsigned char* takeBuffer(unsigned long* size);
 private:
     void move(Data& other);
 
 private:
     unsigned char* _bytes;
-    ssize_t _size;
+    unsigned long _size;
 };
 
 

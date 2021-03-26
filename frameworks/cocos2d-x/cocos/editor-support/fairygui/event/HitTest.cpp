@@ -45,11 +45,11 @@ bool PixelHitTest::hitTest(GComponent * obj, const cocos2d::Vec2 & localPoint)
     if (x < 0 || y < 0 || x >= _data->pixelWidth)
         return false;
 
-    ssize_t pos = y * _data->pixelWidth + x;
-    ssize_t pos2 = pos / 8;
-    ssize_t pos3 = pos % 8;
+    unsigned long pos = y * _data->pixelWidth + x;
+    unsigned long pos2 = pos / 8;
+    unsigned long pos3 = pos % 8;
 
-    if (pos2 >= 0 && pos2 < (ssize_t)_data->pixelsLength)
+    if (pos2 >= 0 && pos2 < (unsigned long)_data->pixelsLength)
         return ((_data->pixels[pos2] >> pos3) & 0x1) > 0;
     else
         return false;

@@ -34,7 +34,7 @@
 
 #include "platform/CCPlatformMacros.h"
 #include "base/CCRef.h"
-#include "platform/CCStdC.h" // ssize_t on windows
+#include "platform/CCStdC.h" // unsigned long on windows
 #include "renderer/CCTexture2D.h"
 
 NS_CC_BEGIN
@@ -79,7 +79,7 @@ public:
     
     bool prepareLetterDefinitions(const std::u32string& utf16String);
 
-    const std::unordered_map<ssize_t, Texture2D*>& getTextures() const { return _atlasTextures; }
+    const std::unordered_map<unsigned long, Texture2D*>& getTextures() const { return _atlasTextures; }
     void  addTexture(Texture2D *texture, int slot);
     float getLineHeight() const { return _lineHeight; }
     void  setLineHeight(float newHeight);
@@ -133,7 +133,7 @@ protected:
     
     void updateTextureContent(backend::PixelFormat format, int startY);
 
-    std::unordered_map<ssize_t, Texture2D*> _atlasTextures;
+    std::unordered_map<unsigned long, Texture2D*> _atlasTextures;
     std::unordered_map<char32_t, FontLetterDefinition> _letterDefinitions;
     float _lineHeight = 0.f;
     Font* _font = nullptr;

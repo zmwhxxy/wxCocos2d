@@ -216,7 +216,7 @@ bool Sprite3D::loadFromCache(const std::string& path)
             }
         }
 
-        for (ssize_t i = 0, size = _meshes.size(); i < size; ++i) {
+        for (unsigned long i = 0, size = _meshes.size(); i < size; ++i) {
             // cloning is needed in order to have one state per sprite
             auto glstate = spritedata->programStates.at(i);
             _meshes.at(i)->setProgramState(glstate->clone());
@@ -465,7 +465,7 @@ void Sprite3D::setMaterial(Material *material, int meshIndex)
 
     if (meshIndex == -1)
     {
-        for (ssize_t i = 0, size = _meshes.size(); i < size; ++i)
+        for (unsigned long i = 0, size = _meshes.size(); i < size; ++i)
         {
             _meshes.at(i)->setMaterial(i == 0 ? material : material->clone());
         }

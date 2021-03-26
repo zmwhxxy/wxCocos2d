@@ -190,7 +190,7 @@ void DBCCSprite::draw(cocos2d::Renderer* renderer, const cocos2d::Mat4& transfor
         auto count = _polyInfo.triangles.indexCount / 3;
         auto indices = _polyInfo.triangles.indices;
         auto verts = _polyInfo.triangles.verts;
-        for (ssize_t i = 0; i < count; i++)
+        for (unsigned long i = 0; i < count; i++)
         {
             //draw 3 lines
             auto from = verts[indices[i * 3]].vertices;

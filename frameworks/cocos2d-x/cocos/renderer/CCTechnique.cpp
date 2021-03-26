@@ -109,13 +109,13 @@ void Technique::setName(const std::string &name)
     _name = name;
 }
 
-Pass* Technique::getPassByIndex(ssize_t index) const
+Pass* Technique::getPassByIndex(unsigned long index) const
 {
     CC_ASSERT(index>=0 && index<_passes.size() && "Invalid index");
     return _passes.at(index);
 }
 
-ssize_t Technique::getPassCount() const
+unsigned long Technique::getPassCount() const
 {
     return _passes.size();
 }

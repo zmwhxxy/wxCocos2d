@@ -35,7 +35,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/cocos/core/cmake_install.cmake")
-  include("F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/wxWidgets/cmake_install.cmake")
 
 endif()
 

@@ -46,8 +46,8 @@ Widget* Helper::seekWidgetByTag(Widget* root, int tag)
         return root;
     }
     const auto& arrayRootChildren = root->getChildren();
-    ssize_t length = arrayRootChildren.size();
-    for (ssize_t i=0;i<length;i++)
+    unsigned long length = arrayRootChildren.size();
+    for (unsigned long i=0;i<length;i++)
     {
         Widget* child = dynamic_cast<Widget*>(arrayRootChildren.at(i));
         if (child)

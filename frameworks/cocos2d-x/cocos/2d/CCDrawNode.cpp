@@ -423,7 +423,7 @@ void DrawNode::drawCardinalSpline(PointArray *config, float tension,  unsigned i
     if( ! vertices )
         return;
     
-    ssize_t p;
+    unsigned long p;
     float lt;
     float deltaT = 1.0f / config->count();
     
@@ -436,7 +436,7 @@ void DrawNode::drawCardinalSpline(PointArray *config, float tension,  unsigned i
             p = config->count() - 1;
             lt = 1;
         } else {
-            p = static_cast<ssize_t>(dt / deltaT);
+            p = static_cast<unsigned long>(dt / deltaT);
             lt = (dt - deltaT * (float)p) / deltaT;
         }
         

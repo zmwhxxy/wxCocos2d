@@ -649,7 +649,7 @@ TrianglesCommand::Triangles AutoPolygon::triangulate(const std::vector<Vec2>& po
     return triangles;
 }
 
-void AutoPolygon::calculateUV(const Rect& rect, V3F_C4B_T2F* verts, ssize_t count)
+void AutoPolygon::calculateUV(const Rect& rect, V3F_C4B_T2F* verts, unsigned long count)
 {
     /*
      whole texture UV coordination

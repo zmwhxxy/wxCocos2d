@@ -83,7 +83,7 @@ void PageViewIndicator::setDirection(PageView::Direction direction)
     rearrange();
 }
 
-void PageViewIndicator::reset(ssize_t numberOfTotalPages)
+void PageViewIndicator::reset(unsigned long numberOfTotalPages)
 {
     while(_indexNodes.size() < numberOfTotalPages)
     {
@@ -97,7 +97,7 @@ void PageViewIndicator::reset(ssize_t numberOfTotalPages)
     _currentIndexNode->setVisible(!_indexNodes.empty());
 }
 
-void PageViewIndicator::indicate(ssize_t index)
+void PageViewIndicator::indicate(unsigned long index)
 {
     if (index < 0 || index >= _indexNodes.size())
     {
@@ -126,7 +126,7 @@ void PageViewIndicator::rearrange()
     Size indexNodeSize = _indexNodes.at(0)->getContentSize();
     float sizeValue = (horizontal ? indexNodeSize.width : indexNodeSize.height);
 
-    ssize_t numberOfItems = _indexNodes.size();
+    unsigned long numberOfItems = _indexNodes.size();
     float totalSizeValue = sizeValue * numberOfItems + _spaceBetweenIndexNodes * (numberOfItems - 1);
 
     float posValue = -(totalSizeValue / 2) + (sizeValue / 2);

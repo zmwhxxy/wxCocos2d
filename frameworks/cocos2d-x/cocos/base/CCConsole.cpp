@@ -253,7 +253,7 @@ bool Console::Utility::isFloat(const std::string& myString) {
     return iss.eof() && !iss.fail();
 }
 
-ssize_t Console::Utility::sendToConsole(int fd, const void* buffer, size_t length, int flags)
+unsigned long Console::Utility::sendToConsole(int fd, const void* buffer, size_t length, int flags)
 {
     if (_prompt.length() == length) {
         if (strncmp(_prompt.c_str(), static_cast<const char*>(buffer), length) == 0) {
@@ -263,7 +263,7 @@ ssize_t Console::Utility::sendToConsole(int fd, const void* buffer, size_t lengt
     }
     
     const char* buf = static_cast<const char*>(buffer);
-    ssize_t retLen = 0;
+    unsigned long retLen = 0;
     for (size_t i = 0; i < length; ) {
         size_t len = length - i;
         if (SEND_BUFSIZ < len) len = SEND_BUFSIZ;
@@ -275,7 +275,7 @@ ssize_t Console::Utility::sendToConsole(int fd, const void* buffer, size_t lengt
 
 // dprintf() is not defined in Android
 // so we add our own 'dpritnf'
-ssize_t Console::Utility::mydprintf(int sock, const char *format, ...)
+unsigned long Console::Utility::mydprintf(int sock, const char *format, ...)
 {
     va_list args;
     char buf[16386];
@@ -844,7 +844,7 @@ void Console::loop()
 // Helpers
 //
 
-ssize_t Console::readline(int fd, char* ptr, size_t maxlen)
+unsigned long Console::readline(int fd, char* ptr, size_t maxlen)
 {
     size_t n, rc;
     char c;
@@ -868,7 +868,7 @@ ssize_t Console::readline(int fd, char* ptr, size_t maxlen)
     return n;
 }
 
-ssize_t Console::readBytes(int fd, char* buffer, size_t maxlen, bool* more)
+unsigned long Console::readBytes(int fd, char* buffer, size_t maxlen, bool* more)
 {
     size_t n, rc;
     char c, *ptr = buffer;
@@ -1461,7 +1461,7 @@ static char invalid_filename_char[] = {':', '/', '\\', '?', '%', '*', '<', '>', 
 
 void Console::commandUpload(int fd)
 {
-    ssize_t n, rc;
+    unsigned long n, rc;
     char buf[512] = {0};
     char c = 0;
     char *ptr = buf;
@@ -1602,7 +1602,7 @@ void Console::sendHelp(int fd, const std::unordered_map<std::string, Command*>& 
         if (command->getHelp().empty()) continue;
         
         Console::Utility::mydprintf(fd, "\t%s", command->getName().c_str());
-        ssize_t tabs = strlen(command->getName().c_str()) / 8;
+        unsigned long tabs = strlen(command->getName().c_str()) / 8;
         tabs = 3 - tabs;
         for(int j=0;j<tabs;j++){
             Console::Utility::mydprintf(fd, "\t");

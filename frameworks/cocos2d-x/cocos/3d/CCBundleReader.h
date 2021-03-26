@@ -63,7 +63,7 @@ public:
      * @param buffer The data buffer pointer
      * @param length The data buffer size
      */
-    void init(char* buffer, ssize_t length);
+    void init(char* buffer, unsigned long length);
 
     /**
      * Reads an array of elements.
@@ -75,7 +75,7 @@ public:
      *
      * @return The number of elements read.
      */
-    ssize_t read(void* ptr, ssize_t size, ssize_t count);
+    unsigned long read(void* ptr, unsigned long size, unsigned long count);
 
     /**
      * Reads a line from the buffer.
@@ -90,12 +90,12 @@ public:
     /**
      * Returns the length of the buffer in bytes.
      */
-    ssize_t length();
+    unsigned long length();
 
     /**
      * Returns the position of the file pointer.
      */
-    ssize_t tell();
+    unsigned long tell();
 
     /**
      * Sets the position of the file pointer.
@@ -125,8 +125,8 @@ public:
     bool readMatrix(float* m);
 
 private:
-    ssize_t _position;
-    ssize_t  _length;
+    unsigned long _position;
+    unsigned long  _length;
     char* _buffer;
 };
 

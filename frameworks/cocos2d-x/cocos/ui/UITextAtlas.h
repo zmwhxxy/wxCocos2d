@@ -121,7 +121,7 @@ public:
      *
      * @return  string length.
      */
-    ssize_t getStringLength()const;
+    unsigned long getStringLength()const;
     
     //override "getVirtualRendererSize" method of widget.
     virtual Size getVirtualRendererSize() const override;

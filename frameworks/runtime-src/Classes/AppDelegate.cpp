@@ -64,8 +64,8 @@ static void decoder(Data &data)
     if (!data.isNull()) {
         bool isEncoder = false;
         unsigned char *buf = data.getBytes();
-        ssize_t size = data.getSize();
-        ssize_t len = strlen((char *)sign);
+        unsigned long size = data.getSize();
+        unsigned long len = strlen((char *)sign);
         if (size <= len) {
             return;
         }

@@ -142,7 +142,7 @@ void ListView::updateInnerContainerSize()
     }
 }
     
-void ListView::remedyVerticalLayoutParameter(LinearLayoutParameter* layoutParameter, ssize_t itemIndex)
+void ListView::remedyVerticalLayoutParameter(LinearLayoutParameter* layoutParameter, unsigned long itemIndex)
 {
     CCASSERT(nullptr != layoutParameter, "Layout parameter can't be nullptr!");
     
@@ -175,7 +175,7 @@ void ListView::remedyVerticalLayoutParameter(LinearLayoutParameter* layoutParame
     }
 }
     
-void ListView::remedyHorizontalLayoutParameter(LinearLayoutParameter* layoutParameter, ssize_t itemIndex)
+void ListView::remedyHorizontalLayoutParameter(LinearLayoutParameter* layoutParameter, unsigned long itemIndex)
 {
     CCASSERT(nullptr != layoutParameter, "Layout parameter can't be nullptr!");
     
@@ -218,7 +218,7 @@ void ListView::remedyLayoutParameter(Widget *item)
         linearLayoutParameter = LinearLayoutParameter::create();
         isLayoutParameterExists = false;
     }
-    ssize_t itemIndex = getIndex(item);
+    unsigned long itemIndex = getIndex(item);
     
     switch (_direction)
     {
@@ -253,7 +253,7 @@ void ListView::pushBackDefaultItem()
     requestDoLayout();
 }
 
-void ListView::insertDefaultItem(ssize_t index)
+void ListView::insertDefaultItem(unsigned long index)
 {
     if (nullptr == _model)
     {
@@ -342,7 +342,7 @@ void ListView::removeAllChildrenWithCleanup(bool cleanup)
     onItemListChanged();
 }
 
-void ListView::insertCustomItem(Widget* item, ssize_t index)
+void ListView::insertCustomItem(Widget* item, unsigned long index)
 {
     if (-1 != _curSelectedIndex)
     {
@@ -360,7 +360,7 @@ void ListView::insertCustomItem(Widget* item, ssize_t index)
     requestDoLayout();
 }
 
-void ListView::removeItem(ssize_t index)
+void ListView::removeItem(unsigned long index)
 {
     Widget* item = getItem(index);
     if (nullptr == item)
@@ -380,7 +380,7 @@ void ListView::removeAllItems()
     removeAllChildren();
 }
 
-Widget* ListView::getItem(ssize_t index) const
+Widget* ListView::getItem(unsigned long index) const
 {
     if (index < 0 || index >= _items.size())
     {
@@ -394,7 +394,7 @@ Vector<Widget*>& ListView::getItems()
     return _items;
 }
 
-ssize_t ListView::getIndex(Widget *item) const
+unsigned long ListView::getIndex(Widget *item) const
 {
     if (nullptr == item)
     {
@@ -566,7 +566,7 @@ void ListView::doLayout()
         return;
     }
 
-    ssize_t length = _items.size();
+    unsigned long length = _items.size();
     for (int i = 0; i < length; ++i)
     {
         Widget* item = _items.at(i);
@@ -646,7 +646,7 @@ static Vec2 calculateItemPositionWithAnchor(Widget* item, const Vec2& itemAnchor
     return origin + Vec2(size.width * itemAnchorPoint.x, size.height * itemAnchorPoint.y);
 }
     
-static Widget* findClosestItem(const Vec2& targetPosition, const Vector<Widget*>& items, const Vec2& itemAnchorPoint, ssize_t firstIndex, float distanceFromFirst, ssize_t lastIndex, float distanceFromLast)
+static Widget* findClosestItem(const Vec2& targetPosition, const Vector<Widget*>& items, const Vec2& itemAnchorPoint, unsigned long firstIndex, float distanceFromFirst, unsigned long lastIndex, float distanceFromLast)
 {
     CCASSERT(firstIndex >= 0 && lastIndex < items.size() && firstIndex <= lastIndex, "");
     if (firstIndex == lastIndex)
@@ -666,7 +666,7 @@ static Widget* findClosestItem(const Vec2& targetPosition, const Vector<Widget*>
     }
     
     // Binary search
-    ssize_t midIndex = (firstIndex + lastIndex) / 2;
+    unsigned long midIndex = (firstIndex + lastIndex) / 2;
     Vec2 itemPosition = calculateItemPositionWithAnchor(items.at(midIndex), itemAnchorPoint);
     float distanceFromMid = (targetPosition - itemPosition).length();
     if (distanceFromFirst <= distanceFromLast)
@@ -689,11 +689,11 @@ Widget* ListView::getClosestItemToPosition(const Vec2& targetPosition, const Vec
     }
     
     // Find the closest item through binary search
-    ssize_t firstIndex = 0;
+    unsigned long firstIndex = 0;
     Vec2 firstPosition = calculateItemPositionWithAnchor(_items.at(firstIndex), itemAnchorPoint);
     float distanceFromFirst = (targetPosition - firstPosition).length();
     
-    ssize_t lastIndex = _items.size() - 1;
+    unsigned long lastIndex = _items.size() - 1;
     Vec2 lastPosition = calculateItemPositionWithAnchor(_items.at(lastIndex), itemAnchorPoint);
     float distanceFromLast = (targetPosition - lastPosition).length();
     
@@ -828,7 +828,7 @@ Vec2 ListView::calculateItemDestination(const Vec2& positionRatioInView, Widget*
     return -(itemPosition - positionInView);
 }
 
-void ListView::jumpToItem(ssize_t itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint)
+void ListView::jumpToItem(unsigned long itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint)
 {
     Widget* item = getItem(itemIndex);
     if (item == nullptr)
@@ -847,12 +847,12 @@ void ListView::jumpToItem(ssize_t itemIndex, const Vec2& positionRatioInView, co
     jumpToDestination(destination);
 }
 
-void ListView::scrollToItem(ssize_t itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint)
+void ListView::scrollToItem(unsigned long itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint)
 {
     scrollToItem(itemIndex, positionRatioInView, itemAnchorPoint, _scrollTime);
 }
 
-void ListView::scrollToItem(ssize_t itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint, float timeInSec)
+void ListView::scrollToItem(unsigned long itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint, float timeInSec)
 {
     Widget* item = getItem(itemIndex);
     if (item == nullptr)
@@ -863,7 +863,7 @@ void ListView::scrollToItem(ssize_t itemIndex, const Vec2& positionRatioInView, 
     startAutoScrollToDestination(destination, timeInSec, true);
 }
 
-ssize_t ListView::getCurSelectedIndex() const
+unsigned long ListView::getCurSelectedIndex() const
 {
     return _curSelectedIndex;
 }
@@ -938,7 +938,7 @@ Vec2 ListView::getHowMuchOutOfBoundary(const Vec2& addition)
     float topBoundary = _topBoundary;
     float bottomBoundary = _bottomBoundary;
     {
-        ssize_t lastItemIndex = _items.size() - 1;
+        unsigned long lastItemIndex = _items.size() - 1;
         Size contentSize = getContentSize();
         Vec2 firstItemAdjustment, lastItemAdjustment;
         if(_magneticType == MagneticType::CENTER)

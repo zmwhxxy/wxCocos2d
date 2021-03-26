@@ -164,7 +164,7 @@ CC_CONSTRUCTOR_ACCESS:
     
 private:
     void updateAllAtlasIndexes();
-    void increaseAtlasCapacityTo(ssize_t quantity);
+    void increaseAtlasCapacityTo(unsigned long quantity);
     int searchNewPositionInChildrenForZ(int z);
     void getCurrentIndex(int* oldIndex, int* newIndex, Node* child, int z);
     int addChildHelper(ParticleSystem* child, int z, int aTag, const std::string &name, bool setTag);

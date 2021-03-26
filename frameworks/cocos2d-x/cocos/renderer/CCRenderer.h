@@ -92,11 +92,11 @@ public:
     /**Push a renderCommand into current renderqueue.*/
     void push_back(RenderCommand* command);
     /**Return the number of render commands.*/
-    ssize_t size() const;
+    unsigned long size() const;
     /**Sort the render commands.*/
     void sort();
     /**Treat sorted commands as an array, access them one by one.*/
-    RenderCommand* operator[](ssize_t index) const;
+    RenderCommand* operator[](unsigned long index) const;
     /**Clear all rendered commands.*/
     void clear();
     /**Realloc command queues and reserve with given size. Note: this clears any existing commands.*/
@@ -104,7 +104,7 @@ public:
     /**Get a sub group of the render queue.*/
     std::vector<RenderCommand*>& getSubQueue(QUEUE_GROUP group) { return _commands[group]; }
     /**Get the number of render commands contained in a subqueue.*/
-    ssize_t getSubQueueSize(QUEUE_GROUP group) const { return _commands[group].size(); }
+    unsigned long getSubQueueSize(QUEUE_GROUP group) const { return _commands[group].size(); }
     
 protected:
     /**The commands in the render queue.*/
@@ -167,13 +167,13 @@ public:
     void clean();
 
     /* returns the number of drawn batches in the last frame */
-    ssize_t getDrawnBatches() const { return _drawnBatches; }
+    unsigned long getDrawnBatches() const { return _drawnBatches; }
     /* RenderCommands (except) TrianglesCommand should update this value */
-    void addDrawnBatches(ssize_t number) { _drawnBatches += number; };
+    void addDrawnBatches(unsigned long number) { _drawnBatches += number; };
     /* returns the number of drawn triangles in the last frame */
-    ssize_t getDrawnVertices() const { return _drawnVertices; }
+    unsigned long getDrawnVertices() const { return _drawnVertices; }
     /* RenderCommands (except) TrianglesCommand should update this value */
-    void addDrawnVertices(ssize_t number) { _drawnVertices += number; };
+    void addDrawnVertices(unsigned long number) { _drawnVertices += number; };
     /* clear draw stats */
     void clearDrawStats() { _drawnBatches = _drawnVertices = 0; }
 

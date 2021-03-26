@@ -125,14 +125,14 @@ public:
     * @js NA
     * @lua NA
     */
-    bool initWithImageData(const unsigned char * data, ssize_t dataLen);
+    bool initWithImageData(const unsigned char * data, unsigned long dataLen);
 
     // @warning kFmtRawData only support RGBA8888
-    bool initWithRawData(const unsigned char * data, ssize_t dataLen, int width, int height, int bitsPerComponent, bool preMulti = false);
+    bool initWithRawData(const unsigned char * data, unsigned long dataLen, int width, int height, int bitsPerComponent, bool preMulti = false);
 
     // Getters
     unsigned char *   getData()               { return _data; }
-    ssize_t           getDataLen()            { return _dataLen; }
+    unsigned long           getDataLen()            { return _dataLen; }
     Format            getFileType()           { return _fileType; }
     backend::PixelFormat getPixelFormat()  { return _pixelFormat; }
     int               getWidth()              { return _width; }
@@ -157,15 +157,15 @@ public:
     void reversePremultipliedAlpha();   
 
 protected:
-    bool initWithJpgData(const unsigned char *  data, ssize_t dataLen);
-    bool initWithPngData(const unsigned char * data, ssize_t dataLen);
-    bool initWithWebpData(const unsigned char * data, ssize_t dataLen);
-    bool initWithPVRData(const unsigned char * data, ssize_t dataLen);
-    bool initWithPVRv2Data(const unsigned char * data, ssize_t dataLen);
-    bool initWithPVRv3Data(const unsigned char * data, ssize_t dataLen);
-    bool initWithETCData(const unsigned char * data, ssize_t dataLen);
-    bool initWithS3TCData(const unsigned char * data, ssize_t dataLen);
-    bool initWithATITCData(const unsigned char *data, ssize_t dataLen);
+    bool initWithJpgData(const unsigned char *  data, unsigned long dataLen);
+    bool initWithPngData(const unsigned char * data, unsigned long dataLen);
+    bool initWithWebpData(const unsigned char * data, unsigned long dataLen);
+    bool initWithPVRData(const unsigned char * data, unsigned long dataLen);
+    bool initWithPVRv2Data(const unsigned char * data, unsigned long dataLen);
+    bool initWithPVRv3Data(const unsigned char * data, unsigned long dataLen);
+    bool initWithETCData(const unsigned char * data, unsigned long dataLen);
+    bool initWithS3TCData(const unsigned char * data, unsigned long dataLen);
+    bool initWithATITCData(const unsigned char *data, unsigned long dataLen);
     typedef struct sImageTGA tImageTGA;
     bool initWithTGAData(tImageTGA* tgaData);
 
@@ -185,7 +185,7 @@ protected:
      */
     static bool PNG_PREMULTIPLIED_ALPHA_ENABLED;
     unsigned char *_data;
-    ssize_t _dataLen;
+    unsigned long _dataLen;
     int _width;
     int _height;
     bool _unpack;
@@ -212,14 +212,14 @@ protected:
      */
     bool initWithImageFileThreadSafe(const std::string& fullpath);
     
-    Format detectFormat(const unsigned char * data, ssize_t dataLen);
-    bool isPng(const unsigned char * data, ssize_t dataLen);
-    bool isJpg(const unsigned char * data, ssize_t dataLen);
-    bool isWebp(const unsigned char * data, ssize_t dataLen);
-    bool isPvr(const unsigned char * data, ssize_t dataLen);
-    bool isEtc(const unsigned char * data, ssize_t dataLen);
-    bool isS3TC(const unsigned char * data,ssize_t dataLen);
-    bool isATITC(const unsigned char *data, ssize_t dataLen);
+    Format detectFormat(const unsigned char * data, unsigned long dataLen);
+    bool isPng(const unsigned char * data, unsigned long dataLen);
+    bool isJpg(const unsigned char * data, unsigned long dataLen);
+    bool isWebp(const unsigned char * data, unsigned long dataLen);
+    bool isPvr(const unsigned char * data, unsigned long dataLen);
+    bool isEtc(const unsigned char * data, unsigned long dataLen);
+    bool isS3TC(const unsigned char * data,unsigned long dataLen);
+    bool isATITC(const unsigned char *data, unsigned long dataLen);
 };
 
 // end of platform group

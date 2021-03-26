@@ -469,7 +469,7 @@ void ColliderDetector::setBody(cpBody *pBody)
 
         ContourData *contourData = colliderBody->getContourData();
 
-        ssize_t num = contourData->vertexList.size();
+        unsigned long num = contourData->vertexList.size();
         auto vs = contourData->vertexList;
         cpVect *verts = new (std::nothrow) cpVect[num];
         for (int i = 0; i < num; i++)

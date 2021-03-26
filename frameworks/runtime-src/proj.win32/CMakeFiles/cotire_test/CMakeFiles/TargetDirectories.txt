@@ -1,6 +1,0 @@
-F:/wxCocos2d/frameworks/runtime-src/proj.win32/CMakeFiles/cotire_test/CMakeFiles/ALL_BUILD.dir
-F:/wxCocos2d/frameworks/runtime-src/proj.win32/CMakeFiles/cotire_test/CMakeFiles/ZERO_CHECK.dir
-F:/wxCocos2d/frameworks/runtime-src/proj.win32/CMakeFiles/cotire_test/src/CMakeFiles/example.dir
-F:/wxCocos2d/frameworks/runtime-src/proj.win32/CMakeFiles/cotire_test/src/CMakeFiles/example_unity.dir
-F:/wxCocos2d/frameworks/runtime-src/proj.win32/CMakeFiles/cotire_test/src/CMakeFiles/all_unity.dir
-F:/wxCocos2d/frameworks/runtime-src/proj.win32/CMakeFiles/cotire_test/src/CMakeFiles/clean_cotire.dir

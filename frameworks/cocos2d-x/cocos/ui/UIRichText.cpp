@@ -1360,7 +1360,7 @@ void RichText::formatText()
         if (_ignoreSize)
         {
             addNewLine();
-            for (ssize_t i=0, size = _richElements.size(); i<size; ++i)
+            for (unsigned long i=0, size = _richElements.size(); i<size; ++i)
             {
                 RichElement* element = _richElements.at(i);
                 Node* elementRenderer = nullptr;
@@ -1454,7 +1454,7 @@ void RichText::formatText()
         else
         {
             addNewLine();
-            for (ssize_t i=0, size = _richElements.size(); i<size; ++i)
+            for (unsigned long i=0, size = _richElements.size(); i<size; ++i)
             {
                 RichElement* element = static_cast<RichElement*>(_richElements.at(i));
                 switch (element->_type)

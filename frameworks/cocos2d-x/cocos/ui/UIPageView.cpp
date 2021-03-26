@@ -122,7 +122,7 @@ void PageView::removePage(Widget* page)
     removeItem(getIndex(page));
 }
 
-void PageView::removePageAtIndex(ssize_t index)
+void PageView::removePageAtIndex(unsigned long index)
 {
     removeItem(index);
 }
@@ -132,7 +132,7 @@ void PageView::removeAllPages()
     removeAllItems();
 }
 
-ssize_t PageView::getCurrentPageIndex()
+unsigned long PageView::getCurrentPageIndex()
 {
     //The _currentPageIndex is lazy calculated
     if (_innerContainerDoLayoutDirty) {
@@ -141,22 +141,22 @@ ssize_t PageView::getCurrentPageIndex()
     return _currentPageIndex;
 }
 
-void PageView::setCurrentPageIndex(ssize_t index)
+void PageView::setCurrentPageIndex(unsigned long index)
 {
     jumpToItem(index, Vec2::ANCHOR_MIDDLE, Vec2::ANCHOR_MIDDLE);
 }
 
-void PageView::scrollToPage(ssize_t idx)
+void PageView::scrollToPage(unsigned long idx)
 {
     scrollToItem(idx);
 }
     
-void PageView::scrollToPage(ssize_t idx, float time)
+void PageView::scrollToPage(unsigned long idx, float time)
 {
     scrollToItem(idx, time);
 }
 
-void PageView::scrollToItem(ssize_t itemIndex)
+void PageView::scrollToItem(unsigned long itemIndex)
 {
     if (_innerContainerDoLayoutDirty) {
         this->forceDoLayout();
@@ -164,7 +164,7 @@ void PageView::scrollToItem(ssize_t itemIndex)
     ListView::scrollToItem(itemIndex, Vec2::ANCHOR_MIDDLE, Vec2::ANCHOR_MIDDLE);
 }
 
-void PageView::scrollToItem(ssize_t itemIndex, float time)
+void PageView::scrollToItem(unsigned long itemIndex, float time)
 {
     if (_innerContainerDoLayoutDirty) {
         this->forceDoLayout();

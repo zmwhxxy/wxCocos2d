@@ -668,7 +668,7 @@ int LuaStack::luaLoadChunksFromZIP(lua_State *L)
         ZipFile *zip = nullptr;
         Data zipFileData(utils->getDataFromFile(zipFilePath));
         unsigned char* bytes = zipFileData.getBytes();
-        ssize_t size = zipFileData.getSize();
+        unsigned long size = zipFileData.getSize();
 
         if (size > 0) {
             zip = ZipFile::createWithBuffer(bytes, (unsigned long)size);
@@ -683,7 +683,7 @@ int LuaStack::luaLoadChunksFromZIP(lua_State *L)
             int count = 0;
             std::string filename = zip->getFirstFilename();
             while (filename.length()) {
-                ssize_t bufferSize = 0;
+                unsigned long bufferSize = 0;
                 unsigned char *zbuffer = zip->getFileData(filename.c_str(), &bufferSize);
                 if (bufferSize) {
                     if (luaLoadBuffer(L, (char*)zbuffer, (int)bufferSize, filename.c_str()) == 0) {

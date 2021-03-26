@@ -94,7 +94,7 @@ void BoneNode::addSkin(SkinNode* skin, bool display)
 
 void BoneNode::removeChild(Node* child, bool cleanup /* = true */)
 {
-    ssize_t index = _children.getIndex(child);
+    unsigned long index = _children.getIndex(child);
     if (index != cocos2d::CC_INVALID_INDEX)
     {
         removeFromChildrenListHelper(child);

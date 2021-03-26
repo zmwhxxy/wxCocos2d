@@ -121,7 +121,7 @@ public:
      *
      * @return  String length.
      */
-    ssize_t getStringLength()const;
+    unsigned long getStringLength()const;
 
     /**
      * Sets the font size of label.

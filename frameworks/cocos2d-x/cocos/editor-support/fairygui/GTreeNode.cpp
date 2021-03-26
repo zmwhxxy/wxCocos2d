@@ -180,7 +180,7 @@ GTreeNode* GTreeNode::getPrevSibling() const
     if (_parent == nullptr)
         return nullptr;
 
-    ssize_t i = _parent->_children.getIndex((GTreeNode*)this);
+    unsigned long i = _parent->_children.getIndex((GTreeNode*)this);
     if (i <= 0)
         return nullptr;
 
@@ -192,7 +192,7 @@ GTreeNode* GTreeNode::getNextSibling() const
     if (_parent == nullptr)
         return nullptr;
 
-    ssize_t i = _parent->_children.getIndex((GTreeNode*)this);
+    unsigned long i = _parent->_children.getIndex((GTreeNode*)this);
     if (i < 0 || i >= _parent->_children.size() - 1)
         return nullptr;
 

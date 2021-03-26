@@ -127,7 +127,7 @@ public:
      *
      * @param index  A given index.
      */
-    void removePageAtIndex(ssize_t index);
+    void removePageAtIndex(unsigned long index);
 
     /**
      * @brief Remove all pages of the PageView.
@@ -139,7 +139,7 @@ public:
      *
      * @param idx   A given index in the PageView. Index start from 0 to pageCount -1.
      */
-    void scrollToPage(ssize_t idx);
+    void scrollToPage(unsigned long idx);
     
     /**
      * Scroll to a page with a given index and with a given scroll time.
@@ -147,14 +147,14 @@ public:
      * @param idx   A given index in the PageView. Index start from 0 to pageCount -1.
      * @param time  Scroll time must be >= 0. Otherwise last set scroll time will be used.
      */
-    void scrollToPage(ssize_t idx, float time);
+    void scrollToPage(unsigned long idx, float time);
 
     /**
      * Scroll to a page with a given index.
      *
      * @param itemIndex   A given index in the PageView. Index start from 0 to pageCount -1.
      */
-    void scrollToItem(ssize_t itemIndex);
+    void scrollToItem(unsigned long itemIndex);
     
     /**
      * Scroll to a item with a given index and with a given scroll time.
@@ -162,13 +162,13 @@ public:
      * @param idx   A given index in the PageView. Index start from 0 to pageCount -1.
      * @param time  Scroll time must be >= 0. Otherwise last set scrolltime will be used.
      */
-    void scrollToItem(ssize_t idx, float time);
+    void scrollToItem(unsigned long idx, float time);
 
     /**
      * Gets current displayed page index.
      * @return current page index.
      */
-    ssize_t getCurrentPageIndex();
+    unsigned long getCurrentPageIndex();
 
     /**
      * Jump to a page with a given index without scrolling.
@@ -176,7 +176,7 @@ public:
      *
      * @param index A given index in PageView. Index start from 0 to pageCount -1.
      */
-    void setCurrentPageIndex(ssize_t index);
+    void setCurrentPageIndex(unsigned long index);
 
     /**
      * @brief Add a page turn callback to PageView, then when one page is turning, the callback will be called.
@@ -350,13 +350,13 @@ protected:
     PageViewIndicator* _indicator;
     Vec2 _indicatorPositionAsAnchorPoint;
 
-    ssize_t _currentPageIndex;
+    unsigned long _currentPageIndex;
 
     float _childFocusCancelOffset;
 
     ccPageViewCallback _eventCallback;
     float _autoScrollStopEpsilon;
-    ssize_t _previousPageIndex;
+    unsigned long _previousPageIndex;
     bool _isTouchBegin;
 };
 

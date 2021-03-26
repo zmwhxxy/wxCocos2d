@@ -40,14 +40,14 @@ BundleReader::~BundleReader()
     
 };
 
-void BundleReader::init(char* buffer, ssize_t length)
+void BundleReader::init(char* buffer, unsigned long length)
 {
     _position = 0;
     _buffer  = buffer;
     _length = length;
 }
 
-ssize_t BundleReader::read(void* ptr, ssize_t size, ssize_t count)
+unsigned long BundleReader::read(void* ptr, unsigned long size, unsigned long count)
 {
     if (!_buffer || eof())
     {
@@ -55,14 +55,14 @@ ssize_t BundleReader::read(void* ptr, ssize_t size, ssize_t count)
         return 0;
     }
 
-    ssize_t validCount;
-    ssize_t validLength = _length - _position;
-    ssize_t needLength = size*count;
+    unsigned long validCount;
+    unsigned long validLength = _length - _position;
+    unsigned long needLength = size*count;
     char* ptr1 = (char*)ptr;
     if(validLength < needLength)
     {
         validCount = validLength/size;
-        ssize_t readLength = size*validCount;
+        unsigned long readLength = size*validCount;
         memcpy(ptr1,(char*)_buffer+_position,readLength);
         ptr1 += readLength;
         _position += readLength;
@@ -93,8 +93,8 @@ char* BundleReader::readLine(int num,char* line)
     char* buffer = (char*)_buffer+_position;
     char* p = line;
     char c;
-    ssize_t readNum = 0;
-    while((c=*buffer) != 10 && readNum < (ssize_t)num && _position < _length)
+    unsigned long readNum = 0;
+    while((c=*buffer) != 10 && readNum < (unsigned long)num && _position < _length)
     {
         *p = c;
         p++;
@@ -112,15 +112,15 @@ bool BundleReader::eof()
     if (!_buffer)
         return true;
     
-    return ((ssize_t)tell()) >= length();
+    return ((unsigned long)tell()) >= length();
 }
 
-ssize_t BundleReader::length()
+unsigned long BundleReader::length()
 {
     return _length;
 }
 
-ssize_t BundleReader::tell()
+unsigned long BundleReader::tell()
 {
     if (!_buffer)
         return -1;
@@ -170,8 +170,8 @@ std::string BundleReader::readString()
 
     std::string str;
     
-    ssize_t validLength = _length - _position;
-    if (length > 0 && static_cast<ssize_t>(length) <= validLength)
+    unsigned long validLength = _length - _position;
+    if (length > 0 && static_cast<unsigned long>(length) <= validLength)
     {
         str.resize(length);
         if (read(&str[0], 1, length) != length)

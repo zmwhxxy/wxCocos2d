@@ -40804,7 +40804,7 @@ static void UnixDir_Rewind(void *pUserData)
 /* jx9_int64 (*xRead)(void *, void *, jx9_int64); */
 static jx9_int64 UnixFile_Read(void *pUserData, void *pBuffer, jx9_int64 nDatatoRead)
 {
-	ssize_t nRd;
+	unsigned long nRd;
 	nRd = read(SX_PTR_TO_INT(pUserData), pBuffer, (size_t)nDatatoRead);
 	if( nRd < 1 ){
 		/* EOF or IO error */
@@ -40818,7 +40818,7 @@ static jx9_int64 UnixFile_Write(void *pUserData, const void *pBuffer, jx9_int64 
 	const char *zData = (const char *)pBuffer;
 	int fd = SX_PTR_TO_INT(pUserData);
 	jx9_int64 nCount;
-	ssize_t nWr;
+	unsigned long nWr;
 	nCount = 0;
 	for(;;){
 		if( nWrite < 1 ){
@@ -41154,7 +41154,7 @@ static jx9_int64 JX9StreamData_Read(void *pHandle, void *pBuffer, jx9_int64 nDat
 	}
 #elif defined(__UNIXES__)
 	{
-		ssize_t nRd;
+		unsigned long nRd;
 		int fd;
 		fd = SX_PTR_TO_INT(pData->x.pHandle);
 		nRd = read(fd, pBuffer, (size_t)nDatatoRead);
@@ -41200,7 +41200,7 @@ static jx9_int64 JX9StreamData_Write(void *pHandle, const void *pBuf, jx9_int64 
 	}
 #elif defined(__UNIXES__)
 	{
-		ssize_t nWr;
+		unsigned long nWr;
 		int fd;
 		fd = SX_PTR_TO_INT(pData->x.pHandle);
 		nWr = write(fd, pBuf, (size_t)nWrite);

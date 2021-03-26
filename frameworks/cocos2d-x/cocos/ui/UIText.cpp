@@ -126,7 +126,7 @@ const std::string& Text::getString() const
     return _labelRenderer->getString();
 }
 
-ssize_t Text::getStringLength()const
+unsigned long Text::getStringLength()const
 {
     return _labelRenderer->getStringLength();
 }

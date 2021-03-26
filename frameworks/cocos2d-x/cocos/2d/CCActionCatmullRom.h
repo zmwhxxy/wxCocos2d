@@ -63,7 +63,7 @@ public:
      * @js NA
      * @param capacity The size of the array.
      */
-    static PointArray* create(ssize_t capacity);
+    static PointArray* create(unsigned long capacity);
 
     /**
      * @js NA
@@ -82,7 +82,7 @@ public:
      * @param capacity The size of the array.
      * @return True.
      */
-    bool initWithCapacity(ssize_t capacity);
+    bool initWithCapacity(unsigned long capacity);
 
     /** Appends a control point.
      *
@@ -97,7 +97,7 @@ public:
      * @param controlPoint A control point.
      * @param index Insert the point to array in index.
      */
-    void insertControlPoint(const Vec2& controlPoint, ssize_t index);
+    void insertControlPoint(const Vec2& controlPoint, unsigned long index);
 
     /** Replaces an existing controlPoint at index.
      *
@@ -105,7 +105,7 @@ public:
      * @param controlPoint A control point.
      * @param index Replace the point to array in index.
      */
-    void replaceControlPoint(const Vec2& controlPoint, ssize_t index);
+    void replaceControlPoint(const Vec2& controlPoint, unsigned long index);
 
     /** Get the value of a controlPoint at a given index.
      *
@@ -113,21 +113,21 @@ public:
      * @param index Get the point in index.
      * @return A Vec2.
      */
-    const Vec2& getControlPointAtIndex(ssize_t index) const;
+    const Vec2& getControlPointAtIndex(unsigned long index) const;
 
     /** Deletes a control point at a given index
      *
      * @js NA
      * @param index Remove the point in index.
      */
-    void removeControlPointAtIndex(ssize_t index);
+    void removeControlPointAtIndex(unsigned long index);
 
     /** Returns the number of objects of the control point array.
      *
      * @js NA
      * @return The number of objects of the control point array.
      */
-    ssize_t count() const;
+    unsigned long count() const;
 
     /** Returns a new copy of the array reversed. User is responsible for releasing this copy.
      *

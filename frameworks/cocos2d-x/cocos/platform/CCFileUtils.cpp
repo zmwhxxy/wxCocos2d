@@ -696,7 +696,7 @@ FileUtils::Status FileUtils::getContents(const std::string& filename, ResizableB
     return Status::OK;
 }
 
-unsigned char* FileUtils::getFileDataFromZip(const std::string& zipFilePath, const std::string& filename, ssize_t *size) const
+unsigned char* FileUtils::getFileDataFromZip(const std::string& zipFilePath, const std::string& filename, unsigned long *size) const
 {
     unsigned char * buffer = nullptr;
     unzFile file = nullptr;

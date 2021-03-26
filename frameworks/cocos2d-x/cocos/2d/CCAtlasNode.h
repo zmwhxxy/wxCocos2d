@@ -96,7 +96,7 @@ public:
      */
     TextureAtlas* getTextureAtlas() const;
     
-    void setQuadsToDraw(ssize_t quadsToDraw);
+    void setQuadsToDraw(unsigned long quadsToDraw);
     size_t getQuadsToDraw() const;
 
 CC_CONSTRUCTOR_ACCESS:

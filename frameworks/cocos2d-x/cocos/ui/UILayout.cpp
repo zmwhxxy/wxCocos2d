@@ -1156,8 +1156,8 @@ float Layout::calculateFarthestDistance(cocos2d::ui::Widget *baseWidget)
 
 int Layout::findFirstFocusEnabledWidgetIndex()
 {
-    ssize_t index = 0;
-    ssize_t count = this->getChildren().size();
+    unsigned long index = 0;
+    unsigned long count = this->getChildren().size();
     while (index < count)
     {
         Widget* w =  dynamic_cast<Widget*>(_children.at(index));
@@ -1178,7 +1178,7 @@ int Layout::findNearestChildWidgetIndex(FocusDirection direction, Widget* baseWi
         return this->findFirstFocusEnabledWidgetIndex();
     }
     int index = 0;
-    ssize_t count = this->getChildren().size();
+    unsigned long count = this->getChildren().size();
     
     float distance = FLT_MAX;
     int found = 0;
@@ -1226,7 +1226,7 @@ int Layout::findFarthestChildWidgetIndex(FocusDirection direction, cocos2d::ui::
         return this->findFirstFocusEnabledWidgetIndex();
     }
     int index = 0;
-    ssize_t count = this->getChildren().size();
+    unsigned long count = this->getChildren().size();
     
     float distance = -FLT_MAX;
     int found = 0;
@@ -1268,7 +1268,7 @@ int Layout::findFarthestChildWidgetIndex(FocusDirection direction, cocos2d::ui::
     
 
 
-Widget* Layout::findFocusEnabledChildWidgetByIndex(ssize_t index)
+Widget* Layout::findFocusEnabledChildWidgetByIndex(unsigned long index)
 {
   
     Widget *widget = this->getChildWidgetByIndex(index);
@@ -1422,11 +1422,11 @@ bool Layout::checkFocusEnabledChild()const
     return ret;
 }
 
-Widget* Layout::getChildWidgetByIndex(ssize_t index)const
+Widget* Layout::getChildWidgetByIndex(unsigned long index)const
 {
-    ssize_t size = _children.size();
+    unsigned long size = _children.size();
     int count = 0;
-    ssize_t oldIndex = index;
+    unsigned long oldIndex = index;
     Widget *widget = nullptr;
     while (index < size)
     {
@@ -1463,7 +1463,7 @@ Widget* Layout::getChildWidgetByIndex(ssize_t index)const
 Widget* Layout::getPreviousFocusedWidget(FocusDirection direction, Widget *current)
 {
     Widget *nextWidget = nullptr;
-    ssize_t previousWidgetPos = _children.getIndex(current);
+    unsigned long previousWidgetPos = _children.getIndex(current);
     previousWidgetPos = previousWidgetPos - 1;
     if (previousWidgetPos >= 0)
     {
@@ -1552,7 +1552,7 @@ Widget* Layout::getPreviousFocusedWidget(FocusDirection direction, Widget *curre
 Widget* Layout::getNextFocusedWidget(FocusDirection direction, Widget *current)
 {
     Widget *nextWidget = nullptr;
-    ssize_t previousWidgetPos = _children.getIndex(current);
+    unsigned long previousWidgetPos = _children.getIndex(current);
     previousWidgetPos = previousWidgetPos + 1;
     if (previousWidgetPos < _children.size())
     {
@@ -1655,7 +1655,7 @@ bool  Layout::isLastWidgetInContainer(Widget* widget, FocusDirection direction)c
     }
     
     auto& container = parent->getChildren();
-    ssize_t index = container.getIndex(widget);
+    unsigned long index = container.getIndex(widget);
     if (parent->getLayoutType() == Type::HORIZONTAL)
     {
         if (direction == FocusDirection::LEFT)

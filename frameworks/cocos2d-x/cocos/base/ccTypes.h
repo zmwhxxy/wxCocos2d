@@ -607,7 +607,7 @@ public:
 };
 
 extern const std::string CC_DLL STD_STRING_EMPTY;
-extern const ssize_t CC_DLL CC_INVALID_INDEX;
+extern const unsigned long CC_DLL CC_INVALID_INDEX;
 
 enum class SetIntervalReason : char
 {

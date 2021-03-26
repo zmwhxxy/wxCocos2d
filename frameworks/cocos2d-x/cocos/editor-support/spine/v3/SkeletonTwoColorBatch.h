@@ -67,9 +67,9 @@ namespace spine {
 
 		inline const TwoColorTriangles& getTriangles() const { return _triangles; }
 
-		inline ssize_t getVertexCount() const { return _triangles.vertCount; }
+		inline unsigned long getVertexCount() const { return _triangles.vertCount; }
 
-		inline ssize_t getIndexCount() const { return _triangles.indexCount; }
+		inline unsigned long getIndexCount() const { return _triangles.indexCount; }
 
 		inline const V3F_C4B_C4B_T2F* getVertices() const { return _triangles.verts; }
 

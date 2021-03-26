@@ -155,7 +155,7 @@ Bone3D* Bone3D::getParentBone()
 {
     return _parent;
 }
-ssize_t Bone3D::getChildBoneCount() const
+unsigned long Bone3D::getChildBoneCount() const
 {
     return _children.size();
 }
@@ -268,7 +268,7 @@ Skeleton3D* Skeleton3D::create(const std::vector<NodeData*>& skeletondata)
     return skeleton;
 }
 
-ssize_t Skeleton3D::getBoneCount() const
+unsigned long Skeleton3D::getBoneCount() const
 {
     return _bones.size();
 }
@@ -292,7 +292,7 @@ Bone3D* Skeleton3D::getBoneByName(const std::string& id) const
     return nullptr;
 }
 
-ssize_t Skeleton3D::getRootCount() const
+unsigned long Skeleton3D::getRootCount() const
 {
     return _rootBones.size();
 }
@@ -304,7 +304,7 @@ Bone3D* Skeleton3D::getRootBone(int index) const
 
 int Skeleton3D::getBoneIndex(Bone3D* bone) const
 {
-    for (ssize_t i = 0, size = _bones.size(); i < size; ++i) {
+    for (unsigned long i = 0, size = _bones.size(); i < size; ++i) {
         if (_bones.at(i) == bone)
             return static_cast<int>(i);
     }

@@ -2429,7 +2429,7 @@ int lua_cocos2dx_3d_Mesh_getMeshVertexAttribCount(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_3d_Mesh_getMeshVertexAttribCount'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getMeshVertexAttribCount();
+        unsigned long ret = cobj->getMeshVertexAttribCount();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -3092,7 +3092,7 @@ int lua_cocos2dx_3d_Skeleton3D_getRootCount(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_3d_Skeleton3D_getRootCount'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getRootCount();
+        unsigned long ret = cobj->getRootCount();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -3189,7 +3189,7 @@ int lua_cocos2dx_3d_Skeleton3D_getBoneCount(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_3d_Skeleton3D_getBoneCount'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getBoneCount();
+        unsigned long ret = cobj->getBoneCount();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }
@@ -4037,7 +4037,7 @@ int lua_cocos2dx_3d_Sprite3D_getMeshCount(lua_State* tolua_S)
             tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_3d_Sprite3D_getMeshCount'", nullptr);
             return 0;
         }
-        ssize_t ret = cobj->getMeshCount();
+        unsigned long ret = cobj->getMeshCount();
         tolua_pushnumber(tolua_S,(lua_Number)ret);
         return 1;
     }

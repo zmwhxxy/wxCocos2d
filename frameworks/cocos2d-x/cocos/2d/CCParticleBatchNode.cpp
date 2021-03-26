@@ -460,7 +460,7 @@ void ParticleBatchNode::draw(Renderer* renderer, const Mat4 & transform, uint32_
     CC_PROFILER_STOP("CCParticleBatchNode - draw");
 }
 
-void ParticleBatchNode::increaseAtlasCapacityTo(ssize_t quantity)
+void ParticleBatchNode::increaseAtlasCapacityTo(unsigned long quantity)
 {
     CCLOG("cocos2d: ParticleBatchNode: resizing TextureAtlas capacity from [%lu] to [%lu].",
           (long)_textureAtlas->getCapacity(),

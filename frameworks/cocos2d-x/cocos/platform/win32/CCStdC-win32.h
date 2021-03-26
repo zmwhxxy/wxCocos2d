@@ -26,10 +26,6 @@ THE SOFTWARE.
 #pragma once
 
 #include <BaseTsd.h>
-#ifndef __SSIZE_T
-#define __SSIZE_T
-typedef SSIZE_T ssize_t;
-#endif // __SSIZE_T
 
 #include "platform/CCPlatformMacros.h"
 #include <float.h>

@@ -127,9 +127,9 @@ public:
     
     /**
      * Insert a default item(create by cloning model) into listview at a give index.
-     *@param index  An index in ssize_t.
+     *@param index  An index in unsigned long.
      */
-    void insertDefaultItem(ssize_t index);
+    void insertDefaultItem(unsigned long index);
     
     /**
      * Insert a  custom item into the end of ListView.
@@ -142,9 +142,9 @@ public:
      * @brief Insert a custom widget into ListView at a given index.
      *
      * @param item A widget pointer to be inserted.
-     * @param index A given index in ssize_t.
+     * @param index A given index in unsigned long.
      */
-    void insertCustomItem(Widget* item, ssize_t index);
+    void insertCustomItem(Widget* item, unsigned long index);
     
     /**
      *  Removes the last item of ListView.
@@ -154,9 +154,9 @@ public:
     /**
      * Remove an item at given index.
      *
-     * @param index A given index in ssize_t.
+     * @param index A given index in unsigned long.
      */
-    void removeItem(ssize_t index);
+    void removeItem(unsigned long index);
 
     /**
      * @brief Remove all items in current ListView.
@@ -168,10 +168,10 @@ public:
     /**
      * Return an item at a given index.
      *
-     * @param index A given index in ssize_t.
+     * @param index A given index in unsigned long.
      * @return A widget instance.
      */
-    Widget* getItem(ssize_t index)const;
+    Widget* getItem(unsigned long index)const;
     
     /**
      * Return all items in a ListView.
@@ -185,7 +185,7 @@ public:
      * @param item  A widget pointer.
      * @return The index of a given widget in ListView.
      */
-    ssize_t getIndex(Widget* item) const;
+    unsigned long getIndex(Widget* item) const;
     
     /**
      * Set the gravity of ListView.
@@ -290,7 +290,7 @@ public:
      * Set the time in seconds to scroll between items.
      * Subsequent calls of function 'scrollToItem', will take 'time' seconds for scrolling.
      * @param time The seconds needed to scroll between two items. 'time' must be >= 0
-     * @see scrollToItem(ssize_t, const Vec2&, const Vec2&)
+     * @see scrollToItem(unsigned long, const Vec2&, const Vec2&)
      */
     void  setScrollDuration(float time);
     
@@ -382,7 +382,7 @@ public:
      * @param positionRatioInView Specifies the position with ratio in list view's content size.
      * @param itemAnchorPoint Specifies an anchor point of each item for position to calculate distance.
      */
-    void jumpToItem(ssize_t itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint);
+    void jumpToItem(unsigned long itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint);
     
     /**
      * @brief Scroll to specific item
@@ -390,8 +390,8 @@ public:
      * @param itemAnchorPoint Specifies an anchor point of each item for position to calculate distance.
      * @param timeInSec Scroll time
      */
-    void scrollToItem(ssize_t itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint);
-    void scrollToItem(ssize_t itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint, float timeInSec);
+    void scrollToItem(unsigned long itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint);
+    void scrollToItem(unsigned long itemIndex, const Vec2& positionRatioInView, const Vec2& itemAnchorPoint, float timeInSec);
     
     /**
      * @brief Query current selected widget's index.
@@ -399,7 +399,7 @@ public:
      
      * @return An index of a selected item.
      */
-    ssize_t getCurSelectedIndex() const;
+    unsigned long getCurSelectedIndex() const;
     
     /**
      * @brief Set current selected widget's index and call TouchEventType::ENDED event.
@@ -434,8 +434,8 @@ protected:
 
     virtual void remedyLayoutParameter(Widget* item);
     void updateInnerContainerSize();
-    void remedyVerticalLayoutParameter(LinearLayoutParameter* layoutParameter, ssize_t itemIndex);
-    void remedyHorizontalLayoutParameter(LinearLayoutParameter* layoutParameter,ssize_t itemIndex);
+    void remedyVerticalLayoutParameter(LinearLayoutParameter* layoutParameter, unsigned long itemIndex);
+    void remedyHorizontalLayoutParameter(LinearLayoutParameter* layoutParameter,unsigned long itemIndex);
     
     virtual void onSizeChanged() override;
     virtual Widget* createCloneInstance() override;
@@ -470,7 +470,7 @@ protected:
 
     float _scrollTime;
     
-    ssize_t _curSelectedIndex;
+    unsigned long _curSelectedIndex;
 
     bool _innerContainerDoLayoutDirty;
     ccListViewCallback _eventCallback;

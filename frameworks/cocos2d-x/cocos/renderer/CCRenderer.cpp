@@ -96,9 +96,9 @@ void RenderQueue::push_back(RenderCommand* command)
     }
 }
 
-ssize_t RenderQueue::size() const
+unsigned long RenderQueue::size() const
 {
-    ssize_t result(0);
+    unsigned long result(0);
     for(int index = 0; index < QUEUE_GROUP::QUEUE_COUNT; ++index)
     {
         result += _commands[index].size();
@@ -115,11 +115,11 @@ void RenderQueue::sort()
     std::stable_sort(std::begin(_commands[QUEUE_GROUP::GLOBALZ_POS]), std::end(_commands[QUEUE_GROUP::GLOBALZ_POS]), compareRenderCommand);
 }
 
-RenderCommand* RenderQueue::operator[](ssize_t index) const
+RenderCommand* RenderQueue::operator[](unsigned long index) const
 {
     for(int queIndex = 0; queIndex < QUEUE_GROUP::QUEUE_COUNT; ++queIndex)
     {
-        if(index < static_cast<ssize_t>(_commands[queIndex].size()))
+        if(index < static_cast<unsigned long>(_commands[queIndex].size()))
             return _commands[queIndex][index];
         else
         {

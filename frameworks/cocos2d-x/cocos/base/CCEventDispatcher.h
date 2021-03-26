@@ -229,12 +229,12 @@ protected:
         
         std::vector<EventListener*>* getFixedPriorityListeners() const { return _fixedListeners; }
         std::vector<EventListener*>* getSceneGraphPriorityListeners() const { return _sceneGraphListeners; }
-        ssize_t getGt0Index() const { return _gt0Index; }
-        void setGt0Index(ssize_t index) { _gt0Index = index; }
+        unsigned long getGt0Index() const { return _gt0Index; }
+        void setGt0Index(unsigned long index) { _gt0Index = index; }
     private:
         std::vector<EventListener*>* _fixedListeners;
         std::vector<EventListener*>* _sceneGraphListeners;
-        ssize_t _gt0Index;
+        unsigned long _gt0Index;
     };
     
     /** Adds an event listener with item

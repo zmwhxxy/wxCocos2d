@@ -426,8 +426,8 @@ void ActionTimeline::gotoFrame(int frameIndex)
     if(_target == nullptr)
         return;
 
-    ssize_t size = _timelineList.size();
-    for(ssize_t i = 0; i < size; i++)
+    unsigned long size = _timelineList.size();
+    for(unsigned long i = 0; i < size; i++)
     {      
         _timelineList.at(i)->gotoFrame(frameIndex);
     }
@@ -435,8 +435,8 @@ void ActionTimeline::gotoFrame(int frameIndex)
 
 void ActionTimeline::stepToFrame(int frameIndex)
 {
-    ssize_t size = _timelineList.size();
-    for(ssize_t i = 0; i < size; i++)
+    unsigned long size = _timelineList.size();
+    for(unsigned long i = 0; i < size; i++)
     {      
         _timelineList.at(i)->stepToFrame(frameIndex);
     }

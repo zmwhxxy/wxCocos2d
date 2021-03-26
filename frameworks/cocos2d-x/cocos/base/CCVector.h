@@ -118,7 +118,7 @@ public:
      * Constructor with a capacity. 
      * @param capacity Capacity of the Vector.
      */
-    explicit Vector<T>(ssize_t capacity)
+    explicit Vector<T>(unsigned long capacity)
     : _data()
     {
         static_assert(std::is_convertible<T, Ref*>::value, "Invalid Type for cocos2d::Vector<T>!");
@@ -197,7 +197,7 @@ public:
      * Requests that the vector capacity be at least enough to contain n elements.
      * @param capacity Minimum capacity requested of the Vector.
      */
-    void reserve(ssize_t n)
+    void reserve(unsigned long n)
     {
         _data.reserve(n);
     }
@@ -207,7 +207,7 @@ public:
      *        It can be equal or greater, with the extra space allowing to accommodate for growth without the need to reallocate on each insertion.
      *  @return The size of the currently allocated storage capacity in the Vector, measured in terms of the number elements it can hold.
      */
-    ssize_t capacity() const
+    unsigned long capacity() const
     {
         return _data.capacity();
     }
@@ -216,7 +216,7 @@ public:
      *  @note This is the number of actual objects held in the Vector, which is not necessarily equal to its storage capacity.
      *  @return The number of elements in the Vector.
      */
-    ssize_t size() const
+    unsigned long size() const
     {
         return  _data.size();
     }
@@ -230,13 +230,13 @@ public:
     }
     
     /** Returns the maximum number of elements that the Vector can hold. */
-    ssize_t max_size() const
+    unsigned long max_size() const
     {
         return _data.max_size();
     }
     
     /** Returns index of a certain object, return UINT_MAX if doesn't contain the object */
-    ssize_t getIndex(T object) const
+    unsigned long getIndex(T object) const
     {
         auto iter = std::find(_data.begin(), _data.end(), object);
         if (iter != _data.end())
@@ -266,7 +266,7 @@ public:
     }
     
     /** Returns the element at position 'index' in the Vector. */
-    T at(ssize_t index) const
+    T at(unsigned long index) const
     {
         CCASSERT( index >= 0 && index < size(), "index out of range in getObjectAtIndex()");
         return _data[index];
@@ -289,7 +289,7 @@ public:
     {
         if (!_data.empty())
         {
-            ssize_t randIdx = RandomHelper::random_int<int>(0, static_cast<int>(_data.size()) - 1);
+            unsigned long randIdx = RandomHelper::random_int<int>(0, static_cast<int>(_data.size()) - 1);
             return *(_data.begin() + randIdx);
         }
         return nullptr;
@@ -312,11 +312,11 @@ public:
      */
     bool equals(const Vector<T> &other) const
     {
-        ssize_t s = this->size();
+        unsigned long s = this->size();
         if (s != other.size())
             return false;
         
-        for (ssize_t i = 0; i < s; i++)
+        for (unsigned long i = 0; i < s; i++)
         {
             if (this->at(i) != other.at(i))
             {
@@ -350,7 +350,7 @@ public:
      * @param index The index to be inserted at.
      * @param object The object to be inserted.
      */
-    void insert(ssize_t index, T object)
+    void insert(unsigned long index, T object)
     {
         CCASSERT(index >= 0 && index <= size(), "Invalid index!");
         CCASSERT(object != nullptr, "The object should not be nullptr");
@@ -436,7 +436,7 @@ public:
      *  @param index The index of the element to be removed from the Vector.
      *  @return An iterator pointing to the successor of Vector[index].
      */
-    iterator erase(ssize_t index)
+    iterator erase(unsigned long index)
     {
         CCASSERT(!_data.empty() && index >=0 && index < size(), "Invalid index!");
         auto it = std::next( begin(), index );
@@ -460,8 +460,8 @@ public:
     /** Swap the values object1 and object2. */
     void swap(T object1, T object2)
     {
-        ssize_t idx1 = getIndex(object1);
-        ssize_t idx2 = getIndex(object2);
+        unsigned long idx1 = getIndex(object1);
+        unsigned long idx2 = getIndex(object2);
 
         CCASSERT(idx1>=0 && idx2>=0, "invalid object index");
 
@@ -469,7 +469,7 @@ public:
     }
     
     /** Swap two elements by indexes. */
-    void swap(ssize_t index1, ssize_t index2)
+    void swap(unsigned long index1, unsigned long index2)
     {
         CCASSERT(index1 >=0 && index1 < size() && index2 >= 0 && index2 < size(), "Invalid indices");
 
@@ -477,7 +477,7 @@ public:
     }
 
     /** Replace value at index with given object. */
-    void replace(ssize_t index, T object)
+    void replace(unsigned long index, T object)
     {
         CCASSERT(index >= 0 && index < size(), "Invalid index!");
         CCASSERT(object != nullptr, "The object should not be nullptr");

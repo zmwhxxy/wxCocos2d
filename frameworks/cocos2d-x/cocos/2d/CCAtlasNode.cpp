@@ -276,7 +276,7 @@ size_t AtlasNode::getQuadsToDraw() const
     return _quadsToDraw;
 }
 
-void AtlasNode::setQuadsToDraw(ssize_t quadsToDraw)
+void AtlasNode::setQuadsToDraw(unsigned long quadsToDraw)
 {
     _quadsToDraw = quadsToDraw;
 }

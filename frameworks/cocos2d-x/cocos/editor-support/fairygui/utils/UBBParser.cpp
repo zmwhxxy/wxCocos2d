@@ -44,7 +44,7 @@ std::string UBBParser::parse(const char * text, bool remove)
     lastColor.clear();
     lastFontSize.clear();
 
-    ssize_t pos;
+    unsigned long pos;
     bool end;
     string tag, attr;
     string repl;
@@ -122,7 +122,7 @@ void UBBParser::getTagText(std::string& out, bool remove)
     if (!p)
         return;
 
-    ssize_t pos = p - _pString;
+    unsigned long pos = p - _pString;
     out.assign(_pString, _readPos, pos - _readPos);
     if (remove)
         _readPos = pos;

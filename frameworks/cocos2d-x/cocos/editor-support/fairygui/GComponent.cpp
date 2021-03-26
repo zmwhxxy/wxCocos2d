@@ -433,7 +433,7 @@ void GComponent::removeController(GController* c)
 {
     CCASSERT(c != nullptr, "Argument must be non-nil");
 
-    ssize_t index = _controllers.getIndex(c);
+    unsigned long index = _controllers.getIndex(c);
     CCASSERT(index != -1, "controller not exists");
 
     c->setParent(nullptr);
@@ -445,7 +445,7 @@ void GComponent::applyController(GController* c)
 {
     _applyingController = c;
 
-    for (ssize_t i = 0; i < _children.size(); i++)
+    for (unsigned long i = 0; i < _children.size(); i++)
         _children.at(i)->handleControllerChanged(c);
 
     _applyingController = nullptr;
@@ -479,10 +479,10 @@ Transition* GComponent::getTransitionAt(int index) const
 
 void GComponent::adjustRadioGroupDepth(GObject* obj, GController* c)
 {
-    ssize_t cnt = (ssize_t)_children.size();
-    ssize_t i;
+    unsigned long cnt = (unsigned long)_children.size();
+    unsigned long i;
     GObject* child;
-    ssize_t myIndex = -1, maxIndex = -1;
+    unsigned long myIndex = -1, maxIndex = -1;
     for (i = 0; i < cnt; i++)
     {
         child = _children.at(i);
@@ -722,9 +722,9 @@ void GComponent::childStateChanged(GObject* child)
             }
             else if (_childrenRenderOrder == ChildrenRenderOrder::DESCENT)
             {
-                ssize_t index = _children.getIndex(child);
+                unsigned long index = _children.getIndex(child);
                 _container->addChild(child->_displayObject, (int)(cnt - 1 - index));
-                for (ssize_t i = 0; i < index; i++)
+                for (unsigned long i = 0; i < index; i++)
                 {
                     child = _children.at(i);
                     if (child->_displayObject->getParent() != nullptr)

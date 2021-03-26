@@ -59,7 +59,7 @@ public:
     static MeshSkin* create(Skeleton3D* skeleton, const std::vector<std::string>& boneNames, const std::vector<Mat4>& invBindPose);
     
     /**get total bone count, skin bone + node bone*/
-    ssize_t getBoneCount() const;
+    unsigned long getBoneCount() const;
     
     /**get bone*/
     Bone3D* getBoneByIndex(unsigned int index) const;
@@ -72,10 +72,10 @@ public:
     Vec4* getMatrixPalette();
     
     /**getSkinBoneCount() * 3*/
-    ssize_t getMatrixPaletteSize() const;
+    unsigned long getMatrixPaletteSize() const;
 
     /**getSkinBoneCount() * 3 * sizeof(Vec4) */
-    ssize_t getMatrixPaletteSizeInBytes() const;
+    unsigned long getMatrixPaletteSizeInBytes() const;
     
     /**get root bone of the skin*/
     Bone3D* getRootBone() const;

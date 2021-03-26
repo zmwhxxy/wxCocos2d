@@ -144,7 +144,7 @@ bool Mesh::hasVertexAttrib(shaderinfos::VertexKey attrib) const
     return _meshIndexData->getMeshVertexData()->hasVertexAttrib(attrib);
 }
 
-ssize_t Mesh::getMeshVertexAttribCount() const
+unsigned long Mesh::getMeshVertexAttribCount() const
 {
     return _meshIndexData->getMeshVertexData()->getMeshVertexAttribCount();
 }
@@ -695,7 +695,7 @@ CustomCommand::PrimitiveType Mesh::getPrimitiveType() const
     return _meshIndexData->getPrimitiveType();
 }
 
-ssize_t Mesh::getIndexCount() const
+unsigned long Mesh::getIndexCount() const
 {
     return _meshIndexData->getIndexBuffer()->getSize() / sizeof(uint16_t);
 }

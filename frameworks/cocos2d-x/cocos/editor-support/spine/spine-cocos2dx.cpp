@@ -170,9 +170,9 @@ char *Cocos2dExtension::_readFile(const spine::String &path, int *length) {
     Data data = FileUtils::getInstance()->getDataFromFile(path.buffer());
 	if (data.isNull()) return nullptr;
 
-	// avoid buffer overflow (int is shorter than ssize_t in certain platforms)
+	// avoid buffer overflow (int is shorter than unsigned long in certain platforms)
 #if COCOS2D_VERSION >= 0x00031200
-	ssize_t tmpLen;
+	unsigned long tmpLen;
 	char *ret = (char*)data.takeBuffer(&tmpLen);
 	*length = static_cast<int>(tmpLen);
 	return ret;
