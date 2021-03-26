@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/wxWidgets/libs/base/wxbase_CXX_cotire.cmake
+F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/wxWidgets/libs/base/wxbase_C_cotire.cmake
+F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/wxWidgets/libs/base/wxbase_RC_cotire.cmake
+F:/wxCocos2d/frameworks/wxWidgets/build/cmake/lib/base/CMakeLists.txt
+F:/wxCocos2d/frameworks/wxWidgets/build/cmake/source_groups.cmake

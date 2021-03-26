@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{16BA8C7F-ECD7-3C7B-AC90-F8413E03E622}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>luacocos2d</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">luacocos2d.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">luacocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">luacocos2d.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">luacocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">luacocos2d.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">luacocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">luacocos2d.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">luacocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRLUASTATIC;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRLUASTATIC;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\android\jni;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\dragonBones;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support\fairygui;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/cocos2d-x/cocos/scripting/lua-bindings/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/cocos/lua-bindings/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\cocos\lua-bindings\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/cocos2d-x/cocos/scripting/lua-bindings/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/cocos/lua-bindings/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\cocos\lua-bindings\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/cocos2d-x/cocos/scripting/lua-bindings/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/cocos/lua-bindings/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\cocos\lua-bindings\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/cocos2d-x/cocos/scripting/lua-bindings/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/cocos/lua-bindings/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\cocos\lua-bindings\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\audio\lua_audio_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaBridge.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaEngine.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaStack.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaValue.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\Cocos2dxLuaLoader.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\LuaBasicConversions.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\lua_module_register.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\tolua_fix.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCComponentLua.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocos2d\LuaScriptHandlerMgr.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocos2d\lua_cocos2dx_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocos2d\lua_cocos2dx_physics_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\3d\lua_cocos2dx_3d_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\CustomGUIReader.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\lua_cocos2dx_coco_studio_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\lua-cocos-studio-conversions.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\lua_cocos2dx_csloader_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\controller\lua_cocos2dx_controller_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extension\lua_cocos2dx_extension_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_extensions.c" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_cocos2dx_network_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\Lua_web_socket.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_http_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\CCHTTPRequest.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\Lua_AsyncTCP.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\lua_cocos2dx_spine_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\lua_spSkeletonData.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\LuaSkeletonAnimation.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\dragonBones\lua_dragonBones.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\fairygui\lua_fairygui.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\ui\lua_cocos2dx_ui_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\physics3d\lua_cocos2dx_physics3d_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\navmesh\lua_cocos2dx_navmesh_conversions.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\navmesh\lua_cocos2dx_navmesh_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extra\lua_extra_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extra\lua_crypto_manual.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_3d_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_controller_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_extension_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_studio_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_csloader_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_ui_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics3d_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_navmesh_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_backend_auto.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_tmx_auto.cpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\audio\lua_audio_manual.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCComponentLua.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\3d\lua_cocos2dx_3d_manual.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaStack.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaEngine.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\lua_module_register.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaBridge.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extension\lua_cocos2dx_extension_manual.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\LuaBasicConversions.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\lua_cocos2dx_spine_manual.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\lua_spSkeletonData.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\LuaSkeletonAnimation.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\dragonBones\lua_dragonBones.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\fairygui\lua_fairygui.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\ios\CCLuaObjcBridge.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_cocos2dx_network_manual.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\Lua_web_socket.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_extensions.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_http_manual.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\CCHTTPRequest.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\Lua_AsyncTCP.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\Lua-BindingsExport.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\tolua_fix.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\navmesh\lua_cocos2dx_navmesh_manual.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\navmesh\lua_cocos2dx_navmesh_conversions.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocos2d\LuaScriptHandlerMgr.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocos2d\lua_cocos2dx_manual.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\Cocos2dxLuaLoader.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaValue.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\physics3d\lua_cocos2dx_physics3d_manual.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\lua-cocos-studio-conversions.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\CustomGUIReader.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\ui\lua_cocos2dx_ui_manual.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\controller\lua_cocos2dx_controller_manual.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extra\lua_extra_manual.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extra\lua_crypto_manual.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_3d_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_controller_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_studio_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_navmesh_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_csloader_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics3d_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_ui_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_extension_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_backend_auto.hpp" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_tmx_auto.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{D60BEBA4-94C3-3875-A18D-CD5D074A59C7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{36352095-23AB-3839-A5BB-326BE7CF0CDD}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\cjson\ext_cjson.vcxproj">
+      <Project>{AECE1ECB-D6EE-3046-B867-CA711995F2D5}</Project>
+      <Name>ext_cjson</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{4AA25DBD-B182-3F36-ABD1-CE841926AB8E}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{7386E315-A085-33F4-8EF0-D1A7FA898DC4}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{D3287927-2B0F-326E-B367-54006808A1BD}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lfs\ext_lfs.vcxproj">
+      <Project>{FAD93259-3A5D-37ED-BC11-FA978FCD04F7}</Project>
+      <Name>ext_lfs</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\faad2\ext_libfaad.vcxproj">
+      <Project>{E8C73858-9972-3842-8DEC-82A60A6BBBCF}</Project>
+      <Name>ext_libfaad</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\libogg\ext_libogg.vcxproj">
+      <Project>{D7616F2C-87F1-32C0-9A94-0B18B2B8FBA3}</Project>
+      <Name>ext_libogg</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\libvorbis\ext_libvorbis.vcxproj">
+      <Project>{8E7700AE-F4BE-327B-8726-66BDBBFA2FA0}</Project>
+      <Name>ext_libvorbis</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lpack\ext_lpack.vcxproj">
+      <Project>{B33E54F3-69E5-363D-BA79-15A10F4D33E7}</Project>
+      <Name>ext_lpack</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lpeg\ext_lpeg.vcxproj">
+      <Project>{2BCC01DE-AE36-3687-951B-010BBD2ECB30}</Project>
+      <Name>ext_lpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lsproto\ext_lsproto.vcxproj">
+      <Project>{5257C702-2080-3072-A69A-CD7CF1575006}</Project>
+      <Name>ext_lsproto</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lsqlite3\ext_lsqlite3.vcxproj">
+      <Project>{BA703083-028A-3F32-A53B-E9F000AA6948}</Project>
+      <Name>ext_lsqlite3</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lua-protobuf\ext_lua-protobuf.vcxproj">
+      <Project>{94997942-D1C9-3C5D-BDDB-2D7B0B0DED9D}</Project>
+      <Name>ext_lua-protobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\luasocket\ext_luasocket.vcxproj">
+      <Project>{776F45C5-634C-3FAB-88C0-5FD743E50005}</Project>
+      <Name>ext_luasocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lunqlite\ext_lunqlite.vcxproj">
+      <Project>{2E49137A-86D7-3539-ACF7-4475EB025B34}</Project>
+      <Name>ext_lunqlite</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lzlib\ext_lzlib.vcxproj">
+      <Project>{02EED8BB-1459-3720-96B9-D28BE7EC1779}</Project>
+      <Name>ext_lzlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{7470E5E7-BCF2-3548-A891-3E32268FEAA0}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{0B93401D-C2AB-3F93-B50A-686276A40FD9}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\protobuf\ext_protobuf.vcxproj">
+      <Project>{B5F796D1-E3C8-30D4-B407-0A1AC98E1357}</Project>
+      <Name>ext_protobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{7D08B5EE-A1BC-3FD4-8ABE-76CFC3294A7C}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{4E16B67F-E690-38A6-B4A5-845F721F99CB}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\tolua\ext_tolua.vcxproj">
+      <Project>{F6AEC284-9D39-33E8-8F68-1B795C720284}</Project>
+      <Name>ext_tolua</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{55657FAB-9B02-3649-9130-1FA3AB580388}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{8B4BEECB-357E-3AF6-A4AE-AEA3EB536DA9}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{CBBF7120-12A4-394D-AA58-F7B549B952BA}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\external.vcxproj">
+      <Project>{1F3AFEB8-D384-3D90-AFDD-8BBFEE99713E}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

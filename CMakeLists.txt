@@ -37,9 +37,12 @@ set(RUNTIME_SRC_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/frameworks/runtime-src)
 set(COCOS2DX_ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/frameworks/cocos2d-x)
 set(CMAKE_MODULE_PATH ${COCOS2DX_ROOT_PATH}/cmake/Modules/)
 
+set(WXWIDGETS_ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/frameworks/wxWidgets)
+
 include(CocosBuildSet)
 set(BUILD_LUA_LIBS ON)
 add_subdirectory(${COCOS2DX_ROOT_PATH}/cocos ${ENGINE_BINARY_PATH}/cocos/core)
+add_subdirectory(${WXWIDGETS_ROOT_PATH} ${ENGINE_BINARY_PATH}/wxWidgets)
 
 # script and source files info, not need to compile
 set(res_res_folders

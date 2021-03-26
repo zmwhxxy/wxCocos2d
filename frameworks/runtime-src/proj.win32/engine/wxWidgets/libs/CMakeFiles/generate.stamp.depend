@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+F:/wxCocos2d/frameworks/wxWidgets/build/cmake/lib/CMakeLists.txt
+F:/wxCocos2d/frameworks/wxWidgets/build/cmake/lib/expat.cmake
+F:/wxCocos2d/frameworks/wxWidgets/build/cmake/lib/jpeg.cmake
+F:/wxCocos2d/frameworks/wxWidgets/build/cmake/lib/png.cmake
+F:/wxCocos2d/frameworks/wxWidgets/build/cmake/lib/regex.cmake
+F:/wxCocos2d/frameworks/wxWidgets/build/cmake/lib/tiff.cmake
+F:/wxCocos2d/frameworks/wxWidgets/build/cmake/lib/zlib.cmake
+F:/wxCocos2d/frameworks/wxWidgets/build/cmake/source_groups.cmake

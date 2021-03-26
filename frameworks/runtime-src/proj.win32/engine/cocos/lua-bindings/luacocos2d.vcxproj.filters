@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\audio\lua_audio_manual.cpp">
+      <Filter>Source Files\manual\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaBridge.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaEngine.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaStack.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaValue.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\Cocos2dxLuaLoader.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\LuaBasicConversions.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\lua_module_register.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\tolua_fix.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCComponentLua.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocos2d\LuaScriptHandlerMgr.cpp">
+      <Filter>Source Files\manual\cocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocos2d\lua_cocos2dx_manual.cpp">
+      <Filter>Source Files\manual\cocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocos2d\lua_cocos2dx_physics_manual.cpp">
+      <Filter>Source Files\manual\cocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\3d\lua_cocos2dx_3d_manual.cpp">
+      <Filter>Source Files\manual\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\CustomGUIReader.cpp">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\lua_cocos2dx_coco_studio_manual.cpp">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\lua-cocos-studio-conversions.cpp">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\lua_cocos2dx_csloader_manual.cpp">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\controller\lua_cocos2dx_controller_manual.cpp">
+      <Filter>Source Files\manual\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extension\lua_cocos2dx_extension_manual.cpp">
+      <Filter>Source Files\manual\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_extensions.c">
+      <Filter>Source Files\manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_cocos2dx_network_manual.cpp">
+      <Filter>Source Files\manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\Lua_web_socket.cpp">
+      <Filter>Source Files\manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_http_manual.cpp">
+      <Filter>Source Files\manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\CCHTTPRequest.cpp">
+      <Filter>Source Files\manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\Lua_AsyncTCP.cpp">
+      <Filter>Source Files\manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\lua_cocos2dx_spine_manual.cpp">
+      <Filter>Source Files\manual\spine</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\lua_spSkeletonData.cpp">
+      <Filter>Source Files\manual\spine</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\LuaSkeletonAnimation.cpp">
+      <Filter>Source Files\manual\spine</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\dragonBones\lua_dragonBones.cpp">
+      <Filter>Source Files\manual\dragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\fairygui\lua_fairygui.cpp">
+      <Filter>Source Files\manual\fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\ui\lua_cocos2dx_ui_manual.cpp">
+      <Filter>Source Files\manual\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\physics3d\lua_cocos2dx_physics3d_manual.cpp">
+      <Filter>Source Files\manual\physics3d</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\navmesh\lua_cocos2dx_navmesh_conversions.cpp">
+      <Filter>Source Files\manual\navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\navmesh\lua_cocos2dx_navmesh_manual.cpp">
+      <Filter>Source Files\manual\navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extra\lua_extra_manual.cpp">
+      <Filter>Source Files\manual\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extra\lua_crypto_manual.cpp">
+      <Filter>Source Files\manual\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_3d_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_controller_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_extension_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_studio_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_csloader_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_ui_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics3d_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_navmesh_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_backend_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_tmx_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\audio\lua_audio_manual.h">
+      <Filter>Source Files\manual\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCComponentLua.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\3d\lua_cocos2dx_3d_manual.h">
+      <Filter>Source Files\manual\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaStack.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaEngine.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\lua_module_register.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaBridge.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extension\lua_cocos2dx_extension_manual.h">
+      <Filter>Source Files\manual\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\LuaBasicConversions.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\lua_cocos2dx_spine_manual.hpp">
+      <Filter>Source Files\manual\spine</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\lua_spSkeletonData.hpp">
+      <Filter>Source Files\manual\spine</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\spine\LuaSkeletonAnimation.h">
+      <Filter>Source Files\manual\spine</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\dragonBones\lua_dragonBones.hpp">
+      <Filter>Source Files\manual\dragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\fairygui\lua_fairygui.hpp">
+      <Filter>Source Files\manual\fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\platform\ios\CCLuaObjcBridge.h">
+      <Filter>Source Files\manual\platform\ios</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_cocos2dx_network_manual.h">
+      <Filter>Source Files\manual\network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\Lua_web_socket.h">
+      <Filter>Source Files\manual\network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_extensions.h">
+      <Filter>Source Files\manual\network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\lua_http_manual.h">
+      <Filter>Source Files\manual\network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\CCHTTPRequest.h">
+      <Filter>Source Files\manual\network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\network\Lua_AsyncTCP.h">
+      <Filter>Source Files\manual\network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\Lua-BindingsExport.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\tolua_fix.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\navmesh\lua_cocos2dx_navmesh_manual.h">
+      <Filter>Source Files\manual\navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\navmesh\lua_cocos2dx_navmesh_conversions.h">
+      <Filter>Source Files\manual\navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocos2d\LuaScriptHandlerMgr.h">
+      <Filter>Source Files\manual\cocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocos2d\lua_cocos2dx_manual.hpp">
+      <Filter>Source Files\manual\cocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\Cocos2dxLuaLoader.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\CCLuaValue.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\physics3d\lua_cocos2dx_physics3d_manual.h">
+      <Filter>Source Files\manual\physics3d</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\lua-cocos-studio-conversions.h">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\cocostudio\CustomGUIReader.h">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\ui\lua_cocos2dx_ui_manual.hpp">
+      <Filter>Source Files\manual\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\controller\lua_cocos2dx_controller_manual.hpp">
+      <Filter>Source Files\manual\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extra\lua_extra_manual.h">
+      <Filter>Source Files\manual\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual\extra\lua_crypto_manual.h">
+      <Filter>Source Files\manual\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_3d_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_controller_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_studio_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_navmesh_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_csloader_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics3d_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_ui_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_extension_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_backend_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_tmx_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4676F2DB-E19B-3841-A2ED-7159A9A66C63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\auto">
+      <UniqueIdentifier>{FA7C5DA7-E81F-39E7-966B-C4F512A9D0F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual">
+      <UniqueIdentifier>{0020F9C2-6DD1-3F2F-9034-6F4A209F1FC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\3d">
+      <UniqueIdentifier>{C0CD6589-80E8-341E-ABA1-F6DB34F7EA62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\audio">
+      <UniqueIdentifier>{1DC8ED34-1B0A-35EB-9E01-DA6318590225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\cocos2d">
+      <UniqueIdentifier>{9ABFF4BF-0C9F-3672-A39E-A0848214AC5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\cocostudio">
+      <UniqueIdentifier>{58EA2768-42E0-38C0-B89C-1D87E4D6ECF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\controller">
+      <UniqueIdentifier>{6F7D78DE-77D1-333D-B741-0B535CF35AC8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\dragonBones">
+      <UniqueIdentifier>{4CC6B506-8A8A-3B37-84C5-165DA1F22913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\extension">
+      <UniqueIdentifier>{FDD21538-76BA-3624-9C70-D038CE5014D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\extra">
+      <UniqueIdentifier>{7202D5E5-4150-34F9-A7F1-2217DD430C65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\fairygui">
+      <UniqueIdentifier>{0EB763D2-6DB2-31AB-9F34-954DCA932B87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\navmesh">
+      <UniqueIdentifier>{CC9E0FEA-A2A1-3949-BC92-77BFF47E7DE6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\network">
+      <UniqueIdentifier>{7B91A65C-B7CC-35C3-B603-7DB2886457CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\physics3d">
+      <UniqueIdentifier>{F3E830C9-92B2-3CF6-AFA3-FD6E8BE966AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\platform">
+      <UniqueIdentifier>{EBF79B46-7858-31E3-94E9-914D8B8CBE35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\platform\ios">
+      <UniqueIdentifier>{A0E18086-5BDA-3C4F-8B2F-D465DB0668C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\spine">
+      <UniqueIdentifier>{BF5105DB-2212-375E-B4ED-D1AB5ABDEC10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\ui">
+      <UniqueIdentifier>{54901E10-027F-39C4-8937-A44BF33A9686}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

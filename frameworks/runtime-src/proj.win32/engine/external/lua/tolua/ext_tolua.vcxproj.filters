@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\tolua_event.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\tolua_is.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\tolua_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\tolua_push.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\tolua_to.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4676F2DB-E19B-3841-A2ED-7159A9A66C63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

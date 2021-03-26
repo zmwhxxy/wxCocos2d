@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\wxCocos2d\frameworks\runtime-src\Classes\AppDelegate.cpp">
+      <Filter>Source Files\frameworks\runtime-src\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\main.cpp">
+      <Filter>Source Files\frameworks\runtime-src\proj.win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\wxCocos2d\frameworks\runtime-src\Classes\AppDelegate.h">
+      <Filter>Source Files\frameworks\runtime-src\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\main.h">
+      <Filter>Source Files\frameworks\runtime-src\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\resource.h">
+      <Filter>Source Files\frameworks\runtime-src\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\res\HelloWorld.png">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\app\MyApp.lua">
+      <Filter>Resources\src\app</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\app\scenes\MainScene.lua">
+      <Filter>Resources\src\app\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\3d\3dConstants.lua">
+      <Filter>Resources\src\cocos\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\cocos2d\Cocos2d.lua">
+      <Filter>Resources\src\cocos\cocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\cocos2d\Cocos2dConstants.lua">
+      <Filter>Resources\src\cocos\cocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\cocos2d\RendererConstants.lua">
+      <Filter>Resources\src\cocos\cocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\controller\ControllerConstants.lua">
+      <Filter>Resources\src\cocos\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\fairygui\FairyGUIConstants.lua">
+      <Filter>Resources\src\cocos\fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\init.lua">
+      <Filter>Resources\src\cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\network\NetworkConstants.lua">
+      <Filter>Resources\src\cocos\network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\physics3d\physics3d-constants.lua">
+      <Filter>Resources\src\cocos\physics3d</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\spine\SpineConstants.lua">
+      <Filter>Resources\src\cocos\spine</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\cocos\ui\GuiConstants.lua">
+      <Filter>Resources\src\cocos\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\config.lua">
+      <Filter>Resources\src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\AppBase.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\NodeEx.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\SimpleTCP.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\WidgetEx.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\audio.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\crypto.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\debug.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\device.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\display.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\functions.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\init.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\json.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\network.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\platform\android.lua">
+      <Filter>Resources\src\framework\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\platform\ios.lua">
+      <Filter>Resources\src\framework\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\platform\luaj.lua">
+      <Filter>Resources\src\framework\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\platform\luaoc.lua">
+      <Filter>Resources\src\framework\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\platform\mac.lua">
+      <Filter>Resources\src\framework\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\containers.lua">
+      <Filter>Resources\src\framework\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\decoder.lua">
+      <Filter>Resources\src\framework\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\descriptor.lua">
+      <Filter>Resources\src\framework\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\encoder.lua">
+      <Filter>Resources\src\framework\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\listener.lua">
+      <Filter>Resources\src\framework\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\protobuf.lua">
+      <Filter>Resources\src\framework\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\text_format.lua">
+      <Filter>Resources\src\framework\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\type_checkers.lua">
+      <Filter>Resources\src\framework\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\wire_format.lua">
+      <Filter>Resources\src\framework\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\scheduler.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\shortcodes.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\framework\toluaEx.lua">
+      <Filter>Resources\src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\main.lua">
+      <Filter>Resources\src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\sproto.lua">
+      <Filter>Resources\src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\src\sprotoparser.lua">
+      <Filter>Resources\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\wxCocos2d\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\game.rc">
+      <Filter>Source Files\frameworks\runtime-src\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{3A9409D1-5324-3665-9311-A04B0570B467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{D1842099-5CC3-386F-B2CF-CC60D236DDD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src">
+      <UniqueIdentifier>{B09D219D-9A97-3E00-8CA5-774EFD6D8EAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\app">
+      <UniqueIdentifier>{2F095D4A-BAEF-3E27-ADC0-80E81841EBF8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\app\scenes">
+      <UniqueIdentifier>{C07D83EB-CC29-3E14-B626-C51CB23746EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\cocos">
+      <UniqueIdentifier>{583C2BBC-50CA-380B-A717-0CAAF3E5B68D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\cocos\3d">
+      <UniqueIdentifier>{49FE785D-BB86-362B-AAA7-088828FC6837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\cocos\cocos2d">
+      <UniqueIdentifier>{AA1C42CA-9E4D-38EF-8873-3FCFB8AB6B02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\cocos\controller">
+      <UniqueIdentifier>{7EB21502-3891-3392-878A-29E863A31D52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\cocos\fairygui">
+      <UniqueIdentifier>{C839453B-1691-3B98-8CAD-8AF418E8784A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\cocos\network">
+      <UniqueIdentifier>{9CC77365-0F8B-3125-8D6B-03A206F329D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\cocos\physics3d">
+      <UniqueIdentifier>{3122D86E-5A1C-363B-91ED-FE3E9CCD0339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\cocos\spine">
+      <UniqueIdentifier>{2B665F93-3BBE-3B7C-BBF5-DC9DCE2F1002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\cocos\ui">
+      <UniqueIdentifier>{C941B92C-BF78-38A1-B1DA-999C706C3770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\framework">
+      <UniqueIdentifier>{F88E842F-11A5-3B12-9B07-4F91A81A8C3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\framework\platform">
+      <UniqueIdentifier>{6DD4F33B-E7A8-3415-A849-7B20500A0894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\src\framework\protobuf">
+      <UniqueIdentifier>{9021C0DA-27A0-3310-AF2A-7C44573A73EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4676F2DB-E19B-3841-A2ED-7159A9A66C63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\frameworks">
+      <UniqueIdentifier>{57AF7378-83BD-39B3-8A38-06FF7BF65912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\frameworks\runtime-src">
+      <UniqueIdentifier>{72613751-D55E-332E-A2A1-D8C0C063331A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\frameworks\runtime-src\Classes">
+      <UniqueIdentifier>{0AF0F9D7-90B0-37FA-8D28-E37DF57AE68A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\frameworks\runtime-src\proj.win32">
+      <UniqueIdentifier>{64B5709D-C4E6-38C7-97BD-AC6B4139A54B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

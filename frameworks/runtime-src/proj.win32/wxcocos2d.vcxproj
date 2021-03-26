@@ -1,0 +1,800 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{26B2C0E3-748D-3C27-A7EC-39351397D40A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>wxcocos2d</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\bin\wxcocos2d\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">wxcocos2d.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">wxcocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\bin\wxcocos2d\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">wxcocos2d.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">wxcocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\bin\wxcocos2d\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">wxcocos2d.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">wxcocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\bin\wxcocos2d\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">wxcocos2d.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">wxcocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRLUASTATIC;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRLUASTATIC;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>							</Message>
+      <Command>setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/lua/luajit/prebuilt/win32/lua51.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Debug/lua51.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/OpenAL/prebuilt/win32/OpenAL32.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/websockets/prebuilt/win32/websockets.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/curl/prebuilt/win32/libcurl.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/openssl/prebuilt/win32/libssl-1_1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/openssl/prebuilt/win32/libcrypto-1_1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/glew/prebuilt/win32/glew.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Debug/glew.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/zlib/prebuilt/win32/zlib1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\luacocos2d.lib;lib\Debug\cocos2d.lib;lib\Debug\external.lib;..\..\cocos2d-x\external\OpenAL\prebuilt\win32\OpenAL32.lib;lib\Debug\ext_libvorbis.lib;lib\Debug\ext_libogg.lib;lib\Debug\ext_libfaad.lib;..\..\cocos2d-x\external\Box2D\prebuilt\win32\debug\libbox2d.lib;..\..\cocos2d-x\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;..\..\cocos2d-x\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;..\..\cocos2d-x\external\bullet\prebuilt\win32\debug\libbullet.lib;..\..\cocos2d-x\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\cocos2d-x\external\webp\prebuilt\win32\libwebp.lib;..\..\cocos2d-x\external\websockets\prebuilt\win32\websockets.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;..\..\cocos2d-x\external\curl\prebuilt\win32\libcurl.lib;..\..\cocos2d-x\external\openssl\prebuilt\win32\libssl.lib;..\..\cocos2d-x\external\openssl\prebuilt\win32\libcrypto.lib;..\..\cocos2d-x\external\png\prebuilt\win32\libpng.lib;..\..\cocos2d-x\external\glew\prebuilt\win32\glew.lib;..\..\cocos2d-x\external\glfw3\prebuilt\win32\glfw3.lib;..\..\cocos2d-x\external\zlib\prebuilt\win32\zdll.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;..\..\cocos2d-x\external\lua\luajit\prebuilt\win32\lua51.lib;lib\Debug\ext_tolua.lib;lib\Debug\ext_cjson.lib;lib\Debug\ext_lfs.lib;lib\Debug\ext_lpack.lib;lib\Debug\ext_lpeg.lib;lib\Debug\ext_lsproto.lib;lib\Debug\ext_lsqlite3.lib;lib\Debug\ext_luasocket.lib;lib\Debug\ext_lunqlite.lib;lib\Debug\ext_lzlib.lib;lib\Debug\ext_protobuf.lib;lib\Debug\ext_lua-protobuf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/wxCocos2d/frameworks/runtime-src/proj.win32/Debug/wxcocos2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Debug/wxcocos2d.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>							</Message>
+      <Command>setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/lua/luajit/prebuilt/win32/lua51.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Release/lua51.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/OpenAL/prebuilt/win32/OpenAL32.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/websockets/prebuilt/win32/websockets.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/curl/prebuilt/win32/libcurl.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/openssl/prebuilt/win32/libssl-1_1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/openssl/prebuilt/win32/libcrypto-1_1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/glew/prebuilt/win32/glew.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Release/glew.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/zlib/prebuilt/win32/zlib1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\luacocos2d.lib;lib\Release\cocos2d.lib;lib\Release\external.lib;..\..\cocos2d-x\external\OpenAL\prebuilt\win32\OpenAL32.lib;lib\Release\ext_libvorbis.lib;lib\Release\ext_libogg.lib;lib\Release\ext_libfaad.lib;..\..\cocos2d-x\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\..\cocos2d-x\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\..\cocos2d-x\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;..\..\cocos2d-x\external\bullet\prebuilt\win32\release\libbullet.lib;..\..\cocos2d-x\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\cocos2d-x\external\webp\prebuilt\win32\libwebp.lib;..\..\cocos2d-x\external\websockets\prebuilt\win32\websockets.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;..\..\cocos2d-x\external\curl\prebuilt\win32\libcurl.lib;..\..\cocos2d-x\external\openssl\prebuilt\win32\libssl.lib;..\..\cocos2d-x\external\openssl\prebuilt\win32\libcrypto.lib;..\..\cocos2d-x\external\png\prebuilt\win32\libpng.lib;..\..\cocos2d-x\external\glew\prebuilt\win32\glew.lib;..\..\cocos2d-x\external\glfw3\prebuilt\win32\glfw3.lib;..\..\cocos2d-x\external\zlib\prebuilt\win32\zdll.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;..\..\cocos2d-x\external\lua\luajit\prebuilt\win32\lua51.lib;lib\Release\ext_tolua.lib;lib\Release\ext_cjson.lib;lib\Release\ext_lfs.lib;lib\Release\ext_lpack.lib;lib\Release\ext_lpeg.lib;lib\Release\ext_lsproto.lib;lib\Release\ext_lsqlite3.lib;lib\Release\ext_luasocket.lib;lib\Release\ext_lunqlite.lib;lib\Release\ext_lzlib.lib;lib\Release\ext_protobuf.lib;lib\Release\ext_lua-protobuf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/wxCocos2d/frameworks/runtime-src/proj.win32/Release/wxcocos2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/Release/wxcocos2d.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>							</Message>
+      <Command>setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/lua/luajit/prebuilt/win32/lua51.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/MinSizeRel/lua51.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/OpenAL/prebuilt/win32/OpenAL32.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/websockets/prebuilt/win32/websockets.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/curl/prebuilt/win32/libcurl.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/openssl/prebuilt/win32/libssl-1_1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/openssl/prebuilt/win32/libcrypto-1_1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/glew/prebuilt/win32/glew.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/MinSizeRel/glew.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/zlib/prebuilt/win32/zlib1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\luacocos2d.lib;lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;..\..\cocos2d-x\external\OpenAL\prebuilt\win32\OpenAL32.lib;lib\MinSizeRel\ext_libvorbis.lib;lib\MinSizeRel\ext_libogg.lib;lib\MinSizeRel\ext_libfaad.lib;..\..\cocos2d-x\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\..\cocos2d-x\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\..\cocos2d-x\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;..\..\cocos2d-x\external\bullet\prebuilt\win32\release\libbullet.lib;..\..\cocos2d-x\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\cocos2d-x\external\webp\prebuilt\win32\libwebp.lib;..\..\cocos2d-x\external\websockets\prebuilt\win32\websockets.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;..\..\cocos2d-x\external\curl\prebuilt\win32\libcurl.lib;..\..\cocos2d-x\external\openssl\prebuilt\win32\libssl.lib;..\..\cocos2d-x\external\openssl\prebuilt\win32\libcrypto.lib;..\..\cocos2d-x\external\png\prebuilt\win32\libpng.lib;..\..\cocos2d-x\external\glew\prebuilt\win32\glew.lib;..\..\cocos2d-x\external\glfw3\prebuilt\win32\glfw3.lib;..\..\cocos2d-x\external\zlib\prebuilt\win32\zdll.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;..\..\cocos2d-x\external\lua\luajit\prebuilt\win32\lua51.lib;lib\MinSizeRel\ext_tolua.lib;lib\MinSizeRel\ext_cjson.lib;lib\MinSizeRel\ext_lfs.lib;lib\MinSizeRel\ext_lpack.lib;lib\MinSizeRel\ext_lpeg.lib;lib\MinSizeRel\ext_lsproto.lib;lib\MinSizeRel\ext_lsqlite3.lib;lib\MinSizeRel\ext_luasocket.lib;lib\MinSizeRel\ext_lunqlite.lib;lib\MinSizeRel\ext_lzlib.lib;lib\MinSizeRel\ext_protobuf.lib;lib\MinSizeRel\ext_lua-protobuf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/wxCocos2d/frameworks/runtime-src/proj.win32/MinSizeRel/wxcocos2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/MinSizeRel/wxcocos2d.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRLUASTATIC;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\wxCocos2d\frameworks\runtime-src\Classes;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto;F:\wxCocos2d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\manual;F:\wxCocos2d\frameworks\cocos2d-x;F:\wxCocos2d\frameworks\cocos2d-x\cocos;F:\wxCocos2d\frameworks\cocos2d-x\extensions;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform;F:\wxCocos2d\frameworks\cocos2d-x\cocos\editor-support;F:\wxCocos2d\frameworks\cocos2d-x\cocos\base;F:\wxCocos2d\frameworks\cocos2d-x\cocos\audio\include;F:\wxCocos2d\frameworks\cocos2d-x\cocos\platform\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\.\lib;F:\wxCocos2d\frameworks\cocos2d-x\external\libvorbis\..\libogg;F:\wxCocos2d\frameworks\cocos2d-x\external\libogg\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\include;F:\wxCocos2d\frameworks\cocos2d-x\external\faad2\.\libfaad;F:\wxCocos2d\frameworks\cocos2d-x\external\recast\..;F:\wxCocos2d\frameworks\cocos2d-x\external\tinyxml2\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxhash\.;F:\wxCocos2d\frameworks\cocos2d-x\external\xxtea\.;F:\wxCocos2d\frameworks\cocos2d-x\external\clipper\.;F:\wxCocos2d\frameworks\cocos2d-x\external\edtaa3func\.;F:\wxCocos2d\frameworks\cocos2d-x\external\ConvertUTF\.;F:\wxCocos2d\frameworks\cocos2d-x\external\poly2tri\..;F:\wxCocos2d\frameworks\cocos2d-x\external\md5\..;F:\wxCocos2d\frameworks\cocos2d-x\external\unzip\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\tolua\.;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\..;F:\wxCocos2d\frameworks\cocos2d-x\external\OpenAL\include;F:\wxCocos2d\frameworks\cocos2d-x\external\Box2D\include;F:\wxCocos2d\frameworks\cocos2d-x\external\chipmunk\include;F:\wxCocos2d\frameworks\cocos2d-x\external\freetype2\include\win32\freetype2;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include;F:\wxCocos2d\frameworks\cocos2d-x\external\bullet\include\bullet;F:\wxCocos2d\frameworks\cocos2d-x\external\jpeg\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\webp\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\websockets\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\openssl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\curl\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\png\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\glew\include;F:\wxCocos2d\frameworks\cocos2d-x\external\glfw3\include\win32;F:\wxCocos2d\frameworks\cocos2d-x\external\zlib\include;F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>							</Message>
+      <Command>setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/lua/luajit/prebuilt/win32/lua51.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/RelWithDebInfo/lua51.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/OpenAL/prebuilt/win32/OpenAL32.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/websockets/prebuilt/win32/websockets.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/curl/prebuilt/win32/libcurl.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/openssl/prebuilt/win32/libssl-1_1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/openssl/prebuilt/win32/libcrypto-1_1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/glew/prebuilt/win32/glew.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/RelWithDebInfo/glew.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -E copy_if_different F:/wxCocos2d/frameworks/cocos2d-x/external/zlib/prebuilt/win32/zlib1.dll F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\luacocos2d.lib;lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;..\..\cocos2d-x\external\OpenAL\prebuilt\win32\OpenAL32.lib;lib\RelWithDebInfo\ext_libvorbis.lib;lib\RelWithDebInfo\ext_libogg.lib;lib\RelWithDebInfo\ext_libfaad.lib;..\..\cocos2d-x\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\..\cocos2d-x\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\..\cocos2d-x\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;..\..\cocos2d-x\external\bullet\prebuilt\win32\release\libbullet.lib;..\..\cocos2d-x\external\jpeg\prebuilt\win32\libjpeg.lib;..\..\cocos2d-x\external\webp\prebuilt\win32\libwebp.lib;..\..\cocos2d-x\external\websockets\prebuilt\win32\websockets.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;..\..\cocos2d-x\external\curl\prebuilt\win32\libcurl.lib;..\..\cocos2d-x\external\openssl\prebuilt\win32\libssl.lib;..\..\cocos2d-x\external\openssl\prebuilt\win32\libcrypto.lib;..\..\cocos2d-x\external\png\prebuilt\win32\libpng.lib;..\..\cocos2d-x\external\glew\prebuilt\win32\glew.lib;..\..\cocos2d-x\external\glfw3\prebuilt\win32\glfw3.lib;..\..\cocos2d-x\external\zlib\prebuilt\win32\zdll.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;..\..\cocos2d-x\external\lua\luajit\prebuilt\win32\lua51.lib;lib\RelWithDebInfo\ext_tolua.lib;lib\RelWithDebInfo\ext_cjson.lib;lib\RelWithDebInfo\ext_lfs.lib;lib\RelWithDebInfo\ext_lpack.lib;lib\RelWithDebInfo\ext_lpeg.lib;lib\RelWithDebInfo\ext_lsproto.lib;lib\RelWithDebInfo\ext_lsqlite3.lib;lib\RelWithDebInfo\ext_luasocket.lib;lib\RelWithDebInfo\ext_lunqlite.lib;lib\RelWithDebInfo\ext_lzlib.lib;lib\RelWithDebInfo\ext_protobuf.lib;lib\RelWithDebInfo\ext_lua-protobuf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/wxCocos2d/frameworks/runtime-src/proj.win32/RelWithDebInfo/wxcocos2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/wxCocos2d/frameworks/runtime-src/proj.win32/bin/wxcocos2d/RelWithDebInfo/wxcocos2d.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\wxCocos2d\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/wxCocos2d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPython\Support.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPython3.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosBuildHelpers.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosBuildSet.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosConfigDefine.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosConfigDepend.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeCCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/wxCocos2d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPython\Support.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPython3.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosBuildHelpers.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosBuildSet.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosConfigDefine.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosConfigDepend.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeCCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/wxCocos2d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPython\Support.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPython3.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosBuildHelpers.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosBuildSet.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosConfigDefine.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosConfigDepend.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeCCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/wxCocos2d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPython\Support.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPython3.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosBuildHelpers.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosBuildSet.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosConfigDefine.cmake;F:\wxCocos2d\frameworks\cocos2d-x\cmake\Modules\CocosConfigDepend.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeCCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\wxCocos2d\frameworks\runtime-src\Classes\AppDelegate.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\main.h" />
+    <ClInclude Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\resource.h" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\runtime-src\Classes\AppDelegate.cpp" />
+    <ClCompile Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\main.cpp" />
+    <ResourceCompile Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\game.rc" />
+    <ClInclude Include="F:\wxCocos2d\res\HelloWorld.png" />
+    <ClInclude Include="F:\wxCocos2d\src\app\MyApp.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\app\scenes\MainScene.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\3d\3dConstants.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\cocos2d\Cocos2d.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\cocos2d\Cocos2dConstants.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\cocos2d\RendererConstants.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\controller\ControllerConstants.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\fairygui\FairyGUIConstants.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\init.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\network\NetworkConstants.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\physics3d\physics3d-constants.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\spine\SpineConstants.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\cocos\ui\GuiConstants.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\config.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\AppBase.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\NodeEx.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\SimpleTCP.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\WidgetEx.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\audio.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\crypto.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\debug.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\device.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\display.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\functions.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\init.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\json.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\network.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\platform\android.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\platform\ios.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\platform\luaj.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\platform\luaoc.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\platform\mac.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\containers.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\decoder.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\descriptor.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\encoder.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\listener.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\protobuf.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\text_format.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\type_checkers.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\protobuf\wire_format.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\scheduler.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\shortcodes.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\framework\toluaEx.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\main.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\sproto.lua" />
+    <ClInclude Include="F:\wxCocos2d\src\sprotoparser.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{D60BEBA4-94C3-3875-A18D-CD5D074A59C7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\COPY_RESOURCE-wxcocos2d.vcxproj">
+      <Project>{411A1909-FE01-3C1C-B89C-A618E697E074}</Project>
+      <Name>COPY_RESOURCE-wxcocos2d</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{36352095-23AB-3839-A5BB-326BE7CF0CDD}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\cjson\ext_cjson.vcxproj">
+      <Project>{AECE1ECB-D6EE-3046-B867-CA711995F2D5}</Project>
+      <Name>ext_cjson</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{4AA25DBD-B182-3F36-ABD1-CE841926AB8E}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{7386E315-A085-33F4-8EF0-D1A7FA898DC4}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{D3287927-2B0F-326E-B367-54006808A1BD}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lfs\ext_lfs.vcxproj">
+      <Project>{FAD93259-3A5D-37ED-BC11-FA978FCD04F7}</Project>
+      <Name>ext_lfs</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\faad2\ext_libfaad.vcxproj">
+      <Project>{E8C73858-9972-3842-8DEC-82A60A6BBBCF}</Project>
+      <Name>ext_libfaad</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\libogg\ext_libogg.vcxproj">
+      <Project>{D7616F2C-87F1-32C0-9A94-0B18B2B8FBA3}</Project>
+      <Name>ext_libogg</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\libvorbis\ext_libvorbis.vcxproj">
+      <Project>{8E7700AE-F4BE-327B-8726-66BDBBFA2FA0}</Project>
+      <Name>ext_libvorbis</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lpack\ext_lpack.vcxproj">
+      <Project>{B33E54F3-69E5-363D-BA79-15A10F4D33E7}</Project>
+      <Name>ext_lpack</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lpeg\ext_lpeg.vcxproj">
+      <Project>{2BCC01DE-AE36-3687-951B-010BBD2ECB30}</Project>
+      <Name>ext_lpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lsproto\ext_lsproto.vcxproj">
+      <Project>{5257C702-2080-3072-A69A-CD7CF1575006}</Project>
+      <Name>ext_lsproto</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lsqlite3\ext_lsqlite3.vcxproj">
+      <Project>{BA703083-028A-3F32-A53B-E9F000AA6948}</Project>
+      <Name>ext_lsqlite3</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lua-protobuf\ext_lua-protobuf.vcxproj">
+      <Project>{94997942-D1C9-3C5D-BDDB-2D7B0B0DED9D}</Project>
+      <Name>ext_lua-protobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\luasocket\ext_luasocket.vcxproj">
+      <Project>{776F45C5-634C-3FAB-88C0-5FD743E50005}</Project>
+      <Name>ext_luasocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lunqlite\ext_lunqlite.vcxproj">
+      <Project>{2E49137A-86D7-3539-ACF7-4475EB025B34}</Project>
+      <Name>ext_lunqlite</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lzlib\ext_lzlib.vcxproj">
+      <Project>{02EED8BB-1459-3720-96B9-D28BE7EC1779}</Project>
+      <Name>ext_lzlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{7470E5E7-BCF2-3548-A891-3E32268FEAA0}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{0B93401D-C2AB-3F93-B50A-686276A40FD9}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\protobuf\ext_protobuf.vcxproj">
+      <Project>{B5F796D1-E3C8-30D4-B407-0A1AC98E1357}</Project>
+      <Name>ext_protobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{7D08B5EE-A1BC-3FD4-8ABE-76CFC3294A7C}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{4E16B67F-E690-38A6-B4A5-845F721F99CB}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\tolua\ext_tolua.vcxproj">
+      <Project>{F6AEC284-9D39-33E8-8F68-1B795C720284}</Project>
+      <Name>ext_tolua</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{55657FAB-9B02-3649-9130-1FA3AB580388}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{8B4BEECB-357E-3AF6-A4AE-AEA3EB536DA9}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{CBBF7120-12A4-394D-AA58-F7B549B952BA}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\external.vcxproj">
+      <Project>{1F3AFEB8-D384-3D90-AFDD-8BBFEE99713E}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\cocos\lua-bindings\luacocos2d.vcxproj">
+      <Project>{16BA8C7F-ECD7-3C7B-AC90-F8413E03E622}</Project>
+      <Name>luacocos2d</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

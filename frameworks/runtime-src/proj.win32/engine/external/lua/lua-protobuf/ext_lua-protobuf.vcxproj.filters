@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\lua-protobuf\pb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\lua-protobuf\pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\lua-protobuf\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A6A92B3A-381C-33B3-8CCD-991F1860C3EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4676F2DB-E19B-3841-A2ED-7159A9A66C63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

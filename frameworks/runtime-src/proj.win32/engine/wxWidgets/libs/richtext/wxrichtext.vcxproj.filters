@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\richtext\richtextbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\richtext\richtextctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\richtext\richtextformatdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\richtext\richtexthtml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\richtext\richtextimagedlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\richtext\richtextprint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\richtext\richtextstyledlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\richtext\richtextstyles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\richtext\richtextsymboldlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\richtext\richtextxml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\xrc\xh_richtext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextbackgroundpage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextborderspage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextbuffer.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextbulletspage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextctrl.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextdialogpage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextfontpage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextformatdlg.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtexthtml.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextimagedlg.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextindentspage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextliststylepage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextmarginspage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextprint.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextsizepage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextstyledlg.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextstylepage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextstyles.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextsymboldlg.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtexttabspage.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextuicustomization.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\richtext\richtextxml.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\xrc\xh_richtext.h">
+      <Filter>Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\lib\vc_dll\mswu\wx\setup.h">
+      <Filter>Setup Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\wxCocos2d\frameworks\wxWidgets\include\wx\msw\genrcdefs.h">
+      <Filter>MSW Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\4aa9de97ac02d0bffbe819c97919dc0d\wxrichtext_CXX_prefix.hxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\wxCocos2d\frameworks\wxWidgets\build\cmake\lib\richtext\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="F:\wxCocos2d\frameworks\wxWidgets\src\msw\version.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0F651CB5-12EE-3B78-97BB-351285248197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Headers">
+      <UniqueIdentifier>{9B4B0C14-A9CD-3072-BE63-8BD4BEECCC1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MSW Headers">
+      <UniqueIdentifier>{9198E5DC-0E45-3DC9-BAEC-F1478D327ED4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{6FD1AC66-63FA-3F05-84E7-BBD92469D24F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setup Headers">
+      <UniqueIdentifier>{756A9976-7FFF-300B-8EAA-BDE6E9CD607E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4676F2DB-E19B-3841-A2ED-7159A9A66C63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

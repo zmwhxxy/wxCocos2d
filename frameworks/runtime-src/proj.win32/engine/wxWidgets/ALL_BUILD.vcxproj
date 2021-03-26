@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC792A0E-40AE-3D1C-80DA-2AE72AEAF4FA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\wxCocos2d\frameworks\wxWidgets\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/wxWidgets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/wxWidgets/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeConfigurableFile.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDependentOption.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakePrintHelpers.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXSymbolExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.c.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cxx.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckPrototypeDefinition.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckStructHasMember.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckTypeSize.c.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckTypeSize.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\ExternalProject.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindThreads.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\ProcessorCount.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\TestBigEndian.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\TestEndianess.c.in;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckIncludeFiles\STDC_HEADERS.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\LOCALE_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_GID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_PID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_UID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_WCHAR_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SSIZE_T.c;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\files.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\functions.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\init.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\install.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\main.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\modules\cotire.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\options.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\policies.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\setup.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\setup.h.in;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\toolkit.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/wxWidgets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/wxWidgets/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeConfigurableFile.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDependentOption.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakePrintHelpers.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXSymbolExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.c.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cxx.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckPrototypeDefinition.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckStructHasMember.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckTypeSize.c.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckTypeSize.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\ExternalProject.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindThreads.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\ProcessorCount.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\TestBigEndian.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\TestEndianess.c.in;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckIncludeFiles\STDC_HEADERS.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\LOCALE_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_GID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_PID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_UID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_WCHAR_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SSIZE_T.c;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\files.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\functions.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\init.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\install.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\main.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\modules\cotire.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\options.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\policies.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\setup.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\setup.h.in;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\toolkit.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/wxWidgets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/wxWidgets/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeConfigurableFile.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDependentOption.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakePrintHelpers.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXSymbolExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.c.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cxx.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckPrototypeDefinition.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckStructHasMember.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckTypeSize.c.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckTypeSize.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\ExternalProject.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindThreads.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\ProcessorCount.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\TestBigEndian.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\TestEndianess.c.in;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckIncludeFiles\STDC_HEADERS.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\LOCALE_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_GID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_PID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_UID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_WCHAR_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SSIZE_T.c;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\files.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\functions.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\init.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\install.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\main.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\modules\cotire.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\options.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\policies.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\setup.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\setup.h.in;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\toolkit.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/wxWidgets/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/wxWidgets/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeConfigurableFile.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeDependentOption.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakePrintHelpers.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckCXXSymbolExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckFunctionExists.c;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.c.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cxx.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFileCXX.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckPrototypeDefinition.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckStructHasMember.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckTypeSize.c.in;D:\DevelopTools\CMake\share\cmake-3.19\Modules\CheckTypeSize.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\ExternalProject.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\FindThreads.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\ProcessorCount.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\TestBigEndian.cmake;D:\DevelopTools\CMake\share\cmake-3.19\Modules\TestEndianess.c.in;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckIncludeFiles\STDC_HEADERS.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\LOCALE_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_GID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_PID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_UID_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SIZEOF_WCHAR_T.c;F:\wxCocos2d\frameworks\runtime-src\proj.win32\CMakeFiles\CheckTypeSize\SSIZE_T.c;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\files.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\functions.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\init.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\install.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\main.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\modules\cotire.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\options.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\policies.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\setup.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\setup.h.in;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\toolkit.cmake;F:\wxCocos2d\frameworks\wxWidgets\build\cmake\uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{D60BEBA4-94C3-3875-A18D-CD5D074A59C7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\adv\wxadv.vcxproj">
+      <Project>{14E0AFAD-A99A-317A-AFA1-1F95D6656ADF}</Project>
+      <Name>wxadv</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\aui\wxaui.vcxproj">
+      <Project>{D35FC7D0-8771-31BB-B14C-A4A2C1D4A304}</Project>
+      <Name>wxaui</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\base\wxbase.vcxproj">
+      <Project>{AE52E88E-F354-3CA6-A787-5B464B1412E9}</Project>
+      <Name>wxbase</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\core\wxcore.vcxproj">
+      <Project>{F7E9CB1A-8C28-3584-9435-FF037BB8AD0F}</Project>
+      <Name>wxcore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\wxexpat.vcxproj">
+      <Project>{45EB0FFE-D5A3-370D-9227-CD6AE7141D44}</Project>
+      <Name>wxexpat</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\gl\wxgl.vcxproj">
+      <Project>{D5E4D062-B283-31AD-9B80-9449A72ADD90}</Project>
+      <Name>wxgl</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\html\wxhtml.vcxproj">
+      <Project>{2A3516A0-BD22-3BA3-9A2F-70472C3BE800}</Project>
+      <Name>wxhtml</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\wxjpeg.vcxproj">
+      <Project>{B11D4488-F940-3240-8C93-182DE521AB25}</Project>
+      <Name>wxjpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\media\wxmedia.vcxproj">
+      <Project>{9337ADC6-3714-3116-ACE6-215BB441180A}</Project>
+      <Name>wxmedia</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\net\wxnet.vcxproj">
+      <Project>{F594860F-70F9-3C59-A85C-5B3F3F5C5B94}</Project>
+      <Name>wxnet</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\wxpng.vcxproj">
+      <Project>{AD9D136C-7452-3D4E-8779-C051C6AD4034}</Project>
+      <Name>wxpng</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\propgrid\wxpropgrid.vcxproj">
+      <Project>{C5FE668E-8F98-398F-8991-0C5EBD5A567F}</Project>
+      <Name>wxpropgrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\qa\wxqa.vcxproj">
+      <Project>{B44F039F-B761-3AF2-965B-32311C248859}</Project>
+      <Name>wxqa</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\utils\wxrc.vcxproj">
+      <Project>{8C2DCDB8-2B37-3FEF-91B1-C7D79F925495}</Project>
+      <Name>wxrc</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\wxregex.vcxproj">
+      <Project>{4EA7E9F2-1288-39E7-BD9B-5E4F4CB6067E}</Project>
+      <Name>wxregex</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\ribbon\wxribbon.vcxproj">
+      <Project>{980D950A-41E5-3D45-A737-CD4BA2FD1FF0}</Project>
+      <Name>wxribbon</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\richtext\wxrichtext.vcxproj">
+      <Project>{A7A718F7-ED7A-3EF7-BE1A-94A48F35736B}</Project>
+      <Name>wxrichtext</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\stc\wxscintilla.vcxproj">
+      <Project>{C391A88B-E7F9-39E1-9943-61FA723E0A22}</Project>
+      <Name>wxscintilla</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\stc\wxstc.vcxproj">
+      <Project>{BE05D9B0-6002-36CE-9DC2-98737B5B52CE}</Project>
+      <Name>wxstc</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\wxtiff.vcxproj">
+      <Project>{77C3B83E-EB90-3DB4-A891-B4878C0E14CC}</Project>
+      <Name>wxtiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\webview\wxwebview.vcxproj">
+      <Project>{BFDA7F01-20B4-348B-9043-00EE3B11CE2E}</Project>
+      <Name>wxwebview</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\xml\wxxml.vcxproj">
+      <Project>{7102BF8C-EDB1-3111-A28E-871FC628E620}</Project>
+      <Name>wxxml</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\xrc\wxxrc.vcxproj">
+      <Project>{DEB527AE-8C1F-3F97-A990-36DAE39C9398}</Project>
+      <Name>wxxrc</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\wxWidgets\libs\wxzlib.vcxproj">
+      <Project>{46B5BBC3-4FA0-36AC-BC00-2843645B65FA}</Project>
+      <Name>wxzlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\asynconnect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\timeout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\select.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\udp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\mime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\tcp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\auxiliar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\inet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\luasocket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\luasocket_scripts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\except.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\wsocket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\wxCocos2d\frameworks\cocos2d-x\external\lua\luasocket\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4676F2DB-E19B-3841-A2ED-7159A9A66C63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

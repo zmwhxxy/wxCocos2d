@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC792A0E-40AE-3D1C-80DA-2AE72AEAF4FA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\wxCocos2d\frameworks\cocos2d-x\external\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/cocos2d-x/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/cocos2d-x/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/cocos2d-x/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/wxCocos2d/frameworks/cocos2d-x/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopTools\CMake\bin\cmake.exe -SF:/wxCocos2d -BF:/wxCocos2d/frameworks/runtime-src/proj.win32 --check-stamp-file F:/wxCocos2d/frameworks/runtime-src/proj.win32/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{D60BEBA4-94C3-3875-A18D-CD5D074A59C7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\cjson\ext_cjson.vcxproj">
+      <Project>{AECE1ECB-D6EE-3046-B867-CA711995F2D5}</Project>
+      <Name>ext_cjson</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{4AA25DBD-B182-3F36-ABD1-CE841926AB8E}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{7386E315-A085-33F4-8EF0-D1A7FA898DC4}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{D3287927-2B0F-326E-B367-54006808A1BD}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lfs\ext_lfs.vcxproj">
+      <Project>{FAD93259-3A5D-37ED-BC11-FA978FCD04F7}</Project>
+      <Name>ext_lfs</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\faad2\ext_libfaad.vcxproj">
+      <Project>{E8C73858-9972-3842-8DEC-82A60A6BBBCF}</Project>
+      <Name>ext_libfaad</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\libogg\ext_libogg.vcxproj">
+      <Project>{D7616F2C-87F1-32C0-9A94-0B18B2B8FBA3}</Project>
+      <Name>ext_libogg</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\libvorbis\ext_libvorbis.vcxproj">
+      <Project>{8E7700AE-F4BE-327B-8726-66BDBBFA2FA0}</Project>
+      <Name>ext_libvorbis</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lpack\ext_lpack.vcxproj">
+      <Project>{B33E54F3-69E5-363D-BA79-15A10F4D33E7}</Project>
+      <Name>ext_lpack</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lpeg\ext_lpeg.vcxproj">
+      <Project>{2BCC01DE-AE36-3687-951B-010BBD2ECB30}</Project>
+      <Name>ext_lpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lsproto\ext_lsproto.vcxproj">
+      <Project>{5257C702-2080-3072-A69A-CD7CF1575006}</Project>
+      <Name>ext_lsproto</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lsqlite3\ext_lsqlite3.vcxproj">
+      <Project>{BA703083-028A-3F32-A53B-E9F000AA6948}</Project>
+      <Name>ext_lsqlite3</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lua-protobuf\ext_lua-protobuf.vcxproj">
+      <Project>{94997942-D1C9-3C5D-BDDB-2D7B0B0DED9D}</Project>
+      <Name>ext_lua-protobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\luasocket\ext_luasocket.vcxproj">
+      <Project>{776F45C5-634C-3FAB-88C0-5FD743E50005}</Project>
+      <Name>ext_luasocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lunqlite\ext_lunqlite.vcxproj">
+      <Project>{2E49137A-86D7-3539-ACF7-4475EB025B34}</Project>
+      <Name>ext_lunqlite</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\lzlib\ext_lzlib.vcxproj">
+      <Project>{02EED8BB-1459-3720-96B9-D28BE7EC1779}</Project>
+      <Name>ext_lzlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{7470E5E7-BCF2-3548-A891-3E32268FEAA0}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{0B93401D-C2AB-3F93-B50A-686276A40FD9}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\protobuf\ext_protobuf.vcxproj">
+      <Project>{B5F796D1-E3C8-30D4-B407-0A1AC98E1357}</Project>
+      <Name>ext_protobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{7D08B5EE-A1BC-3FD4-8ABE-76CFC3294A7C}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{4E16B67F-E690-38A6-B4A5-845F721F99CB}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\lua\tolua\ext_tolua.vcxproj">
+      <Project>{F6AEC284-9D39-33E8-8F68-1B795C720284}</Project>
+      <Name>ext_tolua</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{55657FAB-9B02-3649-9130-1FA3AB580388}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{8B4BEECB-357E-3AF6-A4AE-AEA3EB536DA9}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{CBBF7120-12A4-394D-AA58-F7B549B952BA}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\wxCocos2d\frameworks\runtime-src\proj.win32\engine\external\external.vcxproj">
+      <Project>{1F3AFEB8-D384-3D90-AFDD-8BBFEE99713E}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
